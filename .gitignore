@@ -1,0 +1,4 @@
+search-app/.idea
+search-app/target
+*.iml
+chef/.idea

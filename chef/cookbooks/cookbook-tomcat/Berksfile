@@ -1,0 +1,7 @@
+source 'https://supermarket.chef.io'
+
+metadata
+
+group :internal do
+  cookbook 'quickbase-java', path: '../cookbook-quickbase-java'
+end

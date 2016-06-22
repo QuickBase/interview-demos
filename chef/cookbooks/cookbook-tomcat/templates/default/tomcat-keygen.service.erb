@@ -1,0 +1,14 @@
+[Unit]
+Description=Tomcat Server Key Generation
+ConditionPathExists=|!/dev/shm/secrets/keystore.jks
+PartOf=tomcat.service
+
+[Service]
+ExecStart=/bin/mkdir -p /dev/shm/secrets
+ExecStart=/bin/chmod 750 /dev/shm/secrets
+ExecStart=/bin/chown root:tomcat /dev/shm/secrets
+ExecStart=/bin/keytool -genkeypair -dname "CN=demo.newstack.quickbaserocks.com, OU=QuickBase, O=QuickBase, L=Cambridge, S=MA, C=US" -alias quickbaserocks -keypass changeit -keystore /dev/shm/secrets/keystore.jks -storepass changeit -keyalg RSA -keysize 2048
+ExecStart=/bin/chmod 640 /dev/shm/secrets/keystore.jks
+ExecStart=/bin/chown root:tomcat /dev/shm/secrets/keystore.jks
+Type=oneshot
+RemainAfterExit=yes
