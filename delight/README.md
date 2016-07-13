@@ -29,8 +29,10 @@ Steps to Reproduce:
 3.	View the table home page for the table.  Notice that if you scroll down on the first page, the column headers freeze at the top.  If you go to the second page of the report and scroll down, the headers no longer freeze.
 
 Screenshot page 1: has frozen headers
+
 <img src = https://cloud.githubusercontent.com/assets/4675652/16807742/9ce27f5c-48e7-11e6-9eef-a0759833153a.png />
 
 Screenshot page 2: no frozen headers
+
 <img src = https://cloud.githubusercontent.com/assets/4675652/16807745/9f4d05a0-48e7-11e6-9cb9-c749c37988cc.png />
 
