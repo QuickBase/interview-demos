@@ -11,6 +11,6 @@ dependencies {
 }
 jar {
     manifest {
-        attributes 'Main-Class': 'com.intuit.quickbase.Main'
+        attributes 'Main-Class': 'Main'
     }
 }
