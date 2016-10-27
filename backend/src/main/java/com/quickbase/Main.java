@@ -1,7 +1,7 @@
-package com.intuit.quickbase;
+package com.quickbase;
 
-import com.intuit.quickbase.devint.DBManager;
-import com.intuit.quickbase.devint.DBManagerImpl;
+import com.quickbase.devint.DBManager;
+import com.quickbase.devint.DBManagerImpl;
 
 import java.sql.Connection;
 

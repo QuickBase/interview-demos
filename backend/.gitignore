@@ -4,3 +4,4 @@
 *.class
 .classpath
 build/libs/dev-interview-materials.jar
+.gradle/*

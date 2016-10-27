@@ -1,4 +1,4 @@
-package com.intuit.quickbase.devint;
+package com.quickbase.devint;
 
 import java.util.ArrayList;
 import java.util.List;
