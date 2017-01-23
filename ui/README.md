@@ -1,6 +1,6 @@
 # Interview materials for UX dev
 ## The demo
-The purpose of the craft demo is to give us a jumping off point for discussion of your approach to solving a problem and of your code.  We do not expect you to fulfill all the requirements listed below.  Choose from the list of tasks what you can get done in an hour or two and that best highlights your skills. We would rather see one task done well than all the tasks attempted but none working!
+The purpose of the craft demo is to give us a jumping off point for discussion of your approach to solving a problem and of your code.  We are interested in learning how you approach this problem and go about solving it. We would like you to start working on the requirements and we do not expect you to fulfill all of the requirements listed below. By the same token if you want to extend the requirements or validation, please feel free to do so as you see fit. 
 
 Use of your favorite libraries is permitted but optional.  You will demo this from a browser - you are free to use any or no webserver.  
 
