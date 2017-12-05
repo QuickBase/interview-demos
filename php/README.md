@@ -4,6 +4,8 @@ The purpose of the craft demo is to give us a jumping off point for discussion o
 
 Use of your favorite libraries is permitted but optional.  You will demo this from a browser - you are free to use any web server.  
 
+Please feel free to use the craft demo presentation template: https://github.com/QuickBase/interview-demos/blob/master/QuickBase_CraftDemo_PresentationTemplate.pptx
+
 ## The scenario
 
 Assume you are working on the admin controls of a product that allows users to set up their own input forms. The project is to create a control to modify the properties of a multiple choice field. It’s not necessary to have the control actually build a multiple choice field; assume that functionality is handled by a service and you just need to interact with its APIs.
