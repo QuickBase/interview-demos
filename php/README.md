@@ -41,8 +41,8 @@ functionality to work.
 
 ## The scenario
 
-Assume you are working on the admin controls of a product that allows users to
-set up their own input forms (e.g., how Google Forms, SurveyMonkey, or Quick
+Assume you are working on the admin controls of a product that allows builders
+to set up their own input forms (e.g., how Google Forms, SurveyMonkey, or Quick
 Base allow you to build a survey with a multiple choice field). The project is
 to create a control to modify the properties of a multiple choice field. It’s
 not necessary to have the control actually build a multiple choice field; assume
@@ -65,8 +65,8 @@ the conversation and make changes you think would be worthwhile.
 
 1. The submit button should post this form to your PHP application and validate
    the data on the server.
-1. Validate the following rules and notify the user if there are any validation
-   issues.
+1. Validate the following rules and notify the builder if there are any
+   validation issues.
    * The Label field is required.
    * Duplicates choices are not allowed.
    * There cannot be more than 50 choices total.
@@ -75,7 +75,7 @@ the conversation and make changes you think would be worthwhile.
 1. For the purpose of the demo, you may want the form to keep its values after
    the form is submitted. This helps demonstrate the prior requirement (that the
    default value is added).
-1. Add a button that allows the user to clear the form and start fresh.
+1. Add a button that allows the builder to clear the form and start fresh.
 
 ## Stretch Requirements / Tasks
 
@@ -99,3 +99,32 @@ have time to complete additional requirements. These are only suggestions.
 1. Have you ever closed the browser accidentally when working on something?
    Yeah, me too. Let's help the user out by populating the form with the input
    they were working on if they accidentally close the browser.
+
+## FAQ
+
+* **What is a "builder" vs. and "end user"?**
+
+  This spec is designed for a "builder". A "builder" is a user of the product
+  that creates forms.
+
+  An "end user" is a user of the product that submits data using the forms that
+  were created by the builder.
+
+  For example, let's say I own an apartment building. As a "builder", I would
+  create a form that allows people to submit work requests if something in their
+  apartment breaks.
+
+  Once I publish the form, the tenants that live in my apartment building, the
+  "end users", would fill out this form to let me know something is broken in
+  their apartment.
+
+* **What is that "Type: Multi-select Text" in the spec image?**
+
+  In the full version of this spec, that is a drop-down. An builder could select
+  "multi-select" (allow end users to select multiple options) or "single-select"
+  (end users can only pick one of the options).
+
+* **What is the checkbox for "A value is required"?**
+
+  After the builder creates their form with this multiple choice option, the end
+  user be required to pick a choice before they could submit the form.
