@@ -102,7 +102,7 @@ have time to complete additional requirements. These are only suggestions.
 
 ## FAQ
 
-* **What is a "builder" vs. and "end user"?**
+* **What is a "builder" vs. an "end user"?**
 
   This spec is designed for a "builder". A "builder" is a user of the product
   that creates forms.
