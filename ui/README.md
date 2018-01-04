@@ -1,4 +1,4 @@
-# Quick Base Craft Demo for the UI or XD Developer
+# Quick Base Craft Demo for the UI/UX or XD Developer
 
 ## General Description
 
