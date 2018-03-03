@@ -86,9 +86,11 @@ the conversation and make changes you think would be worthwhile.
 1. The submit button should create a json object and post it to a
    [http://www.mocky.io/v2/566061f21200008e3aabd919](http://www.mocky.io/v2/566061f21200008e3aabd919).
    It should also log the post data to the console. You can add a function to
-   FieldService in MockFieldService.js to accomplish this, but everything is up
-   to you. Feel free to modify or change anything you would like as long as it
-   meets the minimum requiring of posting json data to the back-end endpoint.
+   FieldService in
+   [MockFieldService.js](https://github.com/QuickBase/interview-demos/blob/master/ui/js/MockService.js)
+   to accomplish this, but everything is up to you. Feel free to modify or
+   change anything you would like as long as it meets the minimum requiring of
+   posting json data to the back-end endpoint.
 
 ## Stretch Requirements / Tasks
 
@@ -133,7 +135,7 @@ have time to complete additional requirements. These are only suggestions.
 
 * **What is that "Type: Multi-select Text" in the spec image?**
 
-  In the full version of this spec, that is a drop-down. An builder could select
+  In the full version of this spec, that is a drop-down. A builder could select
   "multi-select" (allow end users to select multiple options) or "single-select"
   (end users can only pick one of the options).
 

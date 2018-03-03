@@ -120,7 +120,7 @@ have time to complete additional requirements. These are only suggestions.
 
 * **What is that "Type: Multi-select Text" in the spec image?**
 
-  In the full version of this spec, that is a drop-down. An builder could select
+  In the full version of this spec, that is a drop-down. A builder could select
   "multi-select" (allow end users to select multiple options) or "single-select"
   (end users can only pick one of the options).
 
