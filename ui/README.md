@@ -68,12 +68,10 @@ the conversation and make changes you think would be worthwhile.
 
 ## Core Requirements / Tasks
 
-1. The submit button should create a json object and post it to a
-   [http://www.mocky.io/v2/566061f21200008e3aabd919](http://www.mocky.io/v2/566061f21200008e3aabd919).
-   It should also log the post data to the console. You can add a function to
-   FieldService in MockFieldService.js to accomplish this, but everything is up
-   to you. Feel free to modify or change anything you would like as long as it
-   meets the minimum requiring of posting json data to the back-end endpoint.
+1. The builder can add and remove choices from the list of choices. In the visual spec
+   provided, the builder adds and removes choices in a textarea element.
+   Individual items are separated by a new line. Feel free to modify this
+   interaction to meet the requirement of being able to add and remove choices.
 1. Validate the following rules and notify the builder if there are any
    validation issues.
    * The Label field is required.
@@ -85,6 +83,12 @@ the conversation and make changes you think would be worthwhile.
    the form is submitted. This helps demonstrate the prior requirement (that the
    default value is added).
 1. Add a button that allows the builder to clear the form and start fresh.
+1. The submit button should create a json object and post it to a
+   [http://www.mocky.io/v2/566061f21200008e3aabd919](http://www.mocky.io/v2/566061f21200008e3aabd919).
+   It should also log the post data to the console. You can add a function to
+   FieldService in MockFieldService.js to accomplish this, but everything is up
+   to you. Feel free to modify or change anything you would like as long as it
+   meets the minimum requiring of posting json data to the back-end endpoint.
 
 ## Stretch Requirements / Tasks
 
