@@ -83,13 +83,13 @@ the conversation and make changes you think would be worthwhile.
    the form is submitted. This helps demonstrate the prior requirement (that the
    default value is added).
 1. Add a button that allows the builder to clear the form and start fresh.
-1. The submit button should create a json object and post it to a
+1. The submit button should create a json object and post it to
    [http://www.mocky.io/v2/566061f21200008e3aabd919](http://www.mocky.io/v2/566061f21200008e3aabd919).
    It should also log the post data to the console. You can add a function to
    FieldService in
    [MockFieldService.js](https://github.com/QuickBase/interview-demos/blob/master/ui/js/MockService.js)
    to accomplish this, but everything is up to you. Feel free to modify or
-   change anything you would like as long as it meets the minimum requiring of
+   change anything you would like as long as it meets the minimum requirements of
    posting json data to the back-end endpoint.
 
 ## Stretch Requirements / Tasks
