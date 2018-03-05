@@ -89,7 +89,7 @@ the conversation and make changes you think would be worthwhile.
    FieldService in
    [MockFieldService.js](https://github.com/QuickBase/interview-demos/blob/master/ui/js/MockService.js)
    to accomplish this, but everything is up to you. Feel free to modify or
-   change anything you would like as long as it meets the minimum requirements of
+   change anything you would like as long as it meets the minimum requirement of
    posting json data to the back-end endpoint.
 
 ## Stretch Requirements / Tasks
