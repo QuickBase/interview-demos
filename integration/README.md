@@ -36,7 +36,7 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
 
 ### **Working with the Quick Base API**
 
-1. Clone the craft demo 'Tweet Tracker' Quick Base application into a free trial account by visiting this link and clicking the 'Try This App' button: https://www.quickbase.com/exchange/tweet-tracker/[app-id-placeholder].
+1. Clone the craft demo 'Tweet Tracker' Quick Base application from the Quick Base Exchange
 2. Create an application token to securely access your Quick Base app through our APIs by following the documentation here: https://help.quickbase.com/user-assistance/app_tokens.html.
 3. Follow the documentation at https://help.quickbase.com/api-guide/index.html to send requests to specific Quick Base APIs.
 
