@@ -1,4 +1,4 @@
-# Quick Base Craft Demo | Senior Integration Specialist
+# Quick Base Craft Demo | Integration Specialist
 
 ## Craft Demo Presentation Outline
 
@@ -10,7 +10,7 @@ We have created a PowerPoint template which covers an outline of what we would l
 
 The purpose of the craft demo is to give us a jumping-off-point for discussion of your approach to solving a problem and of your code. We are interested in learning how you approach this problem and go about solving it.
 
-We expect this project to take experienced developers about two-four hours to complete. We know not everyone has unlimited time to work on interview projects and we do not expect that everyone completes all of the requirements. However, you may be asked how you might have solved a requirement you missed had you been able to work on this project without time constraints. Additionally, if you want to extend the project beyond the listed requirements (e.g., tracking additional data points in the 'Tweet Tracker' app), please feel free to do so as you see fit. Please note that we prefer higher-code quality over additional features if you start to run out of time.
+We expect this project to take experienced developers about two to four hours to complete. We know not everyone has unlimited time to work on interview projects and we do not expect that everyone completes all of the requirements. However, you may be asked how you might have solved a requirement you missed had you been able to work on this project without time constraints. Additionally, if you want to extend the project beyond the listed requirements (e.g., tracking additional data points in the 'Tweet Tracker' app), please feel free to do so as you see fit. Please note that we prefer higher-code quality over additional features if you start to run out of time.
 
 Use of your favorite libraries, SDKs and frameworks is welcomed but optional. The project outlined below can be completed with or without these tools.
 
@@ -22,11 +22,10 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
 
 ## Demo Project Requirements
 
-1. Your code should collect 100 or more tweets from 2018 that include the following hashtags:
+1. Your code should collect 100 or more tweets from this year that include the following hashtags:
     * #QuickBase
     * #NoCode
     * #LowCode
-    * #QBEMPOWER18
     * #QBCommunitySummit
 2. Collected tweets should be de-duplicated in the Quick Base app. For example, if a tweet contains both the #NoCode and #LowCode hashtags it should only be stored once in the app with both hashtags captured in the 'Hashtag' field.
 3. All fields in the destination Quick Base app should be populated for each tweet.
