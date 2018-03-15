@@ -29,7 +29,7 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
     * #QBCommunitySummit
 2. Collected tweets should be de-duplicated in the Quick Base app. For example, if a tweet contains both the #NoCode and #LowCode hashtags it should only be stored once in the app with both hashtags captured in the 'Hashtag' field.
 3. All fields in the destination Quick Base app should be populated for each tweet.
-4. Your project output should be a service or application that adheres to both Quick Base and Twitter API best practices.
+4. Your project output should be a service or application that adheres to both Quick Base and Twitter API best practices. You can write your code in any language or use any framework you prefer. As a data integration specialist at Quick Base, you will likely be working with a code base written in PHP.
 5. Industry-standard practices for testing, logging and error-handling are expected as time permits.
 
 ## FAQ
