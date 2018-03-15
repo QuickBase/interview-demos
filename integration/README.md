@@ -27,20 +27,20 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
     * #NoCode
     * #LowCode
     * #QBCommunitySummit
-2. Collected tweets should be de-duplicated in the Quick Base app. For example, if a tweet contains both the #NoCode and #LowCode hashtags it should only be stored once in the app with both hashtags captured in the 'Hashtag' field.
-3. All fields in the destination Quick Base app should be populated for each tweet.
-4. Your project output should be a service or application that adheres to both Quick Base and Twitter API best practices. You can write your code in any language or use any framework you prefer. As a data integration specialist at Quick Base, you will likely be working with a code base written in PHP.
-5. Industry-standard practices for testing, logging and error-handling are expected as time permits.
+1. Collected tweets should be de-duplicated in the Quick Base app. For example, if a tweet contains both the #NoCode and #LowCode hashtags it should only be stored once in the app with both hashtags captured in the 'Hashtag' field.
+1. All fields in the destination Quick Base app should be populated for each tweet.
+1. Your project output should be a service or application that adheres to both Quick Base and Twitter API best practices. You can write your code in any language or use any framework you prefer. As a data integration specialist at Quick Base, you will likely be working with a code base written in PHP.
+1. Industry-standard practices for testing, logging and error-handling are expected as time permits.
 
 ## FAQ
 
 ### **Working with the Quick Base API**
 
 1. Clone the craft demo 'Tweet Tracker' Quick Base application from the Quick Base Exchange
-2. Create an application token to securely access your Quick Base app through our APIs by following the documentation here: https://help.quickbase.com/user-assistance/app_tokens.html.
-3. Follow the documentation at https://help.quickbase.com/api-guide/index.html to send requests to specific Quick Base APIs.
+1. Create an application token to securely access your Quick Base app through our APIs by following the documentation here: https://help.quickbase.com/user-assistance/app_tokens.html.
+1. Follow the documentation at https://help.quickbase.com/api-guide/index.html to send requests to specific Quick Base APIs.
 
 ### **Working with the Twitter API**
 1. Create a Twitter App at https://apps.twitter.com/ in order for your code to access the Twitter API.
-2. Obtain the Consumer Key and Consumer Secret from your Twitter app and authenticate against the Twitter API auth endpoint for 'Application-only authentication' as described here: https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html
-3. Follow the documentation at https://developer.twitter.com/en/docs/basics/getting-started to send requests to specific Twitter APIs.
+1. Obtain the Consumer Key and Consumer Secret from your Twitter app and authenticate against the Twitter API auth endpoint for 'Application-only authentication' as described here: https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html
+1. Follow the documentation at https://developer.twitter.com/en/docs/basics/getting-started to send requests to specific Twitter APIs.
