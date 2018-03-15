@@ -36,11 +36,13 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
 
 ### **Working with the Quick Base API**
 
-1. Clone the craft demo 'Tweet Tracker' Quick Base application from the Quick Base Exchange
+1. Create a Quick Base trial account at https://www.quickbase.com/trial-register.
+1. Clone the 'Tweet Tracker' Quick Base application from the Quick Base Exchange using these directions: https://help.quickbase.com/user-assistance/create_database_from_template.html.
 1. Create an application token to securely access your Quick Base app through our APIs by following the documentation here: https://help.quickbase.com/user-assistance/app_tokens.html.
 1. Follow the documentation at https://help.quickbase.com/api-guide/index.html to send requests to specific Quick Base APIs.
 
 ### **Working with the Twitter API**
+
 1. Create a Twitter App at https://apps.twitter.com/ in order for your code to access the Twitter API.
 1. Obtain the Consumer Key and Consumer Secret from your Twitter app and authenticate against the Twitter API auth endpoint for 'Application-only authentication' as described here: https://developer.twitter.com/en/docs/basics/authentication/overview/application-only.html
 1. Follow the documentation at https://developer.twitter.com/en/docs/basics/getting-started to send requests to specific Twitter APIs.
