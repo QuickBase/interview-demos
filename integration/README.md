@@ -36,7 +36,7 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
 
 ### **Working with the Quick Base API**
 
-1. Create a Quick Base trial account at https://www.quickbase.com/trial-register.
+1. Create a Quick Base trial account at https://www.quickbase.com/trial-register. Please make sure to set the company name as: QBSmokeTest-999.
 1. Clone the 'Tweet Tracker' Quick Base application from the Quick Base Exchange using these directions: https://help.quickbase.com/user-assistance/create_database_from_template.html.
 1. Create an application token to securely access your Quick Base app through our APIs by following the documentation here: https://help.quickbase.com/user-assistance/app_tokens.html.
 1. Follow the documentation at https://help.quickbase.com/api-guide/index.html to send requests to specific Quick Base APIs.
