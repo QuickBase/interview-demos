@@ -15,31 +15,37 @@ class QBRecord
     int id;
     std::string value;
 
-    public QBRecord(int id, std::string value) : id(id), value(value)
+    /*public QBRecord(int id, std::string value) : id(id), value(value)
         {
 
-        }
+        }*/
     };
 
-typedef std::vector<QBRecord> QBRecordColleciton;
+typedef std::vector<QBRecord> QBRecordCollection;
 
-QBRecordColleciton QBFindMatchingRecords(QBRecordColleciton records)
+/**
+Return records that contain a string
+*/
+QBRecordCollection QBFindMatchingRecords(QBRecordCollection records, std::string matchString)
     {
 
     }
 
-QBRecordColleciton populateDummyData()
+QBRecordCollection populateDummyData()
     {
-    QBRecordColleciton data;
+    QBRecordCollection data;
     for (int i = 0; i < 1000; i++)
         {
-        data.push_back(QBRecord(i, i));
+        //data.push_back(QBRecord(i, i));
         }
+
+    return data;
     }
 
 int main(int argc, _TCHAR* argv[])
 {
-
+    QBRecordCollection data = populateDummyData();
+    QBFindMatchingRecords(data, "1");
 	return 0;
 }
 
