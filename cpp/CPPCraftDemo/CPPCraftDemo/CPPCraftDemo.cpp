@@ -1,51 +1,70 @@
 /**
     We provide a simple base implementation of a Record datastructure and collection of Records
     We would like to implement FindMatchingRecords function that searches through the records for a string
-
+    We have provided a base FindMatchingRecords Function that we would like to optimize
+    Please provide your own implementation of Record, RecordCollection and FindMatchingRecords
+    Feel free to change the profiler function, add unit tests, move the definitions into separate classes.
 */
 #include "stdafx.h"
 #include <string>
 #include <vector>
+#include <algorithm>
+#include <assert.h>
+#include <ctime>
+#include <iostream>
 
-/*
-Represents a Record Object
+/**
+    Represents a Record Object
 */
 class QBRecord
     {
-    int id;
-    std::string value;
 
-    /*public QBRecord(int id, std::string value) : id(id), value(value)
+    public:
+        int recordId;
+        std::string stringValue;
+
+        QBRecord(int recordId, std::string stringValue) : recordId(recordId), stringValue(stringValue)
         {
-
-        }*/
+        }
     };
 
 typedef std::vector<QBRecord> QBRecordCollection;
 
 /**
-Return records that contain a string
+    Return records that contains a string in the StringValue field
+    records - the initial set of records to filter
+    matchString - the string to search for
 */
 QBRecordCollection QBFindMatchingRecords(QBRecordCollection records, std::string matchString)
     {
-
+    QBRecordCollection result;
+    std::copy_if(records.begin(), records.end(), std::back_inserter(result), [matchString](QBRecord rec){return rec.stringValue.find(matchString) != std::string::npos; });
+    return result;
     }
 
-QBRecordCollection populateDummyData()
+/**
+    Utility to populate a record collection
+*/
+QBRecordCollection populateDummyData(const std::string& prefix, int iterations)
     {
     QBRecordCollection data;
-    for (int i = 0; i < 1000; i++)
+    for (int i = 0; i < iterations; i++)
         {
-        //data.push_back(QBRecord(i, i));
+        data.push_back(QBRecord(i, prefix + std::to_string(i)));
         }
 
     return data;
     }
 
+
+
 int main(int argc, _TCHAR* argv[])
 {
-    QBRecordCollection data = populateDummyData();
-    QBFindMatchingRecords(data, "1");
+    auto data = populateDummyData("testdata", 1000);
+    std::clock_t startTimer = std::clock();
+    auto filteredSet = QBFindMatchingRecords(data, "testdata500");
+    std::cout << "profiler: " << (std::clock() - startTimer) / (double)(CLOCKS_PER_SEC / 1000) << std::endl;
+    assert(filteredSet.size() == 1);
 	return 0;
 }
 
