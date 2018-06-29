@@ -6,3 +6,4 @@
 *.opensdf
 x64
 ipch
+*.user
