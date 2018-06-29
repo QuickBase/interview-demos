@@ -41,7 +41,7 @@ QBRecordCollection populateDummyData(const std::string& prefix, int numRecords)
     {
     QBRecordCollection data;
     data.reserve(numRecords);
-    for (unsigned int i = 0; i < numRecords; i++)
+    for (int i = 0; i < numRecords; i++)
         {
         QBRecord rec = { i, prefix + std::to_string(i) };
         data.emplace_back(rec);
