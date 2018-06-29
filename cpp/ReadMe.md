@@ -5,16 +5,23 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 # FindMatchingRecords
 
-We would like to see an implementation of a small in memory database that can perform Fetching of records.
-We provide a simple base implementation of a Record datastructure and collection of Records
-We have provided a base FindMatchingRecords Function that we would like to optimize
-Fee free to provide your own implementation of Record, RecordCollection and FindMatchingRecords
-Feel free to change the profiler function, add unit tests, move the definitions into separate classes to make it more maintainable, add comments.
-Do not assume that the QBRecordCollection is sorted and the recordIDs are monoticinally increasing
+-We would like to see an implementation of a small in memory database that can perform Fetching of records.
+
+- We provide a simple base implementation of a Record datastructure and collection of Records
+
+- We have provided a base FindMatchingRecords Function that we would like to optimize
+
+- Fee free to provide your own implementation of Record, RecordCollection and FindMatchingRecords
+
+- Feel free to change the profiler function, add unit tests, move the definitions into separate classes to make it more maintainable, add comments.
+
+- Do not assume that the QBRecordCollection is sorted and the recordIDs are monoticinally increasing
 
 # DeleteRecords (Stretch)
-We would like to introduce DeleteRecordByRecordID(Recordcollection records, int id)
-This function should essentially delete the record from your collection so that when you do FindMatchingRecords(RecordCollection records, string matchString), we return empty collection after the record is deleted
+
+- We would like to introduce DeleteRecordByRecordID(Recordcollection records, int id)
+
+- This function should essentially delete the record from your collection so that when you do FindMatchingRecords(RecordCollection records, string matchString), we return empty collection after the record is deleted
 
 # What we expect to see
 - We would like you to compare the performance of your implementation of FindMatchingRecords with the base implementation
