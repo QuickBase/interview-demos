@@ -9,18 +9,15 @@
 /**
     Represents a Record Object
 */
-class QBRecord
-    {
+struct QBRecord
+{
+    int recordId;
+    std::string stringValue;
+};
 
-    public:
-        int recordId;
-        std::string stringValue;
-
-        QBRecord(int recordId, std::string stringValue) : recordId(recordId), stringValue(stringValue)
-        {
-        }
-    };
-
+/**
+Represents a Record Collections
+*/
 typedef std::vector<QBRecord> QBRecordCollection;
 
 /**
@@ -37,15 +34,18 @@ QBRecordCollection QBFindMatchingRecords(QBRecordCollection records, std::string
 
 /**
     Utility to populate a record collection
+    prefix - prefix for the string value for every record
+    numRecords - number of records to populate in the collection
 */
-QBRecordCollection populateDummyData(const std::string& prefix, int iterations)
+QBRecordCollection populateDummyData(const std::string& prefix, int numRecords)
     {
     QBRecordCollection data;
-    for (int i = 0; i < iterations; i++)
+    data.reserve(numRecords);
+    for (unsigned int i = 0; i < numRecords; i++)
         {
-        data.push_back(QBRecord(i, prefix + std::to_string(i)));
+        QBRecord rec = { i, prefix + std::to_string(i) };
+        data.emplace_back(rec);
         }
-
     return data;
     }
 
@@ -53,10 +53,15 @@ QBRecordCollection populateDummyData(const std::string& prefix, int iterations)
 
 int main(int argc, _TCHAR* argv[])
 {
+    // populate a bunch of data
     auto data = populateDummyData("testdata", 1000);
+
+    // Find a record that contains and measure the perf
     std::clock_t startTimer = std::clock();
     auto filteredSet = QBFindMatchingRecords(data, "testdata500");
     std::cout << "profiler: " << (std::clock() - startTimer) / (double)(CLOCKS_PER_SEC / 1000) << std::endl;
+
+    // make sure that the function is correct
     assert(filteredSet.size() == 1);
 	return 0;
 }
