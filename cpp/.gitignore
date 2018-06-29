@@ -1,8 +1,9 @@
-Debug\
-x64\
-ipch\
+\Debug\
+\x64\
+\ipch\
 *.sdf
 *.suo
 *.exe
 *.ilk
 *.pdb
+*.opensdf
