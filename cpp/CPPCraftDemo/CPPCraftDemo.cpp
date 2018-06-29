@@ -3,8 +3,9 @@
 #include <vector>
 #include <algorithm>
 #include <assert.h>
-#include <ctime>
+#include <chrono>
 #include <iostream>
+#include <ratio>
 
 /**
     Represents a Record Object
@@ -53,13 +54,13 @@ QBRecordCollection populateDummyData(const std::string& prefix, int numRecords)
 
 int main(int argc, _TCHAR* argv[])
 {
+    using namespace std::chrono;
     // populate a bunch of data
     auto data = populateDummyData("testdata", 1000);
-
     // Find a record that contains and measure the perf
-    std::clock_t startTimer = std::clock();
+    auto startTimer = steady_clock::now();
     auto filteredSet = QBFindMatchingRecords(data, "testdata500");
-    std::cout << "profiler: " << (std::clock() - startTimer) / (double)(CLOCKS_PER_SEC / 1000) << std::endl;
+    std::cout << "profiler: " << double((steady_clock::now() - startTimer).count()) * steady_clock::period::num / steady_clock::period::den << std::endl;
 
     // make sure that the function is correct
     assert(filteredSet.size() == 1);
