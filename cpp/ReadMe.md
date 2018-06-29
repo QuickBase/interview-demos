@@ -5,7 +5,7 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 # FindMatchingRecords
 
--We would like to see an implementation of a small in memory database that can perform Fetching of records.
+- We would like to see an implementation of a small in memory database that can perform Fetching of records.
 
 - We provide a simple base implementation of a Record datastructure and collection of Records
 
@@ -25,7 +25,10 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 # What we expect to see
 - We would like you to compare the performance of your implementation of FindMatchingRecords with the base implementation
+
 - We would like to see the data structure choices, usage of memory layouts
+
 - We would like to see usage of modern and standard C++ idioms
+
 - We would like to see familiarity with writing maintainable and correct C++ projects
 
