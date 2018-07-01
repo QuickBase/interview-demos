@@ -1,0 +1,9 @@
+*.sdf
+*.suo
+*.exe
+*.ilk
+*.pdb
+*.opensdf
+x64
+ipch
+*.user
