@@ -22,7 +22,7 @@ The Quick Base marketing team has a launched a brand-awareness campaign that is 
 
 ## Demo Project Requirements
 
-1. Your code should collect 100 or more tweets from this year that include the following hashtags:
+1. Your code should collect 100 or more tweets from this year that include any of the following hashtags:
     * #QuickBase
     * #NoCode
     * #LowCode
