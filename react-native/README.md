@@ -35,15 +35,15 @@ Sally is hoping to use a native iOS application to add new models to their inven
 1. Create a `react-native` view that pushes data to the Quick Base API
     1. When the user clicks the "Add" button on the form, a new record should be created in the Quick Base app in the parts tables with the data the user entered. **Hint: You can use one of our APIs to add a new record. See the [API Help documentation](https://help.quickbase.com/api-guide/index.html#add_record.html%3FTocPath%3DQuick%2520Base%2520API%2520Call%2520Reference%7C_____6)** 
 
-## Stretch Goals
-1. Add a barcode scanner to their react native view
-1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on that specific field
-
-### User story for stretch goals
+## User story for stretch goals
 Sally is hoping to be able to scan a barcode using our native application and have that data pushed into the "Barcode" 
 field in their Quick Base application. The mobile app should allow one of the floor managers to view the provided add 
 new record web page, and upon clicking the "Barcode" field, there should be a barcode scanner (fine to use QR codes 
 for testing) that scans and then returns that data to the add new record view.   
+
+## Stretch Goals
+1. Add a barcode scanner to their react native view
+1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on that specific field
     
     
 ### Setting up your Quick Base app <a name="faq"/>
