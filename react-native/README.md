@@ -26,7 +26,7 @@ Sally is hoping to use a native iOS application to add new models to their inven
 
 ## Technical Requirements
 
-1. Clone our demo app from the App Exchange (see the [FAQ](#FAQ))
+1. Clone our demo app from the App Exchange (see the [FAQ](#faq))
 1. Recreate a React native version of the input form and post the data via the quick base api to your app. 
 1. Create a `react-native` view that pushes data to the Quick Base API
 
