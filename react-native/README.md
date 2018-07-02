@@ -43,7 +43,9 @@ for testing) that scans and then returns that data to the add new record view.
 
 ## Stretch Goals
 1. Add a barcode scanner to their react native view
-1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on that specific field
+    * Open up a barcode scanner when the user taps the barcode field on the form. 
+    * The barcode field will be populated with the data from the QR and/or barcode that is scanned.
+1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on the `barcode` field
     
     
 ### Setting up your Quick Base app <a name="faq"/>
