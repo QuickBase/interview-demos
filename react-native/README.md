@@ -20,11 +20,11 @@ Use of your favorite libraries, SDKs and frameworks is welcomed but optional. Th
 
 Please be prepared to demo your solution in a working development environment on the day of your interview. When you present your craft demo, we will ask you to describe how you arrived at your solution. After that, we will ask for a tour of your code with a focus on how you arrived at the core functionality and any design decisions and/or trade-offs you made during the process.
 
-## User story
+### User story
 Sally's garage manages a high volume of inventory for many independent auto mechanics using a Quick Base application. 
-Sally is hoping to use a native iOS application to add new models to their inventory tracking Quick Base app. 
+Sally is hoping to use a native iOS or Android application to add new models to their inventory tracking Quick Base app. 
 
-## Technical Requirements
+### Technical Requirements
 
 1. Clone our demo app from the App Exchange (see the [FAQ](#faq))
 1. Recreate a React native version of the `create new part` form and post the data via the quick base api to your app.
@@ -32,23 +32,25 @@ Sally is hoping to use a native iOS application to add new models to their inven
     1. Under my apps, select `React Native Craft Demo`
     1. After selecting your app, navigate to `Parts`
     1. Click `+ New Part` 
-1. Create a `react-native` view that pushes data to the Quick Base API
-    1. When the user clicks the "Add" button on the form, a new record should be created in the Quick Base app in the parts tables with the data the user entered. **Hint: You can use one of our APIs to add a new record. See the [API Help documentation](https://help.quickbase.com/api-guide/index.html#add_record.html%3FTocPath%3DQuick%2520Base%2520API%2520Call%2520Reference%7C_____6)** 
+1. When the user clicks the "Add" button on the form, a new record should be created in the Quick Base app in the parts tables with the data the user entered. **Hint: You can use one of our APIs to add a new record. See the [API Help documentation](https://help.quickbase.com/api-guide/index.html#add_record.html%3FTocPath%3DQuick%2520Base%2520API%2520Call%2520Reference%7C_____6)** 
 
-## User story for stretch goals
+## Stretch Goals
+If you have time, you can optionally complete one or more of the stretch goals listed below **or come up with your own ideas for functionality you want to add to the app**.
+
+### Stretch Goal User Story
 Sally is hoping to be able to scan a barcode using our native application and have that data pushed into the "Barcode" 
 field in their Quick Base application. The mobile app should allow one of the floor managers to view the provided add 
 new record web page, and upon clicking the "Barcode" field, there should be a barcode scanner (fine to use QR codes 
 for testing) that scans and then returns that data to the add new record view.   
 
-## Stretch Goals
+### Stretch Goals - Technical Requirements
 1. Add a barcode scanner to their react native view
     * Open up a barcode scanner when the user taps the barcode field on the form. 
     * The barcode field will be populated with the data from the QR and/or barcode that is scanned.
 1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on the `barcode` field
     
     
-### Setting up your Quick Base app <a name="faq"/>
+## Setting up your Quick Base app <a name="faq"/>
 1. [Create a Quick Base trial account](https://www.quickbase.com/trial-register). Please make sure to set the company name as: `QBSmokeTest-999`
 1. Create a copy of the `react native craft demo` app by following [the exchange instructions](https://help.quickbase.com/user-assistance/create_database_from_template.html)
 1. Create an application token to securely access your Quick Base app through our APIs by [following the documentation](https://help.quickbase.com/user-assistance/app_tokens.html)
