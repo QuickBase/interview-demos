@@ -12,8 +12,10 @@
 */
 struct QBRecord
 {
-    int recordId;
-    std::string stringValue;
+    uint column0; // autoincrementing column
+    std::string column1;
+    long column2;
+    std::string column3;
 };
 
 /**
@@ -26,10 +28,24 @@ typedef std::vector<QBRecord> QBRecordCollection;
     records - the initial set of records to filter
     matchString - the string to search for
 */
-QBRecordCollection QBFindMatchingRecords(QBRecordCollection records, std::string matchString)
+QBRecordCollection QBFindMatchingRecords(const QBRecordCollection& records, const std:string& columnName, const std::string& matchString)
     {
     QBRecordCollection result;
-    std::copy_if(records.begin(), records.end(), std::back_inserter(result), [matchString](QBRecord rec){return rec.stringValue.find(matchString) != std::string::npos; });
+    std::copy_if(records.begin(), records.end(), std::back_inserter(result), [&](QBRecord rec){
+        if (columnName == "column0") {
+            uint matchValue = std::stoul(matchString);
+            return matchValue == rec.column0;
+        } else if (columnName == "column1") {
+            return rec.column1.find(matchString) != std::string::npos;
+        } else if (columnName == "column2") {
+            long matchValue = std::stol(matchString);
+            return matchValue == rec.column2;
+        } else if (columnName == "column3") {
+            return rec.column3.find(matchString) != std::string::npos;
+        } else {
+            return false;
+        }
+    });
     return result;
     }
 
@@ -42,15 +58,13 @@ QBRecordCollection populateDummyData(const std::string& prefix, int numRecords)
     {
     QBRecordCollection data;
     data.reserve(numRecords);
-    for (int i = 0; i < numRecords; i++)
+    for (uint i = 0; i < numRecords; i++)
         {
-        QBRecord rec = { i, prefix + std::to_string(i) };
+        QBRecord rec = { i, prefix + std::to_string(i), (i * 10000) % 100, std::to_string(i) + prefix };
         data.emplace_back(rec);
         }
     return data;
     }
-
-
 
 int main(int argc, _TCHAR* argv[])
 {
@@ -59,7 +73,7 @@ int main(int argc, _TCHAR* argv[])
     auto data = populateDummyData("testdata", 1000);
     // Find a record that contains and measure the perf
     auto startTimer = steady_clock::now();
-    auto filteredSet = QBFindMatchingRecords(data, "testdata500");
+    auto filteredSet = QBFindMatchingRecords(data, "column1", "testdata500");
     std::cout << "profiler: " << double((steady_clock::now() - startTimer).count()) * steady_clock::period::num / steady_clock::period::den << std::endl;
 
     // make sure that the function is correct
