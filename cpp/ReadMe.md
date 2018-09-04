@@ -7,9 +7,9 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 - We would like to see an implementation of a small in memory database that can perform Fetching of records.
 
-- We provide a simple base implementation of a Record datastructure and collection of Records
+- We provide a simple base implementation of a Record data structure and collection of Records
 
-- We have provided a base FindMatchingRecords Function that we would like to optimize
+- We have provided a base FindMatchingRecords Function that we would like to optimize.
 
 - Fee free to provide your own implementation of Record, RecordCollection and FindMatchingRecords
 
@@ -19,7 +19,7 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 # DeleteRecords (Stretch)
 
-- We would like to introduce DeleteRecordByRecordID(Recordcollection records, int id)
+- We would like to introduce `DeleteRecordByID(Recordcollection records, uint id)`
 
 - This function should essentially delete the record from your collection so that when you do FindMatchingRecords(RecordCollection records, string matchString), we return empty collection after the record is deleted
 

@@ -12,7 +12,7 @@
 */
 struct QBRecord
 {
-    uint column0; // autoincrementing column
+    uint column0; // unique id column
     std::string column1;
     long column2;
     std::string column3;
@@ -60,7 +60,7 @@ QBRecordCollection populateDummyData(const std::string& prefix, int numRecords)
     data.reserve(numRecords);
     for (uint i = 0; i < numRecords; i++)
         {
-        QBRecord rec = { i, prefix + std::to_string(i), (i * 10000) % 100, std::to_string(i) + prefix };
+        QBRecord rec = { i, prefix + std::to_string(i), i % 100, std::to_string(i) + prefix };
         data.emplace_back(rec);
         }
     return data;
@@ -74,6 +74,7 @@ int main(int argc, _TCHAR* argv[])
     // Find a record that contains and measure the perf
     auto startTimer = steady_clock::now();
     auto filteredSet = QBFindMatchingRecords(data, "column1", "testdata500");
+    auto filteredSet2 = QBFindMatchingRecords(data, "column2", "24");
     std::cout << "profiler: " << double((steady_clock::now() - startTimer).count()) * steady_clock::period::num / steady_clock::period::den << std::endl;
 
     // make sure that the function is correct
