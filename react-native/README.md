@@ -34,6 +34,12 @@ Sally is hoping to use a native iOS or Android application to add new models to 
     1. Click `+ New Part` 
 1. When the user clicks the "Add" button on the form, a new record should be created in the Quick Base app in the parts tables with the data the user entered. **Hint: You can use one of our APIs to add a new record. See the [API Help documentation](https://help.quickbase.com/api-guide/index.html#add_record.html%3FTocPath%3DQuick%2520Base%2520API%2520Call%2520Reference%7C_____6)** 
 
+## Setting up your Quick Base app <a name="faq"/>
+1. [Create a Quick Base trial account](https://www.quickbase.com/trial-register). Please make sure to set the company name as: `QBSmokeTest-999`
+1. Create a copy of the `react native craft demo` app by following [the exchange instructions](https://help.quickbase.com/user-assistance/create_database_from_template.html)
+1. Create an application token to securely access your Quick Base app through our APIs by [following the documentation](https://help.quickbase.com/user-assistance/app_tokens.html)
+
+
 ## Stretch Goals
 If you have time, you can optionally complete one or more of the stretch goals listed below **or come up with your own ideas for functionality you want to add to the app**.
 
@@ -49,8 +55,3 @@ for testing) that scans and then returns that data to the add new record view.
     * The barcode field will be populated with the data from the QR and/or barcode that is scanned.
 1. Wrap our current mobile web experience in a UI `webview`, but still allow barcode scanner functionality on the `barcode` field
     
-    
-## Setting up your Quick Base app <a name="faq"/>
-1. [Create a Quick Base trial account](https://www.quickbase.com/trial-register). Please make sure to set the company name as: `QBSmokeTest-999`
-1. Create a copy of the `react native craft demo` app by following [the exchange instructions](https://help.quickbase.com/user-assistance/create_database_from_template.html)
-1. Create an application token to securely access your Quick Base app through our APIs by [following the documentation](https://help.quickbase.com/user-assistance/app_tokens.html)
