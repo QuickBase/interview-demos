@@ -3,20 +3,21 @@ The purpose of this exercise is not to give a "gotcha" question or puzzle, but a
 
 ## Requirements
 Create a command line Python program, which retrieves the information of a GitHub User and creates a new Contact or updates an existing contact in Freshdesk, using their respective APIs.
-• Use GitHub Rest API v3. Documentation is available at https://developer.github.com/v3/
-• Use Freshdesk API v2. Documentation is available at https://developers.freshdesk.com/api/
-• Your program should be able to get GitHub user login (username) and Freshdesk subdomain
+
+* Use GitHub Rest API v3. Documentation is available at https://developer.github.com/v3/
+* Use Freshdesk API v2. Documentation is available at https://developers.freshdesk.com/api/
+* Your program should be able to get GitHub user login (username) and Freshdesk subdomain
 from the command line.
-• For authentication assume GitHub personal access token is given in GITHUB_TOKEN
+* For authentication assume GitHub personal access token is given in GITHUB_TOKEN
 environmental variable and Freshdesk API key is given in FRESHDESK_TOKEN environmental
 variable.
-• Transfer all compatible fields from the GitHub User to the Freshdesk Contact by your judgment
-• Please provide unit tests for the main program functionality. Create a separate module for the
+* Transfer all compatible fields from the GitHub User to the Freshdesk Contact by your judgment
+* Please provide unit tests for the main program functionality. Create a separate module for the
 unit tests.
-• You may use either Python 2.7 or Python 3.x.
-• You may also use any Python libraries which will help you with the task, such as requests or
+* You may use either Python 2.7 or Python 3.x.
+* You may also use any Python libraries which will help you with the task, such as requests or
 mock, except for API clients for Freshdesk or GitHub.
-• While you may create trial accounts in GitHub and Freshdesk, this is not a requirement. You can
+* While you may create trial accounts in GitHub and Freshdesk, this is not a requirement. You can
 use the examples from the documentation as test data.
-• Please provide a README.md file with instructions on how to run the Python program and the
+* Please provide a README.md file with instructions on how to run the Python program and the
 tests.
