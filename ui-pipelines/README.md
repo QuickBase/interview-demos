@@ -45,7 +45,7 @@ its APIs.
 ## Core Requirements / Tasks
 
 1. The builder can select a channel for the Pipeline from a dropdown - the list of channels is to be fetched
-   from this API: [https://www.pipelines.quickbase.com/api/-/channels](https://www.pipelines.quickbase.com/api/-/channels)
+   from this API: [https://www.pipelines.quickbase.com/api/-/channels](https://www.pipelines.quickbase.com/api/-/channels) You will probably run into CORS issues.
 1. The builder can add and remove tags to the Pipeline, where a default set of tags is visible.
 1. Validate the following rules and notify the builder if there are any
    validation issues.
@@ -72,13 +72,10 @@ have time to complete additional requirements. These are only suggestions.
 
 * Allow the form to be responsive and work on mobile devices in addition to
   desktop.
-* Introduce Accessibility and/or internationalization best practices
-* Have you ever closed the browser accidentally when working on something? Yeah,
-  me too. Let's help the user out by populating the form with the input they
-  were working on if they accidentally close the browser.
-* Refactor the button component such that it could be used by other developers
+* Think about Accessibility and internationalization best practices. Please form an opinion on how to do these well.
+* Think about reusability. Refactor the button component such that it could be used by other developers
   and maintain the same style and behavior (e.g., for a custom component
   library). For example, let's say we want all of our submit buttons to show a
   loading indicator after they are clicked. How could we create a component that
   has that behavior that would be shared across all instances of the submit
-  button?
+  button? Please be prepared to at least anaswer questions around the principles of reusability.
