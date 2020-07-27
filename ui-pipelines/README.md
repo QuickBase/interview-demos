@@ -62,7 +62,8 @@ have time to complete additional requirements. These are only suggestions.
 
 * Allow the form to be responsive and work on mobile devices in addition to
   desktop.
-* Think about error handling from the APIs, slow APIs, timeouts
+* Think about error handling from the APIs, slow APIs, timeouts. Think about what kind of APIs would serve this feature the best.
+* Think about tests. What kind of tests would you write if you had more time?
 * Think about Accessibility and Internationalization best practices. Please form an opinion on how to do these well.
 * Think about reusability. Refactor the button component such that it could be used by other developers
   and maintain the same style and behavior (e.g., for a custom component
