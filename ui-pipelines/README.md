@@ -3,11 +3,9 @@
 ## General Description
 
 The purpose of the craft demo is to give us a jumping off point for discussion
-of your approach to solving a problem and of your code. We are interested in
-learning how you approach this problem and go about solving it.
+of your approach to solving a problem and of your code. 
 
-We expect this project to take experienced developers familiar with web
-technologies (HTML, CSS, javascript, React) about 1-2 hours to complete. 
+We expect this project about 1-2 hours to complete. 
 
 We know not everyone has unlimited time to work on interview projects and we do not expect
 that everyone completes all of the requirements. However, you may be asked how
@@ -25,21 +23,13 @@ already provides it.
 
 Your demo should run on whichever web browser you prefer.
 
-## Craft Demo Presentation
-
-When you show off your craft demo, we will ask you to show us how it works from
-a user's perspective (e.g., filling out the form and clicking "save"). After
-that, we will ask for a tour of your code with a focus on how you got the core
-functionality to work.
-
 ## The scenario
 
 The project is to create a control to add metadata to a user's Pipeline, including the channels used, labels, etc. 
-It’s not necessary to have the control actually build anything further than the metadata form; assume
-that further functionality is handled by a service and you just need to interact with
-its APIs.
 
 ## Design
+
+Do not worry about styling the UI
 
 ![](https://github.com/QuickBase/interview-demos/blob/master/ui-pipelines/ui-pipelines-design.png)
 
