@@ -1,11 +1,9 @@
 var PipelineService =  {
 	getPipeline: function(id) {
 		return {
-		  "pipelineLabel": "My First Pipeline",
-		  "favorite": false,
-		  "tags": ["development", "sales"],
-		  "channels": ["Quick Base"],
-		  "default": ""
+		  "label": "My First Pipeline",
+		  "tags": ["Tag1", "Tag2"],
+		  "channel": "Quick Base"
 		}
 	},
 	savePipeline: function (pipelineJson) {
