@@ -44,13 +44,10 @@ Do not worry about styling the UI
 1. The submit button should create a json object and post it to any endpoint that returns some response. After the form is submitted, the user should have some indication that there is a success, 
    and the state of the form should be reset.
 
-## Stretch Requirements / Tasks
+## Non-Core Requirements / Tasks
 
-Complete the core tasks before attempting one
-of these. You can also feel free to consider your own ideas for extension if you
-have time to complete additional requirements. These are only suggestions.
 
-* Allow the form to be responsive and work on mobile devices in addition to
+* Think of being responsive. Allow the form to be responsive and work on mobile devices in addition to
   desktop.
 * Think about error handling from the APIs, slow APIs, timeouts. Think about what kind of APIs would serve this feature the best.
 * Think about tests. What kind of tests would you write if you had more time?
