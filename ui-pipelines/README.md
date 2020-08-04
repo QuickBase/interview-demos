@@ -46,6 +46,7 @@ Do not worry about styling the UI
 
 ## Non-Core Requirements / Tasks
 
+We dont expect you to code them but prepared to talk about these scenarios
 
 * Think of being responsive. Allow the form to be responsive and work on mobile devices in addition to
   desktop.
