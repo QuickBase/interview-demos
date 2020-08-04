@@ -36,7 +36,7 @@ Do not worry about styling the UI
 ## Core Requirements / Tasks
 
 1. The builder can select a single channel for the Pipeline from a dropdown - the list of channels is to be fetched
-   from this API: [https://www.pipelines.quickbase.com/api/-/channels](https://www.pipelines.quickbase.com/api/-/channels) You will probably run into CORS issues.
+   from this API: [https://www.pipelines.quickbase.com/api/-/channels](https://www.pipelines.quickbase.com/api/-/channels) You will probably run into CORS issues. You can also use the mock service to get through this.
 1. The builder can add and remove tags to the Pipeline. These tags can be anything a user can enter. Duplicates tags are not allowed. There cannot be more than 5 tags total.
 1. The Label field is required. Validate that following rules and notify the builder if there are any
    validation issues.
