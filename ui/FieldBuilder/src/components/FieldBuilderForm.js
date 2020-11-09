@@ -96,15 +96,65 @@ class FieldBuilderForm extends Component {
         ]
 
 
-    }};
+    }
+//    this.setStart();
+};
 
-// componentDidMount(){
-//     const defaultField = localStorage.getItem('rememberDefault');
-//     if (!this.state.choicesArray.includes(defaultField)) {
-//         this.state.choicesArray.push(defaultField)
-//     }
-   
+
+componentDidMount(){
+window.addEventListener('beforeunload', this.handleUnload)
+
+// function (e) { 
+//     e.preventDefault(); 
+//     e.returnValue = ''; 
+// })
+
+}
+handleUnload =()=> {
+   localStorage.setItem('label',this.state.label);
+   localStorage.setItem('checkedB',this.state.checkedB);
+   localStorage.setItem('default',this.state.default);
+   localStorage.setItem('choices',this.state.choices);
+   localStorage.setItem('order',this.state.order);
+   localStorage.setItem('choicesArray',this.state.choicesArray);
+ 
+
+} 
+
+// setStart=()=>{
+//    if(true){
+//      const labelField = localStorage.getItem('label');
+//     const checkedBField = localStorage.getItem('checkedB');
+//     const defaultF = localStorage.getItem('default');
+//     const choicesField = localStorage.getItem('choices');
+//     const orderField = localStorage.getItem('order');
+//     const choicesArrayField = localStorage.getItem('choicesArray');
+//     this.setState({label: labelField});
+//     this.setState({checkedB: checkedBField});
+//     this.setState({default: defaultF});
+//     this.setState({choices: choicesField});
+//     this.setState({order: orderField});
+//     this.setState({choicesArray: choicesArrayField});
+
+
+//    }
+//    else{
+//      this.setState({
+//         label: '',
+//         checkedB: false,
+//         default: '',
+//         order: "",
+//         choices: [],
+
+//     })
+
+
+
+
 // }
+// componentDidUpdate() {
+
+//  }
 capitalizeFirstLetter = (string)=> {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
@@ -168,7 +218,7 @@ capitalizeFirstLetter = (string)=> {
         
         if(isValid){
            
-
+       
             
            
            
@@ -328,10 +378,7 @@ capitalizeFirstLetter = (string)=> {
                                         value={this.state.order}
                                         onChange={this.handleChange('order')}
                                         variant="outlined"
-                                        // inputProps={{
-                                        //     name: 'age',
-                                        //     id: 'age-simple',
-                                        // }}
+                                      
                                     >
                                         {/* <MenuItem value={''}>
                                             <em></em>

@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .App {
+    float: none;
+    width: 100%;
+    background-color: cadetblue;
+  }
+}
