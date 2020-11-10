@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
 import AppBar from '@material-ui/core/AppBar';
+import axios from 'axios';
 
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -72,7 +73,6 @@ const styles = theme => ({
         width: '75%'
     }
 });
-
 
 
 
@@ -239,22 +239,23 @@ capitalizeFirstLetter = (string)=> {
     
             document.getElementById("myForm").reset();
             
-           
-            fetch("http://www.mocky.io/v2/566061f21200008e3aabd919", {
-                method: "post",
-                body: JSON.stringify({
-                    label: this.state.label,
-                    type: this.state.checkedB,
-                    default: this.state.default,
-                    choices: this.state.choices,
-                    order: this.state.order
+           const url= 'http://www.mocky.io/v2/566061f21200008e3aabd919'
+            // fetch("http://www.mocky.io/v2/566061f21200008e3aabd919", {
+            //     method: "post",
+            //     body: JSON.stringify({
+            //         label: this.state.label,
+            //         type: this.state.checkedB,
+            //         default: this.state.default,
+            //         choices: this.state.choices,
+            //         order: this.state.order
     
-                })
-            })
-                .then((response) => {
-                    console.log(response)
+            //     })
+            // })
+            //     .then((response) => {
+            //         console.log(response)
                     
-                });
+            //     });
+            axios.get(url).then(response => console.log('GOOD',response));
         }
 
        
