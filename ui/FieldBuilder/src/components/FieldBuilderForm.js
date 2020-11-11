@@ -17,7 +17,7 @@ import Chip from '@material-ui/core/Chip';
 
 import OutlinedInput from '@material-ui/core/OutlinedInput';
 import Button from '@material-ui/core/Button';
-// import ls from 'local-storage';
+
 
 
 const ITEM_HEIGHT = 48;
@@ -58,7 +58,7 @@ const styles = theme => ({
     },
     fieldHeaderContainer: {
         height: '50px',
-        // backgroundColor:'#d9eef7'
+        
     },
     fieldHeader: {
         display: 'inherit',
@@ -80,7 +80,7 @@ class FieldBuilderForm extends Component {
    constructor(props){
        super(props);
        this.state ={
-        label: '',
+        label: "Sales Region",
         checkedB: true,
         default: '',
         choices: [],
@@ -93,8 +93,19 @@ class FieldBuilderForm extends Component {
             'Eastern Europe',
             'Latin America',
             'Middle East and Africa'
-        ]
+        ],
+        errors: {
+            label: {
+                valid: true,
+                message: ""
 
+
+            },
+            default: {
+                valid: true,
+                message: ""
+            }
+        }
 
     }
 //    this.setStart();
@@ -102,63 +113,32 @@ class FieldBuilderForm extends Component {
 
 
 componentDidMount(){
-window.addEventListener('beforeunload', this.handleUnload)
+window.addEventListener('beforeunload', function (e) { 
+    e.preventDefault(); 
+    e.returnValue = ''; 
+})
 
-// function (e) { 
-//     e.preventDefault(); 
-//     e.returnValue = ''; 
-// })
+
 
 }
-handleUnload =()=> {
+handleUnload =(e)=> {
    localStorage.setItem('label',this.state.label);
    localStorage.setItem('checkedB',this.state.checkedB);
    localStorage.setItem('default',this.state.default);
    localStorage.setItem('choices',this.state.choices);
    localStorage.setItem('order',this.state.order);
    localStorage.setItem('choicesArray',this.state.choicesArray);
+
  
 
 } 
+// Function to capitalize Default Field
 
-// setStart=()=>{
-//    if(true){
-//      const labelField = localStorage.getItem('label');
-//     const checkedBField = localStorage.getItem('checkedB');
-//     const defaultF = localStorage.getItem('default');
-//     const choicesField = localStorage.getItem('choices');
-//     const orderField = localStorage.getItem('order');
-//     const choicesArrayField = localStorage.getItem('choicesArray');
-//     this.setState({label: labelField});
-//     this.setState({checkedB: checkedBField});
-//     this.setState({default: defaultF});
-//     this.setState({choices: choicesField});
-//     this.setState({order: orderField});
-//     this.setState({choicesArray: choicesArrayField});
-
-
-//    }
-//    else{
-//      this.setState({
-//         label: '',
-//         checkedB: false,
-//         default: '',
-//         order: "",
-//         choices: [],
-
-//     })
-
-
-
-
-// }
-// componentDidUpdate() {
-
-//  }
 capitalizeFirstLetter = (string)=> {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
+  // On change handler
     handleChange = name => event => {
         console.log(name)
         if(name === 'checkedB' ) {
@@ -168,6 +148,79 @@ capitalizeFirstLetter = (string)=> {
             this.setState({
                 [name]: event.target.value,
             },()=>{
+                
+              
+
+                if(name==='label'){
+                    const value= this.state.label;
+                    if(value===""){
+                        let errors = {
+                            ...this.state.errors,
+                            label: {
+                              valid: false,
+                              message: "The Label field is required"
+                            }
+                          };
+                  
+                          this.setState({ errors });
+                        } else {
+                          let errors = {
+                            ...this.state.errors,
+                            label: {
+                              valid: true,
+                              message: ""
+                            }
+                          };
+                  
+                          this.setState({
+                            errors
+                          });
+                        
+                    }
+
+                }
+
+                if(name==='default'){
+                    const defaultValue= this.state.default;
+                    if(defaultValue.length > 40){
+                        let errors = {
+                            ...this.state.errors,
+                            default: {
+                              valid: false,
+                              message: "Default value must be less than or equal to 40 characters to be entered in the choices array"
+                            }
+                          };
+                  
+                          this.setState({ errors });
+                        } else if (this.state.choicesArray.includes(defaultValue)){
+                          let errors = {
+                            ...this.state.errors,
+                            default: {
+                              valid: false,
+                              message: "Default value is already present in the choices array"
+                            }
+                          }
+                  
+                          this.setState({
+                            errors
+                          });}
+                          else {
+                            let errors = {
+                                ...this.state.errors,
+                                default: {
+                                  valid: true,
+                                  msg: ""
+                                }
+                              }
+                      
+                              this.setState({
+                                errors
+                              });
+                          }
+                        
+                    }
+
+                
                 if(name === 'order' && this.state.order === 'Display choices in Alphabetical') {
                    
                     this.setState({
@@ -178,27 +231,28 @@ capitalizeFirstLetter = (string)=> {
     
         }
        
-      
+    
         
         
     };
+    // Choices field handle
 
     handleChangeMultiple = event => {
         if(this.state.choices.length < 50) {
             this.setState({ choices: event.target.value });
         }
         else {
-            window.alert('You can add items more than 50.')
+            window.alert('You cannot add items more than 50.')
         }
     };
 
-
+// Cancel Button Handler
     handleCancel = () => {
     
         
         this.setState({
-            label: '',
-            checkedB: false,
+            label: 'Sales Region',
+            checkedB: true,
             default: '',
             choices: [],
             order: "",
@@ -209,7 +263,7 @@ capitalizeFirstLetter = (string)=> {
         }
     
  
-    
+    // OnSubmit Handler
 
     handleSubmit = () => {
         
@@ -217,21 +271,16 @@ capitalizeFirstLetter = (string)=> {
         const isValid=this.validate();
         
         if(isValid){
-           
-       
-            
-           
-           
             localStorage.setItem('rememberDefault', this.state.default );
             const defaultField = localStorage.getItem('rememberDefault');
             const str= this.capitalizeFirstLetter(defaultField);
-            if (!this.state.choicesArray.includes(str)) {
+            if (!this.state.choicesArray.includes(str) && str.length<40) {
                 
                 this.state.choicesArray.push(str)
             }
             this.setState({
-                label: '',
-                checkedB: false,
+                label: 'Sales Region',
+                checkedB: true,
                 default: '',
                 order: "",
                 choices: [],
@@ -255,30 +304,33 @@ capitalizeFirstLetter = (string)=> {
             //         console.log(response)
                     
             //     });
-            axios.get(url).then(response => console.log('GOOD',response));
+            axios.get(url).then(response => {console.log('GOOD',response);
+            window.alert("Form has been submitted successfully!")}
+            )
+            .catch(err=>console.log(err));
+            
         }
 
        
     }
 
-    handleDelete = () => {
-
-      }
+  //Validation through arrow function
 
     validate=()=> {
-        // var checkBoxValue= document.getElementById('checkDb')
-        if(this.state.label==="" && this.state.checkedB===false){
-            window.alert('Please provide all the required fields') 
+        
+      if(this.state.label==="" && this.state.checkedB===false){
+            return false
          }
      if(this.state.label==="" ){
         window.alert('Label feild is mandatory. Please enter the input!')
+        return false;
      }
      else if(this.state.checkedB===false){
         window.alert('Type is mandatory! Please check the type.')
         return false
      }
      
-   return true;
+return true;
 
     }
 
@@ -286,7 +338,7 @@ capitalizeFirstLetter = (string)=> {
     render() {
         const { classes } = this.props;
         const {choicesArray} = this.state
-    
+        const enableButton= this.validate;
         return (
             <div>
                 <form id="myForm" type='submit' onSubmit={this.handleSubmit}>
@@ -300,6 +352,7 @@ capitalizeFirstLetter = (string)=> {
                             <div className={classes.container}>
                                 <Typography variant="subtitle1" className={classes.label}>Label</Typography>
                                 <TextField
+                                  error={this.state.label===""}
                                     style={{ margin: '0px' }}
                                     required="true"
                                     className={classes.textField}
@@ -307,7 +360,8 @@ capitalizeFirstLetter = (string)=> {
                                     margin="normal"
                                     variant="outlined"
                                     name='label'
-                                    
+                                    value={this.state.label}
+                                    helperText= {this.state.errors.label.message}
                                 />
                             </div>
 
@@ -331,14 +385,20 @@ capitalizeFirstLetter = (string)=> {
                             <div className={classes.container}>
                                 <Typography variant="subtitle1" className={classes.label}>Default</Typography>
                                 <TextField
+                                    
+                                    error={this.state.choicesArray.includes(this.state.default) || this.state.default.length>40}
+                                 
+                                    id="outlined-error-helper-text"
                                     style={{ margin: '0px' }}
                                     className={classes.textField}
                                     onChange={this.handleChange('default')}
                                     margin="normal"
                                     variant="outlined"
                                     name='default'
+                                    helperText={this.state.errors.default.message}
                                 />
                             </div>
+                        
 
                             <div className={classes.container}>
                                 <Typography variant="subtitle1" className={classes.label}>Choices</Typography>
@@ -381,9 +441,7 @@ capitalizeFirstLetter = (string)=> {
                                         variant="outlined"
                                       
                                     >
-                                        {/* <MenuItem value={''}>
-                                            <em></em>
-                                        </MenuItem> */}
+
 
                                       <MenuItem value={'None'}>None</MenuItem>
                                         <MenuItem value={'Display choices in Alphabetical'}>Display choices in Alphabetical</MenuItem>
@@ -394,12 +452,16 @@ capitalizeFirstLetter = (string)=> {
                             <div style={{ justifyContent: 'flex-end', display: 'flex' }}>
                                 <></>
                                 <div className={classes.buttonContainer}>
-                                    <Button variant="contained" color="primary" className={classes.button}
+                                    <Button variant="contained" 
+                                    color="primary" 
+                                    className={classes.button}
+                                    disabled={!this.state.errors.label.valid || !enableButton || !this.state.errors.default.valid }
                                         onClick={this.handleSubmit}
                                     >
                                         Save Changes
                                     </Button>
-                                    <Button color="primary" className={classes.button}
+                                    <h4>Or</h4>
+                                    <Button color="secondary" className={classes.button}
                                         onClick={this.handleCancel}>
                                         Cancel
                                 </Button>
