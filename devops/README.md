@@ -1,6 +1,11 @@
-Our Python Engineers are want to deploy their Python3 service. 
+# Introduction - 10 Minutes
+Please present a short executive summary of your career to the team.
+Please showcase an automation, monitoring or a project that you wrote that you are proud of. We would love to understand what the problem was, your method of solving it and the outcome.
 
-The engineering team is well-versed in Python but they are struggling with how to deploy the right SDLC (software development lifecycle). This team has reached out to you as a member of one of our platform teams to discuss how you would approach this problem and have also provided you some requirements over email.
+
+# Craft Demonstration
+
+Our Python Engineers are want to deploy their Python3 service. The engineering team is well-versed in Python but they are struggling with how to deploy the right SDLC (software development lifecycle). This team has reached out to you as a member of one of our platform teams to discuss how you would approach this problem and have also provided you some requirements over email.
 
 ## These are the highlights of their email:
 
