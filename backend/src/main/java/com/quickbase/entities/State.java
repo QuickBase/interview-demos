@@ -21,7 +21,6 @@ public class State {
 	@NotNull
 	private Integer id;
 
-	// TODO: Add size limits
 	@Column(name = "StateName")
 	@NotNull
 	private String name;
