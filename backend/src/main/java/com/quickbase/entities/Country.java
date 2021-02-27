@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.Id;
+import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -14,10 +15,11 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 public class Country {
 	@Id
-	//	@SequenceGenerator(name="hibernateSequence", sequenceName="hibernate_sequence", allocationSize = 1)
-	//	@GeneratedValue(strategy= GenerationType.SEQUENCE, generator="hibernateSequence")
-	private Integer CountryId;
-
+	@Column(name = "CountryId")
 	@NotNull
-	private String CountryName;
+	private Integer id;
+
+	@Column(name = "CountryName")
+	@NotNull
+	private String name;
 }
