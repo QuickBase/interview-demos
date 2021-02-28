@@ -1,0 +1,45 @@
+<h1>QuickBase Interview Craft Demo: The Result</h1>
+<mat-divider class="mat-elevation-z1"></mat-divider>
+
+<div *ngIf="!isLoading" class="tables-container">
+  <div class="table-container">
+    <h2>The Original Table</h2>
+    <mat-divider class="mat-elevation-z1"></mat-divider>
+    <table mat-table [dataSource]="countriesWithPopulation" class="mat-elevation-z4">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Country Name </th>
+        <td mat-cell *matCellDef="let country"> {{country.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="population">
+        <th mat-header-cell *matHeaderCellDef> Population </th>
+        <td mat-cell *matCellDef="let country"> {{country.population}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" class="gray-row"></tr>
+    </table>
+  </div>
+
+
+  <mat-icon>arrow_right_alt</mat-icon>
+
+  <div class="table-container">
+    <h2>The Updated Table</h2>
+    <mat-divider class="mat-elevation-z1"></mat-divider>
+    <table mat-table [dataSource]="countriesWithUpdatedPopulation" class="mat-elevation-z4">
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Country Name </th>
+        <td mat-cell *matCellDef="let country"> {{country.name}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="population">
+        <th mat-header-cell *matHeaderCellDef> Population </th>
+        <td mat-cell *matCellDef="let country"> {{country.population}} </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;" [ngClass]="isNewRow(row)"></tr>
+    </table>
+  </div>
+</div>

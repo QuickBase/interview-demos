@@ -1,0 +1,38 @@
+h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+
+mat-divider {
+  margin-top: -22px;
+  margin-bottom: 22px;
+}
+
+mat-icon {
+  margin-top: 5em;
+  width: 1em;
+  font-size: 5em;
+}
+
+.tables-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  margin: 2em 0;
+}
+
+.table-container {
+  width: 33%;
+}
+
+table {
+  width: 100%;
+}
+
+.green-row {
+  background-color: lightgreen;
+}
+
+.gray-row {
+  background-color: lightgray;
+}
