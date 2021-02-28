@@ -2,6 +2,7 @@ package com.quickbase.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -15,6 +16,7 @@ import javax.validation.constraints.NotNull;
 @Table(name = "City")
 @Data
 @NoArgsConstructor
+@SuperBuilder
 public class City {
 	@Id
 	@Column(name = "CityId")
