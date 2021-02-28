@@ -1,20 +1,18 @@
-package com.quickbase.services.stat;
+package com.quickbase.services.external;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
+import org.springframework.stereotype.Service;
 
+@Service
 public class StatService implements IStatService {
 	@Override
-	/**
-	 * Returns an unordered list of countries and their populations
-	 */
-	public List<Pair<String, Integer>> GetCountryPopulations() {
+	public List<Pair<String, Integer>> getCountryPopulations() {
 		List<Pair<String, Integer>> output = new ArrayList<>();
 
-		// Pretend this calls a REST API somewhere
 		output.add(new ImmutablePair<>("India",1182105000));
 		output.add(new ImmutablePair<>("United Kingdom",62026962));
 		output.add(new ImmutablePair<>("Chile",17094270));
@@ -43,6 +41,7 @@ public class StatService implements IStatService {
 		output.add(new ImmutablePair<>("Kyrgyzstan",5418300));
 		output.add(new ImmutablePair<>("Lithuania",3329039));
 		output.add(new ImmutablePair<>("United States of America",309349689));
+
 		return output;
 	}
 }

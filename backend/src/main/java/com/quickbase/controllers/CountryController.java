@@ -2,6 +2,7 @@ package com.quickbase.controllers;
 
 import com.quickbase.dtos.CountryDto;
 import com.quickbase.services.country.ICountryService;
+import org.apache.commons.lang3.tuple.Pair;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,6 +30,16 @@ public class CountryController {
 	@GetMapping("api/countries/get/{id}")
 	public ResponseEntity<CountryDto> getById(@PathVariable("id") Integer id) {
 		return new ResponseEntity<>(countryService.getDtoById(id), HttpStatus.OK);
+	}
+
+	@GetMapping("api/countries/get/all-populations")
+	public ResponseEntity<List<Pair<String, Integer>>> getAllPopulations() {
+		return new ResponseEntity<>(countryService.getAllCountryNamesAndPopulations(), HttpStatus.OK);
+	}
+
+	@GetMapping("api/countries/get/updated-populations")
+	public ResponseEntity<List<Pair<String, Integer>>> getUpdatedPopulations() {
+		return new ResponseEntity<>(countryService.getUpdatedCountryNamesAndPopulations(), HttpStatus.OK);
 	}
 
 	@PostMapping("api/countries/create")

@@ -24,7 +24,7 @@ public class StateService implements IStateService {
 		return getAll().stream().map(mapper::toDto).collect(Collectors.toList());
 	}
 
-	public List<State> getAll() {
+	private List<State> getAll() {
 		return stateRepository.findAll();
 	}
 
@@ -33,7 +33,7 @@ public class StateService implements IStateService {
 		return mapper.toDto(getById(id));
 	}
 
-	public State getById(Integer id) {
+	private State getById(Integer id) {
 		return stateRepository.findById(id).orElseThrow(() -> new EntityNotFoundResponseStatusException(State.class, id));
 	}
 

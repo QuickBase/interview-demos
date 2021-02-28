@@ -24,7 +24,7 @@ public class CityService implements ICityService {
 		return getAll().stream().map(mapper::toDto).collect(Collectors.toList());
 	}
 
-	public List<City> getAll() {
+	private List<City> getAll() {
 		return cityRepository.findAll();
 	}
 
@@ -33,7 +33,7 @@ public class CityService implements ICityService {
 		return mapper.toDto(getById(id));
 	}
 
-	public City getById(Integer id) {
+	private City getById(Integer id) {
 		return cityRepository.findById(id).orElseThrow(() -> new EntityNotFoundResponseStatusException(City.class, id));
 	}
 
