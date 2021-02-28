@@ -8,7 +8,6 @@ Please showcase an automation, monitoring or a project that you wrote that you a
 
 
 # Craft Demonstration and Tech Q&A - 45 Minutes
-
 Our Python Engineers want to deploy their Python3 microservice. The engineering team is well-versed in Python but they are struggling with how to deploy the right SDLC (software development lifecycle). This team has reached out to you as a member of one of our platform teams to discuss how you would approach this problem.
 
 * Are there any other questions you feel you need to clarify with the team about their devops strategy? 
