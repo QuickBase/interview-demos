@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>794bebc1-6d9d-436b-89f3-e0fcfe7c1acb</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.0.7" />
+	<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.3" />
+	<PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+	<PackageReference Include="System.Net.NameResolution" Version="4.3.0" />
+	<PackageReference Include="Castle.LoggingFacility.MsLogging" Version="3.1.0" />
+	<PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+	<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+	<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+	<PackageReference Include="Castle.Core" Version="4.4.1" />
+	<PackageReference Include="Abp.AspNetCore" Version="6.2.0" />
+	<PackageReference Include="Abp.Castle.Log4Net" Version="6.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickBase.Demo.Application.Contracts\QuickBase.Demo.Application.Contracts.csproj" />
+    <ProjectReference Include="..\QuickBase.Demo.Application\QuickBase.Demo.Application.csproj" />
+    <ProjectReference Include="..\QuickBase.Demo.EntityFrameworkCore\QuickBase.Demo.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>
