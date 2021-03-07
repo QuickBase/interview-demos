@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Common;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Backend
 {
@@ -17,7 +13,7 @@ namespace Backend
             IDbManager db = new SqliteDbManager();
             DbConnection conn = db.getConnection();
 
-            if(conn == null)
+            if (conn == null)
             {
                 Console.WriteLine("Failed to get connection");
             }
