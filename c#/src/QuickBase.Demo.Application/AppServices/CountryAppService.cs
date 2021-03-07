@@ -6,6 +6,7 @@ using QuickBase.Demo.Domain.EqualityComparers;
 using QuickBase.Demo.Domain.Models;
 using QuickBase.Demo.Domain.Repositories;
 using QuickBase.Demo.Domain.Services;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,18 +17,20 @@ namespace QuickBase.Demo.Application.AppServices
         private readonly ICountryRepository _countryRepository;
         private readonly ICountryManager _countryManager;
         private readonly IStatisticManager _statisticManager;
+        private readonly IEqualityComparer<CountryPopulation> _cpComparer;
 
-        public CountryAppService(ICountryRepository countryRepository, ICountryManager countryManager, IStatisticManager statisticManager): base(countryRepository)
+        public CountryAppService(ICountryRepository countryRepository, ICountryManager countryManager, IStatisticManager statisticManager, IEqualityComparer<CountryPopulation> cpComparer) : base(countryRepository)
         {
             _countryRepository = countryRepository;
             _countryManager = countryManager;
             _statisticManager = statisticManager;
+            _cpComparer = cpComparer;
         }
 
         public async Task<ListResultDto<CountryPopulationDto>> GetAllPopulations()
         {
-            var cpSetDb = (await _countryManager.GetCountryPopulationsAsync()).ToHashSet(CountryPopulationEqualityComparer.Instance);
-            var cpSetApi = (await _statisticManager.GetCountryPopulationsAsync()).ToHashSet(CountryPopulationEqualityComparer.Instance);
+            var cpSetDb = (await _countryManager.GetCountryPopulationsAsync()).ToHashSet(_cpComparer);
+            var cpSetApi = (await _statisticManager.GetCountryPopulationsAsync()).ToHashSet(_cpComparer);
 
             cpSetDb.UnionWith(cpSetApi);
 

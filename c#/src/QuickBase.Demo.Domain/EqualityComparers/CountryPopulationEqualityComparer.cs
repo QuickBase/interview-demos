@@ -6,16 +6,6 @@ namespace QuickBase.Demo.Domain.EqualityComparers
 {
     public class CountryPopulationEqualityComparer : IEqualityComparer<CountryPopulation>
     {
-        protected static CountryPopulationEqualityComparer _instance;
-
-        public static CountryPopulationEqualityComparer Instance
-        {
-            get
-            {
-                return _instance ??= new CountryPopulationEqualityComparer();
-            }
-        }
-
         protected readonly string[][] _countryNames = new[]
         {
             new string[] { "u.s.a.", "united states of america" }
@@ -25,7 +15,7 @@ namespace QuickBase.Demo.Domain.EqualityComparers
 
         protected Dictionary<string, string> _countryNamesAliases;
 
-        protected CountryPopulationEqualityComparer()
+        public CountryPopulationEqualityComparer()
         {
             _countryNamesComparer = new Dictionary<string, SortedSet<string>>();
             _countryNamesAliases = new Dictionary<string, string>();
