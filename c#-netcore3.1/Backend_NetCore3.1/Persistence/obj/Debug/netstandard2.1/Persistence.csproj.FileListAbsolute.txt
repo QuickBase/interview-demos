@@ -1,5 +1,0 @@
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Persistence\bin\Debug\netstandard2.1\Persistence.deps.json
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Persistence\bin\Debug\netstandard2.1\Persistence.dll
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Persistence\obj\Debug\netstandard2.1\Persistence.csprojAssemblyReference.cache
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfoInputs.cache
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Persistence\obj\Debug\netstandard2.1\Persistence.AssemblyInfo.cs
