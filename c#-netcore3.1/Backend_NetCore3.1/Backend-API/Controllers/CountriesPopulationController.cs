@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Domain;
+﻿using System.Collections.Generic;
+using Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Persistence.Interfaces;
+using Persistence.Models;
 
 namespace Backend.Controllers
 {
@@ -12,14 +12,17 @@ namespace Backend.Controllers
     public class CountriesPopulationController : ControllerBase
     {
         private readonly ILogger<CountriesPopulationController> _logger;
+        private readonly IDataRepository _data;
 
-        public CountriesPopulationController(ILogger<CountriesPopulationController> logger)
+        public CountriesPopulationController(ILogger<CountriesPopulationController> logger,
+            IDataRepository data)
         {
             _logger = logger;
+            _data = data;
         }
 
         [HttpGet]
-        public IEnumerable<CountryPopulation> Get()
+        public IEnumerable<CountriesPopulationResponseModel> Get()
         {
             return null;
         }
