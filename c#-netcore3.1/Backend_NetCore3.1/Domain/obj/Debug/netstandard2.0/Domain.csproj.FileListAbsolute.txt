@@ -1,9 +1,0 @@
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\bin\Debug\netstandard2.0\Domain.deps.json
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\bin\Debug\netstandard2.0\Domain.dll
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\bin\Debug\netstandard2.0\Domain.pdb
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.csprojAssemblyReference.cache
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfoInputs.cache
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.AssemblyInfo.cs
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.csproj.CoreCompileInputs.cache
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.dll
-C:\Users\kiril.kirilov\repos\interview-demos-master\c#-netcore3.1\Backend_NetCore3.1\Domain\obj\Debug\netstandard2.0\Domain.pdb
