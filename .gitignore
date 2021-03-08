@@ -2,3 +2,8 @@
 .vscode
 *.iml
 .idea
+
+# Visual Studio 2015
+c#-netcore3.1/Backend_NetCore3.1/.vs
+c#-netcore3.1/Backend_NetCore3.1/*/bin
+c#-netcore3.1/Backend_NetCore3.1/*/obj
