@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Interfaces
+namespace Application.Services.Interfaces
 {
-    interface IStaticCountriesService
+    public interface IStaticCountriesService
     {
         List<Tuple<string, int>> GetCountryPopulations();
         Task<List<Tuple<string, int>>> GetCountryPopulationsAsync();

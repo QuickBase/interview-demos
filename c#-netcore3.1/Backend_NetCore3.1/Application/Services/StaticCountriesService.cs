@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Interfaces;
+using Application.Services.Interfaces;
 
-namespace Application
+namespace Application.Services
 {
-    class StaticCountriesService : IStaticCountriesService
+    public class StaticCountriesService : IStaticCountriesService
     {
         public List<Tuple<string, int>> GetCountryPopulations()
         {
