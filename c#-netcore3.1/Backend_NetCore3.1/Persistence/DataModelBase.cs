@@ -7,5 +7,6 @@ namespace Persistence
 {
     public abstract class DataModelBase : IDataModel
     {
+        //public int Id { get; set; }
     }
 }

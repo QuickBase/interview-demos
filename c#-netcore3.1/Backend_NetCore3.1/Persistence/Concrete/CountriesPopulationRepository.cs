@@ -1,21 +1,14 @@
-﻿using Persistence.Interfaces;
+﻿using Persistence.Concrete.Interfaces;
 using Persistence.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Persistence.Concrete
 {
-    public class CountriesPopulationRepository : DataRepositoryBase
+    public class CountriesPopulationRepository : DataRepositoryBase, ICountriesPopulationRepository
     {
         IQueryable<CityDataModel> _cities;
         IQueryable<CountryDataModel> _contries;
         IQueryable<StateDataModel> _states;
-
-        IQueryable<CityDataModel> Cities => _cities;
-        IQueryable<CountryDataModel> Countries => _contries;
-        IQueryable<StateDataModel> States => _states;
 
         public CountriesPopulationRepository(CountriesPopulationDbContext dbContext)
             : base(dbContext)
@@ -25,10 +18,22 @@ namespace Persistence.Concrete
             _states = dbContext.States.AsQueryable();
         }
 
-        protected override IQueryable<T> Get<T>()
+        public IQueryable<CityDataModel> Cities => _cities;
+
+        public IQueryable<CountryDataModel> Countries => _contries;
+
+        public IQueryable<StateDataModel> States => _states;
+
+        public override T GetById<T>(int id)
         {
-            var dbSet = _dbContext.Set<T>();
-            return dbSet.AsQueryable<T>();
+            var items = _dbContext
+                .Set<T>()
+                .AsQueryable<T>();
+
+            //var result = items.FirstOrDefault(item => item.Id.Equals(id));
+
+            return null;
+
         }
     }
 }

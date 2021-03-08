@@ -13,6 +13,6 @@ namespace Persistence
             _dbContext = dbContext;
         }
 
-        protected abstract IQueryable<T> Get<T>() where T : DataModelBase;
+        public abstract T GetById<T>(int id) where T : DataModelBase;
     }
 }
