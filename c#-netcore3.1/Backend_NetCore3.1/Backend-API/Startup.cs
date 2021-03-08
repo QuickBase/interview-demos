@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Persistence;
+using Persistence.Concrete;
+using Persistence.Concrete.Interfaces;
 
 namespace Backend
 {
@@ -24,7 +26,10 @@ namespace Backend
         {
             services.AddCountriesDbContext(Configuration.GetConnectionString("countries_sqlite"));
 
-            services.AddTransient<IStaticCountriesService, StaticCountriesService>();
+            services.AddTransient<IStaticCountriesDataProvider, StaticCountriesDataProvider>();
+            services.AddTransient<ICountriesPopulationRepository, CountriesPopulationRepository>();
+            services.AddTransient<ICountriesPopulationService, CountriesPopulationService>();
+
 
             services.AddControllers();
 

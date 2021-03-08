@@ -9,11 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{4B3813FA-C28C-4088-960C-C3CC803C5F36}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sqlite-db", "sqlite-db", "{FC7F22FC-9F4F-4919-810F-1A921830394D}"
-	ProjectSection(SolutionItems) = preProject
-		citystatecountry.db = citystatecountry.db
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
