@@ -5,7 +5,7 @@ using Application.Services.Interfaces;
 
 namespace Application.Services
 {
-    public class StaticCountriesService : IStaticCountriesService
+    public class StaticCountriesDataProvider : IStaticCountriesDataProvider
     {
         public List<Tuple<string, int>> GetCountryPopulations()
         {
