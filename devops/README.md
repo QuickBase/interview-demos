@@ -1,5 +1,7 @@
 
-Deliverables for the craft demo: a runnable automated deployment script for the Hands-on task; a free form and format presentation for the Analysis and Planning Task
+# Deliverables for the craft demo
+- a runnable automated deployment script for the Hands-on task
+- a free form and format presentation for the Analysis and Planning Task
 
 
 # Hands-on Task
