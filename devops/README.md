@@ -13,12 +13,12 @@ Deliverables for the craft demo: a runnable automated deployment script for the 
 
 Please prepare a presentation to discuss these points. You dont need to implement these.
 
-- What type of steps you'd do to verify the deployment is successful?
+- What type of steps you would perform in order to verify the deployment is successful?
 
-- Plan and a task break-down how you'd implement monitoring of the deployed app
+- Plan and a task break-down how you wouldd implement monitoring of this deployed app
 
-- What kind of security policies would you recommend to put into place?
+- What kind of security policies and scans would you recommend to put into place?
 
-- What kind of CI/CD pipeline would you recommend? What other imprrovements would you make to the CI/CD process if you had more time?
+- What other imprrovements would you make to the CI/CD process if you had more time?
 
-- Are there any other good  devops practices, tools that you recommend?
+- Are there any other good dev-ops tools and practices that you recommend?
