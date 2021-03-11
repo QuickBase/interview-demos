@@ -7,7 +7,7 @@
 
 - Pick one of Java, Python or Docker Container type of an artifact that is a typical simple web application. You can pick any open-source project artifact or a simple helloworld container.
 
-- Write simple deployment automation script that deploys the given artifact on either AWS or Google Cloud.
+- Write simple deployment automation script that deploys the given artifact on either AWS or Google Cloud (preferable).
 
 #  Presentation
 
