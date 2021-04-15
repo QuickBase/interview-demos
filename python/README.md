@@ -1,5 +1,5 @@
 ## Purpose
-The purpose of this exercise is not to give a "gotcha" question or puzzle, but a straight-forward (albeit contrived) example of the kind of requirement that might arise in a real project so that we have shared context for a technical conversation during the interview. We are interested in how you approach a project, so you should feel free to add new class files as well modify the files that are provided as you see fit. Use of your favorite libraries or frameworks is fine, but not required. How you demonstrate the correctness of your implementation is up to you.
+The purpose of this exercise is not to give a "gotcha" question or puzzle, but a straight-forward (albeit contrived) example of the kind of requirement that might arise in a real project so that we have shared context for a technical conversation during the interview. We are interested in how you approach a project. Use of your favorite libraries or frameworks is fine, but not required. How you demonstrate the correctness of your implementation is up to you.
 
 ## Requirements
 Create a command line Python program, which retrieves the information of a GitHub User and creates a new Contact or updates an existing contact in Freshdesk, using their respective APIs.
