@@ -22,5 +22,6 @@ use the examples from the documentation as test data.
 These are bonus tasks to consider. Complete the core tasks before attempting one of these. You can also feel free to consider your own ideas for extension if you have time to complete additional requirements. These are only suggestions.
 
 * Use a database (MongoDB or another) to store to combined fields from Github and Freshdesk once the user has been fetched. 
+* Consider adding session based authentication to your program. 
 * Provide unit tests for the functionality. 
 * Design and/or implement a UI to replace the command line interface. 
