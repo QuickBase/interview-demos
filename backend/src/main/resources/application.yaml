@@ -1,1 +1,1 @@
-db.path: resources/data/citystatecountry.db
+db.path: db/citystatecountry.db
