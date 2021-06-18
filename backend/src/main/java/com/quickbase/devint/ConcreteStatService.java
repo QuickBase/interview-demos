@@ -1,6 +1,5 @@
 package com.quickbase.devint;
 
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,7 +48,7 @@ public class ConcreteStatService implements IStatService {
 		output.add(new ImmutablePair<>("Lithuania",3329039));
 		output.add(new ImmutablePair<>("United States of America",309349689));
 
-		return Mono.<List<Pair<String,Integer>>>just(output).delayElement(Duration.ofSeconds(2)).doOnNext(e -> log.info("Emitting data"));
+		return Mono.just(output);
 	}
 
 }

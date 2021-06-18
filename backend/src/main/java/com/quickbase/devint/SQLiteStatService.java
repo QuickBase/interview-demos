@@ -38,6 +38,6 @@ public class SQLiteStatService implements IStatService {
                 }
             };
             dbManager.query(SELECT_ALL_COUNTRIES_POPULATION, emitResultSet, emitter::error);
-        }).collectList().doOnNext(e -> log.info("Emitting data"));
+        }).collectList();
     }
 }
