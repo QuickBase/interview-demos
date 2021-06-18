@@ -1,16 +1,54 @@
-apply plugin: 'java'
-apply plugin: 'eclipse'
+plugins {
+    id "org.springframework.boot" version "2.5.1"
+    id 'java'
+    id 'eclipse'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+}
 
 repositories {
     mavenCentral()
 }
 
-dependencies {
-    compile  'org.xerial:sqlite-jdbc:3.8.11.1'
-    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
-}
-jar {
-    manifest {
-        attributes 'Main-Class': 'com.quickbase.Main'
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
     }
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter
+    implementation (group: 'org.springframework.boot', name: 'spring-boot-starter')
+
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.8.11.1'
+
+    // https://mvnrepository.com/artifact/io.projectreactor/reactor-core
+    implementation group: 'io.projectreactor', name: 'reactor-core', version: '3.4.6'
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '30.1.1-jre'
+
+    // Lombok
+    compileOnly 'org.projectlombok:lombok:1.18.20'
+    annotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.20'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.20'
+
+    // Test
+
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/io.projectreactor/reactor-test
+    testImplementation group: 'io.projectreactor', name: 'reactor-test', version: '3.1.0.RELEASE'
+
+
 }
