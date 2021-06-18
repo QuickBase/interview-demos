@@ -28,7 +28,8 @@ public class DBManagerImpl implements DBManager {
         }
     }
 
-    private Connection getConnection() throws SQLException {
+    @Override
+    public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url);
     }
 
