@@ -3,6 +3,8 @@
 *.iml
 .idea
 
+*.vs
+
 # User-specific files
 *.rsuser
 *.suo
