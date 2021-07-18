@@ -16,9 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuickBase.Application\QuickBase.Application.csproj" />
-    <ProjectReference Include="..\QuickBase.CountryApiClient\QuickBase.CountryApiClient.csproj" />
-    <ProjectReference Include="..\QuickBase.Persistence\QuickBase.Persistence.csproj" />
+    <ProjectReference Include="..\..\src\QuickBase.Application\QuickBase.Application.csproj" />
+    <ProjectReference Include="..\..\src\QuickBase.CountryApiClient\QuickBase.CountryApiClient.csproj" />
+    <ProjectReference Include="..\..\src\QuickBase.Persistence\QuickBase.Persistence.csproj" />
   </ItemGroup>
 
 </Project>

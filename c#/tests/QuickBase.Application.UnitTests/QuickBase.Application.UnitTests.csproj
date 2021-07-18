@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\QuickBase.Application\QuickBase.Application.csproj" />
+    <ProjectReference Include="..\..\src\QuickBase.Application\QuickBase.Application.csproj" />
   </ItemGroup>
 
 </Project>
