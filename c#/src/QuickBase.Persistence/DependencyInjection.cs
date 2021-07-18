@@ -18,9 +18,23 @@ namespace QuickBase.Persistence
             services.AddDbContext<QuickBaseDbContext>(options =>
                 options.UseSqlite(configuration.GetConnectionString("QuickBaseDatabase")));
 
-            services.AddScoped<ICountryDatabaseRepository, CountryRepository>();
+            RegisterCommon(services);
 
             return services;
+        }
+
+        public static IServiceCollection AddPersistence(this IServiceCollection services, QuickBaseDbContext db)
+        {
+            services.AddScoped(provider => db);
+
+            RegisterCommon(services);
+
+            return services;
+        }
+
+        private static void RegisterCommon(IServiceCollection services)
+        {
+            services.AddScoped<ICountryDatabaseRepository, CountryRepository>();
         }
     }
 }
