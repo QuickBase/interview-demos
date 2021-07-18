@@ -12,7 +12,7 @@ namespace QuickBase.CountryApiClient
     {
         public static IServiceCollection AddCountryApiClient(this IServiceCollection services)
         {
-            services.AddSingleton<ICountryApiRepository, MockCountryRepository>();
+            services.AddScoped<ICountryApiRepository, MockCountryRepository>();
             return services;
         }
     }

@@ -14,10 +14,14 @@ namespace QuickBase.Persistence.Configurations
         public void Configure(EntityTypeBuilder<Country> builder)
         {
             builder.ToTable("Country");
-            builder.HasKey(x => x.CountryId);
+            builder.HasNoKey();
+
+            builder.Property(x => x.CountryId)
+                .IsRequired(false);
+
             builder.Property(x => x.CountryName)
                 .HasMaxLength(2000)
-                .IsRequired();
+                .IsRequired(false);
         }
     }
 }

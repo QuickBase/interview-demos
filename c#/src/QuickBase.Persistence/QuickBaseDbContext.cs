@@ -10,7 +10,7 @@ namespace QuickBase.Persistence
 {
     public class QuickBaseDbContext : DbContext
     {
-        public DbSet<Country> Countries;
+        public DbSet<Country> Countries { get; set; }
 
         public DbSet<State> States { get; set; }
 

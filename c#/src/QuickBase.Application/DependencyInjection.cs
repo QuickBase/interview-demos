@@ -7,6 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using QuickBase.Domain.Repositories;
+using QuickBase.Application.Common.Repositories;
+using QuickBase.Domain.Entities;
+using QuickBase.Application.Common.Comparers;
+using QuickBase.Application.Common.Mappings;
+using QuickBase.Application.Common.DataNormalizer;
 
 namespace QuickBase.Application
 {
@@ -16,8 +22,11 @@ namespace QuickBase.Application
         {
             var assembly = Assembly.GetExecutingAssembly();
 
-            services.AddAutoMapper(assembly);
+            services.AddAutoMapper(typeof(MappingProfile));
             services.AddMediatR(assembly);
+            services.AddScoped<ICountryRepository, CountrySourcesRepository>();
+            services.AddScoped<IEqualityComparer<Country>, CountryEqualityComparer>();
+            services.AddScoped<ICountryNameNormalizer, CountryNameNormalizer>();
 
             return services;
         }

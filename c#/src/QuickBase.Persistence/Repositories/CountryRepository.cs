@@ -21,7 +21,7 @@ namespace QuickBase.Persistence.Repositories
         public async Task<List<Country>> GetCountries()
         {
             var countries = from country in db.Countries
-                            join state in db.States on country.CountryId equals state.CountryId
+                            join state in db.States on country.CountryId.GetValueOrDefault() equals state.CountryId
                             join city in db.Cities on state.StateId equals city.StateId
                             group new { country, city } by country.CountryName into countryGroup
                             select new Country()
