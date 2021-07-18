@@ -10,12 +10,12 @@ namespace QuickBase.Application.Countries.Queries.GetCountriesList
 {
     public class CountrySourcesRepository : ICountryRepository
     {
-        private readonly IApiCountryRepository apiRepository;
-        private readonly IDatabaseCountryRepository databaseRepository;
+        private readonly ICountryApiRepository apiRepository;
+        private readonly ICountryDatabaseRepository databaseRepository;
         private readonly IEqualityComparer<Country> countryComparer;
 
-        public CountrySourcesRepository(IApiCountryRepository apiRepository,
-            IDatabaseCountryRepository databaseCountryRepository,
+        public CountrySourcesRepository(ICountryApiRepository apiRepository,
+            ICountryDatabaseRepository databaseCountryRepository,
             IEqualityComparer<Country> countryComparer)
         {
             this.apiRepository = apiRepository;

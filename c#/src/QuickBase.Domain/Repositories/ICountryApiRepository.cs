@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuickBase.Domain.Repositories
 {
-    public interface IApiCountryRepository : ICountryRepository
+    public interface ICountryApiRepository : ICountryRepository
     {
 
     }
