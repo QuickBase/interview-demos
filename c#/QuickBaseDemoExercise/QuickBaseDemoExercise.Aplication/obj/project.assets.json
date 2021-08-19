@@ -1842,6 +1842,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
+      },
+      "QuickBaseDemoExercise.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/QuickBaseDemoExercise.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuickBaseDemoExercise.Domain.dll": {}
+        }
+      },
+      "QuickBaseDemoExercise.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "QuickBaseDemoExercise.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/QuickBaseDemoExercise.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QuickBaseDemoExercise.Services.dll": {}
+        }
       }
     }
   },
@@ -6314,6 +6337,16 @@
         "system.xml.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xmldocument.nuspec"
       ]
+    },
+    "QuickBaseDemoExercise.Domain/1.0.0": {
+      "type": "project",
+      "path": "../QuickBaseDemoExercise.Domain/QuickBaseDemoExercise.Domain.csproj",
+      "msbuildProject": "../QuickBaseDemoExercise.Domain/QuickBaseDemoExercise.Domain.csproj"
+    },
+    "QuickBaseDemoExercise.Services/1.0.0": {
+      "type": "project",
+      "path": "../QuickBaseDemoExercise.Services/QuickBaseDemoExercise.Services.csproj",
+      "msbuildProject": "../QuickBaseDemoExercise.Services/QuickBaseDemoExercise.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6322,6 +6355,8 @@
       "Microsoft.EntityFrameworkCore.Proxies >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Sqlite >= 5.0.9",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.9",
+      "QuickBaseDemoExercise.Domain >= 1.0.0",
+      "QuickBaseDemoExercise.Services >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -6350,7 +6385,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jsauraguerra\\Documents\\Repos\\c#\\QuickBaseDemoExercise\\QuickBaseDemoExercise.Domain\\QuickBaseDemoExercise.Domain.csproj": {
+              "projectPath": "C:\\Users\\jsauraguerra\\Documents\\Repos\\c#\\QuickBaseDemoExercise\\QuickBaseDemoExercise.Domain\\QuickBaseDemoExercise.Domain.csproj"
+            },
+            "C:\\Users\\jsauraguerra\\Documents\\Repos\\c#\\QuickBaseDemoExercise\\QuickBaseDemoExercise.Services\\QuickBaseDemoExercise.Services.csproj": {
+              "projectPath": "C:\\Users\\jsauraguerra\\Documents\\Repos\\c#\\QuickBaseDemoExercise\\QuickBaseDemoExercise.Services\\QuickBaseDemoExercise.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,19 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using QuickBaseDemoExercise.Aplication.Models;
-using QuickBaseDemoExercise.Aplication.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace QuickBaseDemoExercise.Aplication
 {
@@ -29,10 +19,6 @@ namespace QuickBaseDemoExercise.Aplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<ICityRepository, CityRepository>();
-            services.AddScoped<ICountryRepository, CountryRepository>();
-            services.AddScoped<IStateRepository, StateRepository>();
-            services.AddDbContext<citystatecountryContext>(o => o.UseSqlite(Configuration.GetConnectionString("QuickBaseDatabase")));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

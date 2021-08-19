@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using QuickBaseDemoExercise.Aplication.Models;
-using QuickBaseDemoExercise.Aplication.Repositories;
-using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using QuickBaseDemoExercise.Domain;
+using QuickBaseDemoExercise.Services;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace QuickBaseDemoExercise.Aplication.Controllers
@@ -13,22 +10,17 @@ namespace QuickBaseDemoExercise.Aplication.Controllers
     [ApiController]
     public class CountriesController : ControllerBase
     {
-        private readonly ICountryRepository _countryRepository;
-        public CountriesController(ICountryRepository countryRepository)
+        private readonly ICountryService _countryService;
+        public CountriesController(ICountryService countryService)
         {
-            _countryRepository = countryRepository;
+            _countryService = countryService;
         }
 
         [HttpGet]
         public async Task<IEnumerable<Country>> GetCities()
         {
-            return await _countryRepository.Get();
+            return await _countryService.GetCountries();
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Country>> GetCity(int id)
-        {
-            return await _countryRepository.Get(id);
-        }
     }
 }

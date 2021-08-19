@@ -57,3 +57,7 @@ C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExer
 C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\obj\Debug\net5.0\QuickBaseDemoExercise.Aplication.csprojAssemblyReference.cache
 C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\Castle.Core.dll
 C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Proxies.dll
+C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\QuickBaseDemoExercise.Domain.dll
+C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\QuickBaseDemoExercise.Services.dll
+C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\QuickBaseDemoExercise.Domain.pdb
+C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Aplication\bin\Debug\net5.0\QuickBaseDemoExercise.Services.pdb
