@@ -1,8 +1,0 @@
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\bin\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.deps.json
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\bin\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.dll
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\bin\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.pdb
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\obj\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.AssemblyInfoInputs.cache
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\obj\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.AssemblyInfo.cs
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\obj\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.csproj.CoreCompileInputs.cache
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\obj\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.dll
-C:\Users\jsauraguerra\Documents\Repos\c#\QuickBaseDemoExercise\QuickBaseDemoExercise.Domain\obj\Debug\netstandard2.0\QuickBaseDemoExercise.Domain.pdb
