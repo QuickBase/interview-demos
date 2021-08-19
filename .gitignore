@@ -2,3 +2,7 @@
 .vscode
 *.iml
 .idea
+
+c#/**/bin/**
+c#/**/obj/**
+c#/**/.vs/**
