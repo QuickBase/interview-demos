@@ -1,4 +1,5 @@
-﻿using QuickBaseDemoExercise.DataBase.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using QuickBaseDemoExercise.DataBase.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ namespace QuickBaseDemoExercise.DataBase.Repositories
 {
     public interface ICountryRepository
     {
-        Task<IEnumerable<Country>> Get();
+        DbSet<Country> Get();
 
     }
 }

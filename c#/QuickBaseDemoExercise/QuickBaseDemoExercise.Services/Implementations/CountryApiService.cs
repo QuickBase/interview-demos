@@ -8,11 +8,7 @@ namespace QuickBaseDemoExercise.Services.Implementations
 {
     public class CountryApiService : ICountrySourceService
     {
-        private int _order = 2;
-        public int Order
-        {
-            get { return _order; }
-        }
+        public int Order { get => 2; }
 
         public Task<List<Country>> GetCountries()
         {

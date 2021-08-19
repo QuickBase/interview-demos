@@ -7,13 +7,18 @@ using System.Threading.Tasks;
 
 namespace QuickBaseDemoExercise.Services.Implementations
 {
-    class CountryService : ICountryService
+    public class CountryService : ICountryService
     {
         private readonly IEqualityComparer<Country> _contrycomparer;
+        private readonly IServiceProvider _serviceProvider;
+        private readonly ICountryIdFactory _countryIdFactory;
 
-        public CountryService(IEqualityComparer<Country> contrycomparer)
+        public CountryService(IEqualityComparer<Country> contrycomparer,
+            IServiceProvider serviceProvider, ICountryIdFactory countryIdFactory)
         {
             _contrycomparer = contrycomparer;
+            _serviceProvider = serviceProvider;
+            _countryIdFactory = countryIdFactory;
         }
         public async Task<List<Country>> GetCountries()
         {
@@ -23,7 +28,13 @@ namespace QuickBaseDemoExercise.Services.Implementations
 
             foreach (var source in sources)
             {
-                countriesSet.UnionWith(await source.GetCountries());
+                var countries = await source.GetCountries();
+
+                foreach (var country in countries)
+                {
+                    country.Id = _countryIdFactory.BuildId(country);
+                }
+                countriesSet.UnionWith(countries);
             }
 
             return countriesSet.ToList();
@@ -31,11 +42,13 @@ namespace QuickBaseDemoExercise.Services.Implementations
 
         private IEnumerable<ICountrySourceService> GetCountrySources()
         {
-            return new List<ICountrySourceService>()
-            {
-                new CountryApiService(),
-                new CountryDbService()
-            };
+            return AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes())
+                .Where(x => x.IsClass && x.GetInterfaces().Contains(typeof(ICountrySourceService)))
+                .Select(x =>
+                {
+                    return _serviceProvider.GetService(x) as ICountrySourceService;
+                })
+                .ToList();
         }
     }
 }

@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\QuickBaseDemoExercise.DataBase\QuickBaseDemoExercise.DataBase.csproj" />
     <ProjectReference Include="..\QuickBaseDemoExercise.Domain\QuickBaseDemoExercise.Domain.csproj" />
     <ProjectReference Include="..\QuickBaseDemoExercise.Services\QuickBaseDemoExercise.Services.csproj" />
   </ItemGroup>

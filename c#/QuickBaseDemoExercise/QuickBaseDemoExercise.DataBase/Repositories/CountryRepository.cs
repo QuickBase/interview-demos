@@ -10,15 +10,15 @@ namespace QuickBaseDemoExercise.DataBase.Repositories
 {
     public class CountryRepository : ICountryRepository
     {
-        private readonly citystatecountryContext _context;
-        public CountryRepository(citystatecountryContext context)
+        private readonly QuickBaseDemoContext _context;
+        public CountryRepository(QuickBaseDemoContext context)
         {
             _context = context;
         }
 
-        public async Task<IEnumerable<Country>> Get()
+        public DbSet<Country> Get()
         {
-            return await _context.Countries.ToListAsync();
+            return _context.Countries;
         }
 
      }
