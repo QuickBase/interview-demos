@@ -10,19 +10,20 @@ namespace QuickBaseDemoExercise.Services.Implementations
     public class CountryService : ICountryService
     {
         private readonly IEqualityComparer<Country> _contrycomparer;
-        private readonly IServiceProvider _serviceProvider;
+        private readonly ISourcesService _sourcesService;
         private readonly ICountryIdFactory _countryIdFactory;
 
         public CountryService(IEqualityComparer<Country> contrycomparer,
-            IServiceProvider serviceProvider, ICountryIdFactory countryIdFactory)
+            ISourcesService sourcesService,
+            ICountryIdFactory countryIdFactory)
         {
             _contrycomparer = contrycomparer;
-            _serviceProvider = serviceProvider;
+            _sourcesService = sourcesService;
             _countryIdFactory = countryIdFactory;
         }
         public async Task<List<Country>> GetCountries()
         {
-            var sources = GetCountrySources().OrderBy(x => x.Order);
+            var sources = _sourcesService.GetCountrySources().OrderBy(x => x.Order);
 
             var countriesSet = new HashSet<Country>(_contrycomparer);
 
@@ -40,15 +41,6 @@ namespace QuickBaseDemoExercise.Services.Implementations
             return countriesSet.ToList();
         }
 
-        private IEnumerable<ICountrySourceService> GetCountrySources()
-        {
-            return AppDomain.CurrentDomain.GetAssemblies().SelectMany(x => x.GetTypes())
-                .Where(x => x.IsClass && x.GetInterfaces().Contains(typeof(ICountrySourceService)))
-                .Select(x =>
-                {
-                    return _serviceProvider.GetService(x) as ICountrySourceService;
-                })
-                .ToList();
-        }
+
     }
 }

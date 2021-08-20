@@ -36,7 +36,7 @@ namespace QuickBaseDemoExercise.Aplication
             services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddScoped<ICountryService, CountryService>();
             services.AddScoped<ICountryIdFactory, CountryIdFactory>(); 
-
+            services.AddScoped<ISourcesService, SourcesService>(); 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

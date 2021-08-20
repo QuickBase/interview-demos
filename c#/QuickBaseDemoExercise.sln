@@ -5,11 +5,13 @@ VisualStudioVersion = 16.0.31019.35
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBaseDemoExercise.Aplication", "QuickBaseDemoExercise.Aplication\QuickBaseDemoExercise.Aplication.csproj", "{D9507385-1444-4CCC-A570-01FF1A0409B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExercise.Services", "QuickBaseDemoExercise.Services\QuickBaseDemoExercise.Services.csproj", "{C6DE914B-A005-433C-83FA-231961304068}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBaseDemoExercise.Services", "QuickBaseDemoExercise.Services\QuickBaseDemoExercise.Services.csproj", "{C6DE914B-A005-433C-83FA-231961304068}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExercise.Domain", "QuickBaseDemoExercise.Domain\QuickBaseDemoExercise.Domain.csproj", "{1FAB4FA6-AB0E-47FB-B9CF-0D52421DBD1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBaseDemoExercise.Domain", "QuickBaseDemoExercise.Domain\QuickBaseDemoExercise.Domain.csproj", "{1FAB4FA6-AB0E-47FB-B9CF-0D52421DBD1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExercise.DataBase", "QuickBaseDemoExercise.DataBase\QuickBaseDemoExercise.DataBase.csproj", "{BA4D2205-DFC0-47D6-9EEB-C55B9D820266}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBaseDemoExercise.DataBase", "QuickBaseDemoExercise.DataBase\QuickBaseDemoExercise.DataBase.csproj", "{BA4D2205-DFC0-47D6-9EEB-C55B9D820266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExcercise.IntegrationTest", "QuickBaseDemoExcercise.IntegrationTest\QuickBaseDemoExcercise.IntegrationTest.csproj", "{994CB25B-038D-4F06-96D5-80F1FF8F7977}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{BA4D2205-DFC0-47D6-9EEB-C55B9D820266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA4D2205-DFC0-47D6-9EEB-C55B9D820266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA4D2205-DFC0-47D6-9EEB-C55B9D820266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
