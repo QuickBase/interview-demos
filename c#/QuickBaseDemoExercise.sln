@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickBaseDemoExercise.DataB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExcercise.IntegrationTest", "QuickBaseDemoExcercise.IntegrationTest\QuickBaseDemoExcercise.IntegrationTest.csproj", "{994CB25B-038D-4F06-96D5-80F1FF8F7977}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickBaseDemoExercise.UnitTests", "QuickBaseDemoExercise.UnitTests\QuickBaseDemoExercise.UnitTests.csproj", "{C7CA814F-B57F-462C-BA55-1A4D8FBD96FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{994CB25B-038D-4F06-96D5-80F1FF8F7977}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7CA814F-B57F-462C-BA55-1A4D8FBD96FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7CA814F-B57F-462C-BA55-1A4D8FBD96FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7CA814F-B57F-462C-BA55-1A4D8FBD96FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7CA814F-B57F-462C-BA55-1A4D8FBD96FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
