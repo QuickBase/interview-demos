@@ -95,6 +95,7 @@ class Ec2 implements Serializable {
 
 ## Bonus Activities
 * Store & pass the cloud provider credentials securely
+* Deploy a container using shared methods you develop
 * Provide automated tests for your shared method
 
 ## References
