@@ -14,10 +14,10 @@ In the spirit of saving time, some of the steps are outline below.  Some links t
 # The PoC
 ## Setup
 ### Install Jenkins in a Docker Container
-* Install, if necessary, (Docker Desktop)[https://www.docker.com/products/docker-desktop]
+* Install, if necessary, [Docker Desktop](https://www.docker.com/products/docker-desktop)
 * * Ensure you have `docker-compose` as well
-* Download (docker-compose.yaml)[docker-compose.yaml]
-* Download (Dockerfile)[docker-compose.yaml]
+* Download [docker-compose.yaml](docker-compose.yaml)
+* Download [Dockerfile](docker-compose.yaml)
 * Run `docker compose build`
 * Run `docker compose up`
 * You'll see Jenkins start up
