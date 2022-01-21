@@ -33,7 +33,7 @@ your craft demo. Feel free to use the template provided or make your own. For
 developers, we are more interested in your code than your PowerPoint skills, so
 plan your prep time accordingly.
 
-[PowerPoint Template and Craft Demo Outline](https://github.com/QuickBase/interview-demos/blob/gbowne-quickbase-patch-1/ui/Quickbase_CandidateExercise_PresentationTemplate.pptx)
+[PowerPoint Template and Craft Demo Outline](https://github.com/QuickBase/interview-demos/blob/master/ui/Quickbase_CandidateExercise_PresentationTemplate.pptx)
 
 When you show off your craft demo, we will ask you to show us how it works from
 a user's perspective (e.g., filling out the form and clicking "save"). After
