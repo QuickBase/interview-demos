@@ -1,9 +1,13 @@
-package com.quickbase;
+package main.java.com.quickbase;
 
-import com.quickbase.devint.DBManager;
-import com.quickbase.devint.DBManagerImpl;
+import java.util.HashMap;
+import java.util.List;
 
-import java.sql.Connection;
+import org.apache.commons.lang3.tuple.Pair;
+
+import main.java.com.quickbase.devint.ConcreteStatService;
+import main.java.com.quickbase.devint.CountryDao;
+import main.java.com.quickbase.devint.IStatService;
 
 /**
  * The main method of the executable JAR generated from this repository. This is to let you
@@ -13,14 +17,38 @@ import java.sql.Connection;
 public class Main {
     public static void main( String args[] ) {
         System.out.println("Starting.");
-        System.out.print("Getting DB Connection...");
+        CountryDao countryDao = CountryDao.getInstance();
+        try {
+        	List<Pair<String, Integer>> countryPopulationFromDB = countryDao.GetCountryPopulations();
+        	
+            IStatService cs = new ConcreteStatService();
+            List<Pair<String, Integer>> countryPopulationFromStatService = cs.GetCountryPopulations();
+            
+            HashMap<String, Integer> dedupCountryPop = new HashMap<>();
+            for(Pair<String, Integer> pair: countryPopulationFromStatService) {
+            	String name = pair.getLeft();
+            	Integer population = pair.getRight();
+            	dedupCountryPop.put(name, population);
+            }
+            
+            for(Pair<String, Integer> pair: countryPopulationFromDB) {
+            	// If there is duplicate country name, the population value from DB table will overwrite
+            	// the concreteStatService.
+            	String name = pair.getLeft();
+            	Integer population = pair.getRight();
+            	dedupCountryPop.put(name, population);
+            }
 
-        DBManager dbm = new DBManagerImpl();
-        Connection c = dbm.getConnection();
-        if (null == c ) {
-            System.out.println("failed.");
-            System.exit(1);
-        }
-
+            for(String countryName: dedupCountryPop.keySet()) {
+            	StringBuilder sb = new StringBuilder();
+            	sb.append(countryName);
+            	sb.append(": ");
+            	sb.append(dedupCountryPop.get(countryName));
+            	System.out.println(sb.toString());
+            }
+        } catch (Exception e) {
+			e.printStackTrace();
+			return;
+        }       
     }
 }

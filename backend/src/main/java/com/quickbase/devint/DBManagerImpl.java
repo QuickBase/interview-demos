@@ -1,4 +1,4 @@
-package com.quickbase.devint;
+package main.java.com.quickbase.devint;
 
 import java.sql.*;
 
@@ -10,7 +10,6 @@ import java.sql.*;
 public class DBManagerImpl implements DBManager {
     public Connection getConnection() {
         Connection c = null;
-        Statement stmt = null;
         try {
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:resources/data/citystatecountry.db");
@@ -23,6 +22,4 @@ public class DBManagerImpl implements DBManager {
         }
         return c;
     }
-    //TODO: Add a method (signature of your choosing) to query the db for population data by country
-
 }
