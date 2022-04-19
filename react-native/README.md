@@ -1,5 +1,10 @@
 # Quick Base Craft Demo | React Native
 
+There are two key parts of the craft demo:
+
+* A very brief presentation outlined below in "Craft Demo Presentation Outline". You can use the powerpoint provided or your own, but we would like you to be able to speak to the questions in the linked Powerpoint provided.
+* A working project that solves the problem outlined below. Your new mobile application should allow you to display and add parts and save them to a Quickbase Application. You can use whichever tools you are most comfortable with (React Native, Ionic, Flutter, etc.) though most candidates do complete it with React Native. You should use the appropriate tooling for the framework you choose to spin up a base project (e.g., [Create React Native App](https://reactnative.dev/docs/environment-setup)) and solve the items below.
+
 ## Craft Demo Presentation Outline
 
 We have created a PowerPoint template which covers an outline of what we would like to talk about during the first section of your interview before you share your craft demo. Feel free to use the template provided or make your own. We are more interested in your code than your PowerPoint skills, so plan your prep time accordingly.
