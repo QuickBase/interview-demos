@@ -5,7 +5,7 @@ import { Form, Row, Col, Button } from "react-bootstrap";
 import { FormButton } from "./FormButton";
 import { ChoiceList } from "./ChoiceList";
 
-import FieldService from './FieldService.js';
+import { FieldService } from "../models/FieldService.js";
 
   export function FieldForm() {
     return (

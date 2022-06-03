@@ -44,4 +44,4 @@ class FieldService {
   }
 }
 
-export default FieldService;
+export { FieldService };
