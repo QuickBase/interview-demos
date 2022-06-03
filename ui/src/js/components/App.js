@@ -1,5 +1,4 @@
 import '../../stylesheets/App.css';
-import bootstrap from 'bootstrap';
 import React from "react";
 import { Card } from "react-bootstrap";
 import { FieldForm } from "./FieldForm";
