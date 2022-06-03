@@ -1,0 +1,16 @@
+.App {
+  font-family: sans-serif;
+}
+
+.bg-teal {
+  background-color: #2c9382 !important;
+  color: white;
+}
+
+.bg-success {
+  background-color: #2c9382 !important;
+}
+
+.border-teal {
+  border: 1px solid #2c9382 !important;
+}
