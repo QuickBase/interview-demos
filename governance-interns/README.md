@@ -22,3 +22,17 @@ use the examples from the documentation as test data.
 * Please provide a README.md file with instructions on how to run the program and the
 tests.
 * Please include the create script of your database as a file in your repo. 
+
+## Time Investment
+* We expect the task to take 4-5 hours
+* If you find yourself spending more time, do let us know.
+
+## Powerpoint?
+* Please don’t prepare any PowerPoint slides. We will ask you questions from your resume and jump right into the code.
+
+## Where should I upload?
+* Please don’t mail your solution.
+* We would prefer if you uploaded it to a private repo and granted us permissions. Otherwise upload it to a private storage (S3, Dropbox) and give us a link.
+
+## More Questions?
+* Please don’t hesitate to ask the hiring manager any questions you have.
