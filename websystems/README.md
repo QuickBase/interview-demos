@@ -11,7 +11,7 @@ Your demo should run on whichever web browser you prefer.
 Candidate Exercise Presentation Outline
 We have created a PowerPoint template which covers an outline of what we would like to talk about during the first section of your interview before you share your craft demo. Feel free to use the template provided or make your own. For developers, we are more interested in your code than your PowerPoint skills, so plan your prep time accordingly.
 
-[PowerPoint Template and Craft Demo Outline](https://github.com/QuickBase/interview-demos/blob/master/websystmes/Quickbase_CandidateExercise_PresentationTemplate.pptx)
+[PowerPoint Template and Craft Demo Outline](https://github.com/QuickBase/interview-demos/blob/master/websystems/Quickbase_CandidateExercise_PresentationTemplate.pptx)
 
 When you show off your craft demo, we will ask you to show us how it works from a user's perspective (e.g., filling out the form and clicking "save"). After that, we will ask for a tour of your code with a focus on how you got the core functionality to work.
 
