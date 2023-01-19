@@ -22,6 +22,14 @@
             "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/88B9CA56-D8E4-1B41-D81AE0F7391666C7.jpg?width=350&quality=90&mode=crop",
             "parktype": "rocks"
         },
+        {
+            "title": "National Lakeshore Michigan",
+            "link": "https://www.nps.gov/piro/index.htm",
+            "body": "Sandstone cliffs, beaches, waterfalls, sand dunes, inland lakes, deep forest, and wild shoreline beckon you to visit Pictured Rocks National Lakeshore. The power of Lake Superior shapes the park's coastal features and affects every ecosystem, creating a unique landscape to explore. Hiking, camping, sightseeing, and four-season outdoor opportunities abound.", 
+            "image": "https://www.nps.gov/common/uploads/grid_builder/piro/crop16_9/9D25D765-C486-FB86-8C74BB111F2819C4.jpg?width=350&quality=90&mode=crop", 
+            "parktype": "nature"
+        },
+        
 
     ]
 }
