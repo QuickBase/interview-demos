@@ -1,0 +1,27 @@
+{
+    [
+        
+        {
+            "title": "Arches",
+            "link": "https://www.nps.gov/arch/index.htm",
+            "body": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+            "image": "https://www.nps.gov/common/uploads/grid_builder/arch/crop16_9/8E09FEF8-1DD8-B71B-0BB792C19048545A.jpg?width=350&quality=90&mode=crop",
+            "parktype": "rocks"
+        },
+        {
+            "title": "Big Bend",
+            "link": "https://www.nps.gov/bibe/index.htm",
+            "body": "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and diversity of species is the best in the country. This magical place is Big Bend...",
+            "image": "https://www.nps.gov/common/uploads/grid_builder/bibe/crop16_9/835AEB7C-B2AC-2291-812FC3295648D4C3.jpg?width=350&quality=90&mode=crop",
+            "parktype": "nature"
+        },
+        {
+            "title": "Bryce Canyon",
+            "link": "https://www.nps.gov/brca/",
+            "body": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
+            "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/88B9CA56-D8E4-1B41-D81AE0F7391666C7.jpg?width=350&quality=90&mode=crop",
+            "parktype": "rocks"
+        },
+
+    ]
+}
