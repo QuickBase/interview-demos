@@ -11,13 +11,12 @@ Your demo should run on whichever web browser you prefer.
 Candidate Exercise Presentation Outline
 We have created a PowerPoint template which covers an outline of what we would like to talk about during the first section of your interview before you share your craft demo. Feel free to use the template provided or make your own. For developers, we are more interested in your code than your PowerPoint skills, so plan your prep time accordingly.
 
-PowerPoint Template and Craft Demo Outline
+[PowerPoint Template and Craft Demo Outline](https://github.com/QuickBase/interview-demos/blob/master/websystmes/Quickbase_CandidateExercise_PresentationTemplate.pptx)
 
 When you show off your craft demo, we will ask you to show us how it works from a user's perspective (e.g., filling out the form and clicking "save"). After that, we will ask for a tour of your code with a focus on how you got the core functionality to work.
 
 #The scenario#
-
+You are building out a component to display a list of cards based on a dataset provided as `json`. The designer has provided you with a mock-up, and a base HTML structure for the cards based upon how they are used on other parts of the site. 
 
 #Design#
-
 A User Experience (UX) designer has created the following image and requirements for the component you are building. It is a first draft. We are collaborative here at Quickbase and as a developer you can suggest alternatives to the items below. We often have conversations between developers and UX designers about a spec before we go build it. Unfortunately, in this setup scenario, you can't talk with the UX designer so feel free to imagine you had the conversation and make changes you think would be worthwhile.
