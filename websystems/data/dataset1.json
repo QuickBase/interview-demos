@@ -4,44 +4,50 @@
         {
             "title": "Arches",
             "link": "https://www.nps.gov/arch/index.htm",
+            "linkText": "Learn More",
             "body": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
             "image": "https://www.nps.gov/common/uploads/grid_builder/arch/crop16_9/8E09FEF8-1DD8-B71B-0BB792C19048545A.jpg?width=350&quality=90&mode=crop",
-            "parktype": "rocks"
+            "category": "Natural"
         },
         {
-            "title": "Big Bend",
-            "link": "https://www.nps.gov/bibe/index.htm",
-            "body": "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and diversity of species is the best in the country. This magical place is Big Bend...",
-            "image": "https://www.nps.gov/common/uploads/grid_builder/bibe/crop16_9/835AEB7C-B2AC-2291-812FC3295648D4C3.jpg?width=350&quality=90&mode=crop",
-            "parktype": "nature"
+            "title": "Boston",
+            "link": "https://www.nps.gov/bost/index.htm",
+            "linkText": "Learn More",
+            "body": "Discover how one city could be the Cradle of Liberty, site of the first major battle of American Revolution, and home to many who espoused that freedom can be extended to all.",
+            "image": "https://www.nps.gov/common/uploads/grid_builder/bost/crop16_9/79889BD1-0F7C-4CE8-3EF501B6CDD42702.jpg?width=465&quality=90&mode=crop",
+            "category": "Historical"
         },
         {
-            "title": "Bryce Canyon",
-            "link": "https://www.nps.gov/brca/",
-            "body": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
-            "image": "https://www.nps.gov/common/uploads/grid_builder/brca/crop16_9/88B9CA56-D8E4-1B41-D81AE0F7391666C7.jpg?width=350&quality=90&mode=crop",
-            "parktype": "rocks"
+            "title": "San Francisco Maritime",
+            "link": "https://www.nps.gov/safr/index.htm",
+            "linkText": "Learn More",
+            "body": "Located in the Fisherman's Wharf neighborhood, San Francisco Maritime National Historical Park offers visitors the sights, sounds, smells and stories of Pacific Coast maritime history. The Park includes a magnificent fleet of historic ships, a Visitor Center, Maritime Museum, Maritime Research Center, and Aquatic Park Historic District.",
+            "image": "https://www.nps.gov/common/uploads/grid_builder/safr/crop16_9/475585C0-B398-2C5C-ED0BF5714128EAB4.jpg?width=465&quality=90&mode=crop",
+            "category": "Historical"
         },
         {
             "title": "National Lakeshore Michigan",
             "link": "https://www.nps.gov/piro/index.htm",
+            "linkText": "Learn More",
             "body": "Sandstone cliffs, beaches, waterfalls, sand dunes, inland lakes, deep forest, and wild shoreline beckon you to visit Pictured Rocks National Lakeshore. The power of Lake Superior shapes the park's coastal features and affects every ecosystem, creating a unique landscape to explore. Hiking, camping, sightseeing, and four-season outdoor opportunities abound.", 
             "image": "https://www.nps.gov/common/uploads/grid_builder/piro/crop16_9/9D25D765-C486-FB86-8C74BB111F2819C4.jpg?width=350&quality=90&mode=crop", 
-            "parktype": "nature"
+            "category": "Natural"
         },
         {
             "title": "Yellowstone",
             "link": "https://www.nps.gov/yell/index.htm",
-            "body": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world’s active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.",
+            "linkText": "Learn More",
+            "body": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal and geologic features. Within Yellowstone's 2.2 million acres, visitors have unparalleled opportunities to observe wildlife in an intact ecosystem, explore geothermal areas that contain about half the world's active geysers, and view geologic wonders like the Grand Canyon of the Yellowstone River.",
             "image": "https://www.nps.gov/common/uploads/grid_builder/yell/crop16_9/DF7D12E9-9F55-86A0-D4FC3F4A3BD693AE.jpg?width=350&quality=90&mode=crop",
-            "parktype": "wilderness"
+            "category": "Natural"
         },
         {
-            "title": "Yosemite",
-            "link": "https://www.nps.gov/yose/index.htm",
-            "body": "Not just a great valley, but a shrine to human foresight, the strength of granite, the power of glaciers, the persistence of life, and the tranquility of the High Sierra. First protected in 1864, Yosemite National Park is best known for its waterfalls, but within its nearly 1,200 square miles, you can find deep valleys, grand meadows, ancient giant sequoias, a vast wilderness area, and much more.", 
-            "image": "https://www.nps.gov/common/uploads/grid_builder/yose/crop16_9/6F27E60D-1DD8-B71B-0B14151D4F4BB714.jpg?width=350&quality=90&mode=crop", 
-            "parktype": "wilderness"
+            "title": "Martin Luther King, Jr. Memorial",
+            "link": "https://www.nps.gov/mlkm/index.htm",
+            "linkText": "Learn More",
+            "body": "Located in downtown Washington, DC, the memorial honors Martin Luther King, Jr.'s legacy and the struggle for freedom, equality, and justice. A prominent leader in the modern civil rights movement, Dr. King was a tireless advocate for racial equality, working class, and the oppressed around the world.", 
+            "image": "https://www.nps.gov/common/uploads/grid_builder/mlkm/crop16_9/1223C485-BDE3-9D3B-E37DF625C61B598E.jpg?width=465&quality=90&mode=crop", 
+            "category": "Monument"
         },
         
 
