@@ -22,25 +22,43 @@ When you show off your craft demo, we will ask you to show us how it works from 
 A User Experience (UX) designer has created the following image and requirements for the component you are building. We are collaborative here at Quickbase and as a developer you can suggest alternatives to the items below. We often have conversations between developers and UX designers about a spec before we go build it. Unfortunately, in this setup scenario, you can't talk with the UX designer so feel free to imagine you had the conversation and make changes you think would be worthwhile.
 
 # Core Requirements
-You work for the Quickbase Web Systems team. You are building out a component to display a list of cards based on a dataset provided as `json`. The designer has provided you with a [desktop design](https://github.com/QuickBase/interview-demos/blob/1b0c6dcd9561eb4e5f9c97d9d785e021476d4da0/websystems/Web-Systems__Craft-Demo-Mockup--Desktop.jpg) and a [mobile design](https://github.com/QuickBase/interview-demos/blob/1b0c6dcd9561eb4e5f9c97d9d785e021476d4da0/websystems/Web-Systems__Craft-Demo-Mockup--Mobile.jpg), and a base HTML structure for the cards based upon how they are used on other parts of the site. You have been given the following ticket to accomplish as part of the current sprint. The Web Systems team does use Bootstrap grid, the BEM naming conventions, and SCSS. We discourage the use of JavaScript inline styles. However, you are welcome to use your own methodologies to finish the required work for this ticket. You can use any technologies, frameworks or libraries you'd like, but we'd like you to focus on core requirements below. When you are satisfied with that, if you have time left, there are some stretch goals. Remember the key to this exercise is to build something that looks as close to the provided mockups as possible and pulls the data in from the dataset provided.
+You work for the Quickbase Web Systems team. You have been given the following ticket to accomplish as part of the current sprint. The Web Systems team does use Bootstrap grid, the BEM naming conventions, and SCSS. We discourage the use of JavaScript inline styles. However, you are welcome to use your own methodologies to finish the required work for this ticket.
 
+1. Recreate the provided mockups using the ticket information provided. Your code should be responsive and match the provided mockups for mobile and desktop views. 
 
-1. Recreate the provided mockups using the [ticket](https://github.com/QuickBase/interview-demos/blob/1b0c6dcd9561eb4e5f9c97d9d785e021476d4da0/websystems/Craft_Demo_Ticket.md) information provided. Your code should be responsive and match the provided mockups for mobile and desktop views.
 2. Take the provided JSON and for each of the objects in the array, create a card as seen in the mockup.
+
 3. Each object may have a different “category” property. Depending on the object category, the card’s banner will have a different background color. Please refer to the ticket for the color values for each category.
-4. If an object doesn't have an image, do not create a card for that particular object.
+
+4. If an object doesn’t have an image, do not create a card for that particular object.
+
 5. If there is no link URL, do not show the link at all, but do show the card with the rest of the content provided.
-6. All cards should maintain a consistent height across a horizontal row, regardless of content provided.
+
+
 
 # Stretch Goals
 - Create a reusable button component that you insert into each of the cards.
+
 - Provide some of your CSS code in SCSS format, including nesting, inheritance, variables, etc.
+
 - Add “National Park” as a default title if there is no title provided for a card.
+
 - Referring to #3 in the Core Requirements, have the title color also change based on the object’s category property.
+
 - Add a class to feature a card in the row. The featured card will appear first in the card list and have:
-    - A card background color of #1A6874 with white text.
-    - A button background color of #F79B82 with black text.
-- Have all card buttons align to the bottom of the card.
+
+  - The background color of the card will be Elm with White text.
+
+  - A button background color of Chrome with Black text.
+
+- Have all cards maintain a consistent height across a row, regardless of content. The link buttons inside the card should be aligned to the bottom, even if there is space between the button and card text.
+
 - Add hover states to buttons.
-    - #82934B should hover to #1A6874. The text color should change from black to white.
-    - If you are doing the featured card stretch goal as well, the featured card button color should hover to #47C5E0. The text color should stay black.
+
+  - Asparagus should hover to Elm. The text color should change from Black to White.
+
+  - Carrot should hover to Geraldine.
+
+  - Elm should hover to Asparagus. The text color should change from White to Black.
+
+  - If you are doing the featured card stretch goal as well, the featured card button color should hover to Picton Blue. The text color should stay black.
