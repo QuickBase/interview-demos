@@ -22,9 +22,9 @@ When you show off your craft demo, we will ask you to show us how it works from 
 A User Experience (UX) designer has created the following image and requirements for the component you are building. We are collaborative here at Quickbase and as a developer you can suggest alternatives to the items below. We often have conversations between developers and UX designers about a spec before we go build it. Unfortunately, in this setup scenario, you can't talk with the UX designer so feel free to imagine you had the conversation and make changes you think would be worthwhile.
 
 # Core Requirements
-You work for the Quickbase Web Systems team. You have been given the following ticket to accomplish as part of the current sprint. The Web Systems team does use Bootstrap grid, the BEM naming conventions, and SCSS. We discourage the use of JavaScript inline styles. However, you are welcome to use your own methodologies to finish the required work for this ticket.
+You work for the Quickbase Web Systems team. You have been given the following ticket to accomplish as part of the current sprint. The Web Systems team does use Bootstrap grid, the BEM naming conventions, and SCSS. We discourage the use of JavaScript inline styles. However, you are welcome to use your own methodologies to finish the required work for this [ticket](https://github.com/QuickBase/interview-demos/blob/a980da9ba2ebc5cec06f6a9ba3e2908f084a726d/websystems/Craft_Demo_Ticket.md).
 
-1. Recreate the provided mockups using the ticket information provided. Your code should be responsive and match the provided mockups for mobile and desktop views. 
+1. Recreate the provided mockups using the ticket information provided. Your code should be responsive and match the provided mockups for [mobile](https://github.com/QuickBase/interview-demos/blob/a980da9ba2ebc5cec06f6a9ba3e2908f084a726d/websystems/Web-Systems__Craft-Demo-Mockup--Mobile.jpg) and [desktop](https://github.com/QuickBase/interview-demos/blob/a980da9ba2ebc5cec06f6a9ba3e2908f084a726d/websystems/Web-Systems__Craft-Demo-Mockup--Desktop.jpg) views. 
 
 2. Take the provided JSON and for each of the objects in the array, create a card as seen in the mockup.
 
