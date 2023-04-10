@@ -6,7 +6,7 @@ const Builder = () => {
   return (
     <div className="builder-container">
       <div className="builder-header">
-        <span>Multi choice field builder</span>
+        <span>Field builder</span>
       </div>
       <BuilderMultipleChoice />
     </div>

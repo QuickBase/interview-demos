@@ -1,4 +1,5 @@
 import Builder from './components/Builder/Builder.component';
+import './components/FormInputFields/FormInputFields.scss';
 
 function App() {
   return (

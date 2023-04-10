@@ -3,6 +3,10 @@ import './BuilderMultipleChoice.scss';
 import ErrorAlert from '../ErrorAlert/ErrorAlert.component';
 import { FieldService } from '../../MockService';
 import Button from '../Button/Button.component';
+import TextInput from '../FormInputFields/TextInput/TextInput.component';
+import TextArea from '../FormInputFields/TextArea/TextArea.component';
+import Checkbox from '../FormInputFields/Checkbox/Checkbox.component';
+import Select from '../FormInputFields/Select/Select.component';
 
 const BuilderMultipleChoice = () => {
   const [label, setLabel] = useState('');
@@ -11,13 +15,17 @@ const BuilderMultipleChoice = () => {
   const [choices, setChoices] = useState([]);
   const [filteredChoices, setFilteredChoices] = useState([]);
   const [selectedOrder, setSelectedOrder] = useState('Original order');
+
   const [requiredLabelError, setRequiredLabelError] = useState('');
   const [duplicateChoicesError, SetDuplicateChoicesError] = useState('');
   const [totalChoicesError, SetTotalChoicesError] = useState('');
+  const [defaultLengthError, SetDefaultLengthError] = useState(false);
   const [invalidChoices, setInvalidChoices] = useState([]);
+
   const [isLoading, setIsLoading] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
   const [sendJson, setSendJson] = useState(false);
+  const [disableSubmit, setDisableSubmit] = useState(false);
 
   useEffect(() => {
     if (sendJson && hasMounted) {
@@ -94,6 +102,26 @@ const BuilderMultipleChoice = () => {
   ]);
 
   useEffect(() => {
+    if (
+      requiredLabelError !== '' ||
+      duplicateChoicesError !== '' ||
+      totalChoicesError !== '' ||
+      invalidChoices.length > 0 ||
+      defaultLengthError
+    ) {
+      setDisableSubmit(true);
+    } else {
+      setDisableSubmit(false);
+    }
+  }, [
+    requiredLabelError,
+    duplicateChoicesError,
+    totalChoicesError,
+    invalidChoices,
+    defaultLengthError,
+  ]);
+
+  useEffect(() => {
     const savedState = JSON.parse(
       localStorage.getItem('builderMultipleChoice')
     );
@@ -113,17 +141,13 @@ const BuilderMultipleChoice = () => {
     }
   }, [label]);
 
-  const handleLabelChange = (event) => {
-    setLabel(event.target.value);
-  };
-
-  const handleIsRequiredChange = (event) => {
-    setIsRequired(event.target.checked);
-  };
-
-  const handleDefaultValueChange = (event) => {
-    setDefaultValue(event.target.value);
-  };
+  useEffect(() => {
+    if (defaultValue.length > 40) {
+      SetDefaultLengthError(true);
+    } else {
+      SetDefaultLengthError(false);
+    }
+  }, [defaultValue]);
 
   const handleChoicesChange = (event) => {
     const newChoices = event.target.value.split('\n');
@@ -135,13 +159,15 @@ const BuilderMultipleChoice = () => {
     setFilteredChoices(filterChoices);
 
     if (filterChoices.length !== new Set(filterChoices).size) {
-      SetDuplicateChoicesError('Duplicate choices are not allowed');
+      SetDuplicateChoicesError('Error: Duplicate choices are not allowed');
     } else {
       SetDuplicateChoicesError('');
     }
 
     if (filterChoices.length > 50) {
-      SetTotalChoicesError('Total number of choices must not be more than 50');
+      SetTotalChoicesError(
+        'Error: Total number of choices must not be more than 50'
+      );
     } else {
       SetTotalChoicesError('');
     }
@@ -162,15 +188,25 @@ const BuilderMultipleChoice = () => {
     setChoices([]);
     setFilteredChoices([]);
     setSelectedOrder('Original order');
+    setRequiredLabelError('');
+    SetDuplicateChoicesError('');
+    SetTotalChoicesError('');
+    SetDefaultLengthError(false);
+    setInvalidChoices([]);
+    setDisableSubmit(false);
   };
 
   const handleSave = async () => {
     if (label === '') {
-      setRequiredLabelError('Label is a required field');
+      setRequiredLabelError('Error: Label is a required field');
       return;
     }
 
-    if (duplicateChoicesError !== '' || invalidChoices.length > 0) {
+    if (
+      duplicateChoicesError !== '' ||
+      invalidChoices.length > 0 ||
+      defaultLengthError
+    ) {
       return;
     }
 
@@ -188,66 +224,66 @@ const BuilderMultipleChoice = () => {
     setSendJson(true);
   };
 
-  const handleOnSubmit = (event) => {
-    event.preventDefault();
-  };
-
   return (
-    <form onSubmit={handleOnSubmit} className="builder-content">
-      <div className="form-input">
-        <label htmlFor="label" className="row-label">
-          Label
-        </label>
-        <input
-          className="row-content"
-          id="label"
-          type="text"
-          value={label}
-          onChange={handleLabelChange}
-        />
-      </div>
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+      }}
+      className="builder-content"
+    >
+      <TextInput
+        htmlFor={'label'}
+        value={label}
+        onChange={(event) => {
+          setLabel(event.target.value);
+        }}
+        fieldLabel={'Label'}
+      />
       <div className="form-input">
         <span className="row-label">Type</span>
         <div className="row-content is-required-check">
           <span>Multi-select </span>
-          <label htmlFor="isRequired" className="custom-check">
-            A Value is required
-            <input
-              id="isRequired"
-              type="checkbox"
-              checked={isRequired}
-              onChange={handleIsRequiredChange}
-            />
-            <span className="checkmark"></span>
-          </label>
+          <Checkbox
+            htmlFor={'isRequired'}
+            fieldLabel={'A Value is required'}
+            checked={isRequired}
+            onChange={(event) => {
+              setIsRequired(event.target.checked);
+            }}
+          />
         </div>
       </div>
-      <div className="form-input">
-        <label className="row-label" htmlFor="defaultVal">
-          Default Value
-        </label>
-        <input
-          className="row-content"
-          id="defaultVal"
-          type="text"
-          value={defaultValue}
-          onChange={handleDefaultValueChange}
-        />
-      </div>
-      <div className="form-input textarea">
-        <label className="row-label" htmlFor="choices">
-          Choices
-        </label>
-        <textarea
-          className="row-content"
-          cols="40"
-          rows="5"
-          id="choices"
-          autoComplete="off"
-          value={choices.join('\n')}
-          onChange={handleChoicesChange}
-        ></textarea>
-      </div>
+      <TextInput
+        htmlFor={'defaultVal'}
+        value={defaultValue}
+        onChange={(event) => {
+          setDefaultValue(event.target.value);
+        }}
+        fieldLabel={'Default Value'}
+      />
+      {defaultLengthError ? (
+        <div className="error-content">
+          <span className="red-text">
+            Error: Maximum length of a choice is 40 characters.
+          </span>
+          <p>
+            {defaultValue.substring(0, 40)}
+            <span className="red-text">{defaultValue.substring(40)}</span>
+          </p>
+        </div>
+      ) : (
+        ''
+      )}
+      <TextArea
+        classes={'form-input textarea'}
+        htmlFor={'choices'}
+        fieldLabel={'Choices'}
+        cols={'40'}
+        rows={'5'}
+        autoComplete={'off'}
+        value={choices.join('\n')}
+        onChange={handleChoicesChange}
+      />
       {duplicateChoicesError !== '' ? (
         <ErrorAlert errorText={duplicateChoicesError} />
       ) : (
@@ -260,13 +296,15 @@ const BuilderMultipleChoice = () => {
       )}
       {invalidChoices.length > 0 ? (
         <div className="error-content">
-          Error: Maximum length of a choice is 40 characters. Please reduce the
-          length of the following:
+          <span className="red-text">
+            Error: Maximum length of a choice is 40 characters. Please reduce
+            the length of the following:
+          </span>
           {invalidChoices.map((item, idx) => {
             return (
               <p key={idx}>
-                {item.substring(0, 41)}
-                <span className="red-text">{item.substring(41)}</span>
+                {item.substring(0, 40)}
+                <span className="red-text">{item.substring(40)}</span>
               </p>
             );
           })}
@@ -274,24 +312,14 @@ const BuilderMultipleChoice = () => {
       ) : (
         ''
       )}
+      <Select
+        htmlFor={'selectOrder'}
+        fieldLabel={'Order'}
+        optionsArray={['Original order', 'Sort alphabetically']}
+        onChange={(e) => setSelectedOrder(e.target.value)}
+        selectedOrder={selectedOrder}
+      />
 
-      <div className="form-input select">
-        <label className="row-label" htmlFor="selectOrder">
-          Order
-        </label>
-        <div className="select-container row-content">
-          <select
-            id="selectOrder"
-            value={selectedOrder}
-            onChange={(e) => setSelectedOrder(e.target.value)}
-          >
-            <option value="Original order">Original order</option>
-            <option value="Sort alphabetically">Sort alphabetically</option>
-          </select>
-          <span className="select-arrow"></span>
-        </div>
-      </div>
-      <div></div>
       {requiredLabelError !== '' ? (
         <ErrorAlert errorText={requiredLabelError} />
       ) : (
@@ -301,6 +329,7 @@ const BuilderMultipleChoice = () => {
         <Button
           onClick={handleSave}
           label="Save changes"
+          disabled={disableSubmit}
           isloading={isLoading}
         />
         Or

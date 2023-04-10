@@ -1,0 +1,156 @@
+@import '../../global-styles/main.scss';
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  .row-label {
+    margin-bottom: 20px;
+  }
+
+  .row-content {
+    display: flex;
+    flex-direction: column;
+
+    &.is-required-check > span {
+      margin-bottom: 20px;
+    }
+
+    &.is-required-check > .custom-check {
+      margin-left: 0;
+    }
+  }
+}
+
+@include sm {
+  .form-input .row-content {
+    flex-direction: row;
+    &.is-required-check > span {
+      margin-right: 20px;
+    }
+  }
+}
+
+@include md {
+  .form-input {
+    flex-direction: row;
+    column-gap: 30px;
+
+    .row-label {
+      flex-basis: calc(25% - 15px);
+    }
+    .row-content {
+      flex-basis: calc(60% - 15px);
+    }
+
+    .row-content.select-container {
+      flex-basis: calc(60% + 40px);
+    }
+  }
+  .form-input:not(.textarea) {
+    align-items: center;
+  }
+}
+
+input,
+textarea,
+select {
+  outline: none;
+  border: 1px solid $grey-md;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+//custon checkbox
+.custom-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.custom-check {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 30px;
+  display: flex;
+}
+
+.checkmark {
+  position: absolute;
+  top: -2px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 1px solid $grey-md;
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.custom-check input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.custom-check .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 5px;
+  height: 12px;
+  border: solid $grey-dark;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+//custom dropdown styles
+
+.select-container {
+  position: relative;
+
+  select {
+    appearance: none;
+    width: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+
+  .select-arrow {
+    position: absolute;
+    right: -10px;
+    top: 0;
+    background-color: $grey-light;
+    height: 35.5px;
+    width: 42px;
+    pointer-events: none;
+    border: 1px solid $grey-md;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+
+    @include sm {
+      height: 40.5px;
+    }
+
+    &::after {
+      content: '▾';
+      position: relative;
+      top: 9px;
+      left: 15px;
+    }
+  }
+}

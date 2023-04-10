@@ -1,9 +1,24 @@
-.error * {
-  color: red;
-  margin: 20px;
+body {
+  .error * {
+    color: red;
+    margin: 20px;
+  }
 
   .error-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+
+    p {
+      margin: 7px 0;
+    }
+  }
+
+  .error-content,
+  .error-content * {
     font-style: italic;
-    font-size: 12px;
+    font-size: 14px;
   }
 }
