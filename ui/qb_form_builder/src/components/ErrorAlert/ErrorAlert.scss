@@ -1,0 +1,9 @@
+.error * {
+  color: red;
+  margin: 20px;
+
+  .error-content {
+    font-style: italic;
+    font-size: 12px;
+  }
+}

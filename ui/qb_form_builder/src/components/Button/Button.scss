@@ -1,0 +1,21 @@
+@import '../../global-styles/main.scss';
+
+.global-btn {
+  background-color: $btn-bg-green;
+  color: $white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  margin: 20px 0px;
+  cursor: pointer;
+
+  .loading-indicator {
+    display: inline-block;
+    margin-left: 10px;
+  }
+
+  @include sm {
+    margin: 20px 20px;
+  }
+}
