@@ -1,3 +1,7 @@
+# Behavioral Question
+- Standard QB Behaviroal question
+- What is the bias variance tradeoff? If an engineer said that they have a high bias and low variance in their classification model, what would you advice the junior to do.
+
 # Portfolio Presentation
 Please present 1 Machine Learning preferably one that involes LLM you have done in the past. Explain what the problem was and how you accomplished the solution.
 
