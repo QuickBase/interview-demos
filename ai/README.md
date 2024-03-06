@@ -3,7 +3,7 @@
 - What is the bias variance tradeoff? If an engineer said that they have a high bias and low variance in their classification model, what would you advice the junior to do.
 
 # Portfolio Presentation
-Please present 1 Machine Learning preferably one that involes LLM you have done in the past. Explain what the problem was and how you accomplished the solution.
+Please present 1 Machine Learning  Project (preferably one that invovles an LLM) you have done in the past. Explain what the problem was and how you accomplished the solution.
 
 
 # Coding Exercise
@@ -18,13 +18,13 @@ Create a command-line Python program that compares semantic searches based on em
 - Below is the  “data set” of 2 applications. “: CRM App and Inventory App
 - Generate embeddings for both datasets and save them. Given a new JSON, compare the embeddings and return the best match.
 - Please use Python 3. x
-- You can use whatever library you prefer to generate embedding. But as a stretch, you can use AWS Bedrock to demonstrate your cloud knowledge.
+- You can use whatever library you prefer to generate embedding. But as a stretch, you can use AWS Bedrock/GCP/Azure to demonstrate your cloud knowledge. This is completely optional
 
 
 
 ### Need
 - Please use best practices from Python.
-- Please provide unit tests for the main program functionality. Create a separate module for the unit tests.
+- Please provide unit tests for the main program functionality.
 - You may also use any Python libraries to help you with tasks, such as requests or mock.
 - Please provide a file with instructions on how to run the Python program and the tests.
 
