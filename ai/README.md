@@ -19,7 +19,7 @@ Create a command-line Python program that compares semantic searches based on em
 - Generate embeddings for both datasets and save them. Given a new JSON, compare the embeddings and return the best match.
 - Please use Python 3. x
 - You can use whatever library you prefer to generate embedding. But as a stretch, you can use AWS Bedrock/GCP/Azure to demonstrate your cloud knowledge. This is completely optional
-
+- Avoid using a library that already does a  `similarity_search`. We would like to see how you implement it.
 
 
 ### Need
