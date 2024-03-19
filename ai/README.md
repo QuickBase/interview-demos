@@ -1,7 +1,3 @@
-# Portfolio Presentation
-Please present 1 Machine Learning  Project (preferably one that invovles an LLM) you have done in the past. Explain what the problem was and how you accomplished the solution.
-
-
 # Coding Exercise
 The purpose of this exercise is not to give a "gotcha" question or puzzle but a straightforward (albeit contrived) example of the requirement that might arise in an actual project so that we have shared context for a technical conversation during the interview. We are interested in how you approach a project. How you demonstrate the correctness of your implementation is up to you.
 
