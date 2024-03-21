@@ -5,21 +5,25 @@ The purpose of this exercise is not to give a "gotcha" question or puzzle but a 
 ## Requirements
 
 ### Goal
-Create a command-line Python program that compares semantic searches based on embeddings. 
-
+Create a command-line Python program that retrieves the APP JSON document.
 - Below is the  “data set” of 2 applications. “: CRM App and Inventory App
-- Generate embeddings for both datasets and save them. Given a new JSON, compare the embeddings and return the best match.
-- Please use Python 3. x
-- You can use whatever library you prefer to generate embedding. But as a stretch, you can use AWS Bedrock/GCP/Azure to demonstrate your cloud knowledge. This is completely optional
-- Avoid using a library that already does a  `similarity_search`. We would like to see how you implement it.
+- Given a new JSON object, return the best match.
 
 
-### Need
-- Please use best practices from Python.
-- Please provide unit tests for the main program functionality.
-- You may also use any Python libraries to help you with tasks, such as requests or mock.
-- Please provide a file with instructions on how to run the Python program and the tests.
+### Guardrails
+- Please use Python 3. Please use best practices from Python.
+- Please provide tests for the main program functionality.
+- Please be prepared to answer questions on what "Best Match" is and how you would evaluate future changes of algorithms.
+- Please provide a file with instructions on how to run the program and the tests.
+- Please ensure you think of Error Cases, Failure Cases, Negative Flows
+- Avoid using a library/tool/service that is already doing a  `similarity_search`. We would like to see how you implement it.
+- Please use whatever library you prefer to generate embeddings and distance functions. You may also use Python libraries to help with tasks like requests or mocks.
 
+
+### Stretch Goals
+- As a stretch, you can also implement given an App Description, find the best match
+- As a stretch, you can use AWS Bedrock/GCP/Azure to demonstrate your cloud knowledge. This is completely optional
+- As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
 
 
 ### Data Set
