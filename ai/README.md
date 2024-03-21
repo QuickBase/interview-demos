@@ -6,7 +6,7 @@ The purpose of this exercise is not to give a "gotcha" question or puzzle but a 
 
 ### Goal
 Create a command-line Python program that retrieves the APP JSON document.
-- Below is the  “data set” of 2 applications. “: CRM App and Inventory App
+- Below is the  “data set” of 2 applications: "CRM App" and "Inventory App"
 - Given a new JSON object, return the best match.
 
 
