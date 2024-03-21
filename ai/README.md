@@ -13,11 +13,11 @@ Create a command-line Python program that retrieves the APP JSON document.
 ### Guardrails
 - Please use Python 3. Please use best practices from Python.
 - Please provide tests for the main program functionality.
-- Please be prepared to answer questions on what "Best Match" is and how you would evaluate future changes of algorithms.
 - Please provide a file with instructions on how to run the program and the tests.
+- Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement the function.
+- Please be prepared to answer questions on what "Best Match" metric and how you would evaluate future changes of algorithms.
 - Please ensure you think of Error Cases, Failure Cases, Negative Flows
-- Avoid using a library/tool/service that is already doing a  `similarity_search`. We would like to see how you implement it.
-- Please use whatever library you prefer to generate embeddings and distance functions. You may also use Python libraries to help with tasks like requests or mocks.
+- Please use whatever library you prefer to generate embeddings and distance functions. You may also use Python libraries to help with requests or mocks.
 
 
 ### Stretch Goals
