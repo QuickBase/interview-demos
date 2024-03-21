@@ -15,14 +15,14 @@ Create a command-line Python program that retrieves the APP JSON document.
 - Please provide tests for the main program functionality.
 - Please provide a file with instructions on how to run the program and the tests.
 - Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement the function.
-- Please be prepared to answer questions on what "Best Match" metric and how you would evaluate future changes of algorithms.
+- Please be prepared to answer questions on what the "Best Match" metric is and how you would evaluate future changes in algorithms.
 - Please ensure you think of Error Cases, Failure Cases, Negative Flows
 - Please use whatever library you prefer to generate embeddings and distance functions. You may also use Python libraries to help with requests or mocks.
 
 
 ### Stretch Goals
 - As a stretch, you can also implement given an App Description, find the best match
-- As a stretch, you can use AWS Bedrock/GCP/Azure to demonstrate your cloud knowledge. This is completely optional
+- As a stretch, you can use AWS Bedrock/GCP/Azure, for example, to generate embeddings to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
 
 
