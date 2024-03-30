@@ -1,13 +1,13 @@
 package com.quickbase;
 
 
-import com.quickbase.devint.dao.CountryDb;
+import com.quickbase.devint.dao.CountryDbDao;
+import com.quickbase.devint.dao.CountryStatDao;
 import com.quickbase.devint.dao.Dao;
 import com.quickbase.devint.entity.Country;
+import com.quickbase.devint.service.stat.ConcreteStatService;
 import lombok.extern.slf4j.Slf4j;
 
-
-import java.sql.Connection;
 
 /**
  * The main method of the executable JAR generated from this repository. This is to let you
@@ -19,8 +19,10 @@ public class Main {
     public static void main( String args[] ) {
         log.info("Starting.");
 
-        Dao<Country> countryDao = new CountryDb("jdbc:sqlite:resources/data/citystatecountry.db");
-        log.debug("Countries in db: {}", countryDao.getAll());
+        Dao<Country> countryDbDao = new CountryDbDao("jdbc:sqlite:resources/data/citystatecountry.db");
+        log.debug("Countries in db: {}", countryDbDao.getAll());
+        Dao<Country> countryStatDao = new CountryStatDao(new ConcreteStatService());
+        log.debug("Countries in stat service: {}", countryStatDao.getAll());
 
     }
 }

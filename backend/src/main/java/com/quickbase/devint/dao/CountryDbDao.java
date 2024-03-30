@@ -11,11 +11,11 @@ import java.util.List;
  * This CountryDbDao exposes population data stored in the database.
  */
 @Slf4j
-public class CountryDb implements Dao<Country> {
+public class CountryDbDao implements Dao<Country> {
     private final static String GET_POPULATION_BY_COUNTRY = "SELECT country, population FROM CountryPopulation";
     private final String connection;
 
-    public CountryDb(String connection) {
+    public CountryDbDao(String connection) {
         this.connection = connection;
     }
 
