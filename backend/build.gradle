@@ -41,6 +41,11 @@ tasks.named('test', Test) {
     }
 }
 
+task copyDepJars(type: Copy) {
+    from configurations.runtimeClasspath
+    into 'lib'
+}
+
 jar {
     manifest {
         attributes 'Main-Class': "$mainClassName"
