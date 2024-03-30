@@ -52,7 +52,7 @@ public class CountryDbDao implements Dao<Country> {
     /**
      * The CityStateCountry database contains population numbers per city, so it requires a complicated query to get the
      * number per country. This method creates a temporary view that exposes the population per country.
-     * TODO: Consider creating a table similar to the view defined here, so we can delete this method and query the
+     * TODO: Create a table similar to the view defined here, so we can delete this method and query the
      *  database directly.
      */
     private void createPopulationView(Connection conn) {

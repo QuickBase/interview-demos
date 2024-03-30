@@ -2,7 +2,6 @@ package com.quickbase.devint.dao;
 
 import com.quickbase.devint.entity.Country;
 import com.quickbase.devint.service.stat.StatService;
-import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.apache.commons.lang3.tuple.Pair;
 
 import java.util.ArrayList;
@@ -18,6 +17,7 @@ public class CountryStatDao implements Dao<Country> {
     @Override
     public List<Country> getAll() {
         List<Country> result = new ArrayList<>();
+        // If this is a real external service, we need to handle retries.
         List<Pair<String, Integer>> list = statService.getCountryPopulations();
 
         list.forEach(pair -> result.add(Country.of(pair.getKey(), pair.getValue())));
