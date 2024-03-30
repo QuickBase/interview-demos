@@ -7,6 +7,7 @@ import com.quickbase.devint.dao.Dao;
 import com.quickbase.devint.entity.Country;
 import com.quickbase.devint.service.aggregation.DefaultPopulationAggregator;
 import com.quickbase.devint.service.aggregation.PopulationAggregator;
+import com.quickbase.devint.service.names.DefaultCountryNameResolver;
 import com.quickbase.devint.service.stat.ConcreteStatService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -24,12 +25,13 @@ public class Main {
     public static void main( String args[] ) {
         log.info("Starting.");
 
+        // Pretend we have a DI framework to do this.
         Dao<Country> countryDbDao = new CountryDbDao("jdbc:sqlite:resources/data/citystatecountry.db");
         log.debug("Countries in db: {}", countryDbDao.getAll());
         Dao<Country> countryStatDao = new CountryStatDao(new ConcreteStatService());
         log.debug("Countries in stat service: {}", countryStatDao.getAll());
         PopulationAggregator populationAggregator =
-                new DefaultPopulationAggregator(List.of(countryStatDao, countryDbDao));
+                new DefaultPopulationAggregator(List.of(countryStatDao, countryDbDao), new DefaultCountryNameResolver());
 
         Map<String, Integer> populationData = populationAggregator.getPopulationData();
         for (String country : populationData.keySet()) {
