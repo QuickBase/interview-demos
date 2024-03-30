@@ -2,7 +2,7 @@ package com.quickbase.devint.service.aggregation;
 
 import com.quickbase.devint.dao.Dao;
 import com.quickbase.devint.entity.Country;
-import com.quickbase.devint.service.names.CountryNameResolver;
+import com.quickbase.devint.service.resolver.CountryNameResolver;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.HashMap;

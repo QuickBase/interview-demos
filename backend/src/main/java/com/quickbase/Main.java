@@ -1,13 +1,12 @@
 package com.quickbase;
 
-
 import com.quickbase.devint.dao.CountryDbDao;
 import com.quickbase.devint.dao.CountryStatDao;
 import com.quickbase.devint.dao.Dao;
 import com.quickbase.devint.entity.Country;
 import com.quickbase.devint.service.aggregation.DefaultPopulationAggregator;
 import com.quickbase.devint.service.aggregation.PopulationAggregator;
-import com.quickbase.devint.service.names.DefaultCountryNameResolver;
+import com.quickbase.devint.service.resolver.DefaultCountryNameResolver;
 import com.quickbase.devint.service.stat.ConcreteStatService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -22,7 +21,7 @@ import java.util.Map;
  */
 @Slf4j
 public class Main {
-    public static void main( String args[] ) {
+    public static void main(String[] args) {
         log.info("Starting.");
 
         // Pretend we have a DI framework to do this.

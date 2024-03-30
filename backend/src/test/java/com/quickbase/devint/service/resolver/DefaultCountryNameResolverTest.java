@@ -1,4 +1,4 @@
-package com.quickbase.devint.service.names;
+package com.quickbase.devint.service.resolver;
 
 import org.junit.jupiter.api.Test;
 

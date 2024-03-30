@@ -3,7 +3,7 @@ package com.quickbase.devint.service.aggregation;
 import com.quickbase.devint.dao.CountryDbDao;
 import com.quickbase.devint.dao.CountryStatDao;
 import com.quickbase.devint.entity.Country;
-import com.quickbase.devint.service.names.DefaultCountryNameResolver;
+import com.quickbase.devint.service.resolver.DefaultCountryNameResolver;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
