@@ -6,7 +6,6 @@ import lombok.Value;
 @Value
 @RequiredArgsConstructor(staticName = "of")
 public class Country {
-
     String name;
     Integer population;
 }
