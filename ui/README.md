@@ -27,6 +27,8 @@ Your demo should run on whichever web browser you prefer.
 
 ## Candidate Exercise Presentation Outline
 
+[optional] it is optional to use the presentation slide. You can jump right into the code as well.
+
 We have created a PowerPoint template which covers an outline of what we would
 like to talk about during the first section of your interview before you share
 your craft demo. Feel free to use the template provided or make your own. For
