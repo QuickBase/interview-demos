@@ -1,5 +1,8 @@
 # Coding Exercise
-The purpose of this exercise is not to give a "gotcha" question or puzzle but a straightforward (albeit contrived) example of the requirement that might arise in an actual project so that we have shared context for a technical conversation during the interview. We are interested in how you approach a project. How you demonstrate the correctness of your implementation is up to you.
+- The purpose of this exercise is not to give a "gotcha" question or puzzle but a straightforward (albeit contrived) example of the requirement that might arise in an actual project so that we have shared context for a technical conversation during the interview.
+- We are interested in how you approach a project. How you demonstrate the correctness of your implementation is up to you.
+- This exercise should take no more than 4 hours. If you find yourself taking more time, you are probably overthinking it.
+- If you have questions about the  requirements, please ask
 
 
 ## Requirements
@@ -8,22 +11,23 @@ The purpose of this exercise is not to give a "gotcha" question or puzzle but a 
 Create a command-line Python program that retrieves the APP JSON document.
 - Below is the  “data set” of 2 applications: "CRM App" and "Inventory App"
 - Given a new JSON object, return the best match.
-
+- Be able to run the program and demonstrate that it is running in the craft demo
 
 ### Guardrails
-- Please use Python 3. Please use best practices from Python.
-- Please provide tests for the main program functionality.
-- Please provide a file with instructions on how to run the program and the tests.
-- Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement the function.
-- Please be prepared to answer questions on what the "Best Match" metric is and how you would evaluate future changes in algorithms.
-- Please ensure you think of Error Cases, Failure Cases, Negative Flows
-- Please use whatever library you prefer to generate embeddings and distance functions. You may also use Python libraries to help with requests or mocks.
+- Please use Python 3. 
+- Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
+- You may also use Python libraries to help with requests or mocks.
+
+## Preparation
+- Be prepared to answer questions on Evaluation Metrics.
+- Be prepared to dive deeper into the hyperparameters of choice.
+- Be prepared to answer questions on Error Cases, Failure Cases, Negative Flows and things that may arise in the real world.
 
 
 ### Stretch Goals
-- As a stretch, you can also implement given an App Description, find the best match
-- As a stretch, you can use AWS Bedrock/GCP/Azure, for example, to generate embeddings to demonstrate your cloud knowledge. This is completely optional
+- As a stretch, you can use AWS Bedrock/GCP/Azure, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
+- You can skip the unit tests unless it helps you.
 
 
 ### Data Set
