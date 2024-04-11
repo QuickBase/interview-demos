@@ -100,6 +100,7 @@ These are bonus tasks to consider. Complete the core tasks before attempting one
 of these. You can also feel free to consider your own ideas for extension if you
 have time to complete additional requirements. These are only suggestions.
 
+* Add some unit tests using Jest, React testing library or similar
 * Allow the form to be responsive and work on mobile devices in addition to
   desktop.
 * Have you ever closed the browser accidentally when working on something? Yeah,
