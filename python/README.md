@@ -14,10 +14,8 @@ variable.
 * Transfer all compatible fields from the GitHub User to the Freshdesk Contact by your judgment
 * Please provide unit tests for the main program functionality. Create a separate module for the
 unit tests.
-* You may use either Python 2.7 or Python 3.x.
+* You need to use Python 3.x.
 * You may also use any Python libraries which will help you with the task, such as requests or
-mock, except for API clients for Freshdesk or GitHub.
-* While you may create trial accounts in GitHub and Freshdesk, this is not a requirement. You can
-use the examples from the documentation as test data.
+mock, **except for API clients for Freshdesk or GitHub**.
 * Please provide a README.md file with instructions on how to run the Python program and the
 tests.
