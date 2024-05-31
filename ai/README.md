@@ -9,7 +9,7 @@
 
 ### Goal
 Create a command-line Python program that retrieves the APP JSON document.
-- Below is the  “data set” of 2 applications: "CRM App" and "Inventory App"
+- Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps at most
 - Given a new JSON object, return the best match.
 - Be able to run the program and demonstrate that it is running in the craft demo
 
