@@ -9,7 +9,7 @@ The purpose of this exercise is not to give a "gotcha" question or puzzle, but a
 * Use Freshdesk API v2. Documentation is available at https://developers.freshdesk.com/api/  
 * Your program should be able to take GitHub user login (username) and Freshdesk subdomain  
 as inputs from the command line.  
-* For authentication assume GitHub personal access token is given in `GITHUB_TOKEN ` 
+* For authentication assume GitHub personal access token is given in `GITHUB_TOKEN` 
 environmental variable and Freshdesk API key is given in `FRESHDESK_TOKEN` environmental  
 variable.  
 * You may also use any JS or TS libraries which will help you with the task, such as requests or  
