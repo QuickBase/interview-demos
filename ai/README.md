@@ -13,10 +13,16 @@ Create a command-line Python program that retrieves the APP JSON document.
 - Given a new JSON object, return the best match.
 - Be able to run the program and demonstrate that it is running in the craft demo
 
+If you are curious, in production, we wil be wrapping the inference in an API. This API will be called 1 times per minute. This will be part of Quickbase's smart builder, you can create a trial to test it out.
+
+You don't need to prepare any PowerPoint presentations. You are welcome to create documents that accompany your code to illustrate your decisions.
+
 ### Guardrails
-- Please use Python 3. 
+- Please use Python 3.
+- Please dont use a notebook and create a runnable python program
 - Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
 - You may also use Python libraries to help with requests or mocks.
+- We recommend you spend no more than 8 hours on this
 
 ## Preparation
 - Be prepared to answer questions on Evaluation Metrics.
