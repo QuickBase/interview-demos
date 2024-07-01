@@ -31,6 +31,7 @@ You don't need to prepare any PowerPoint presentations. You are welcome to creat
 
 
 ### Stretch Goals
+- You can augment the data with LLM. Ask something like GPT to generate more App JSON. Let us know your experience.
 - As a stretch, you can use AWS Bedrock/GCP/Azure, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
 - You can skip the unit tests unless it helps you.
