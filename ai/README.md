@@ -4,11 +4,6 @@
 - This exercise should take no more than 4 hours. If you find yourself taking more time, you are probably overthinking it.
 - If you have questions about the requirements, please ask us.
 
-## Presentation
-- You don't need to prepare any PowerPoint presentations.
-- You are welcome to create documents that accompany your code to illustrate your decisions.
-- Be able to run the program
-
 
 ## Requirements
 
@@ -26,7 +21,13 @@ If you are curious, in production,
 - Don't use a Jupyter Notebook and create a runnable Python program
 - Avoid using a library/tool/service/database with  `similarity_search`, `recsys`,  `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
 
-## Preparation
+
+
+## Preparation for the Craft Demo
+- You don't need to prepare any PowerPoint presentations.
+- You are welcome to create documents that accompany your code to illustrate your decisions.
+- Be able to run the program
+
 - Be prepared to answer questions on what you learned from the data
 - Be prepared to answer questions on Evaluation Metrics for the solution.
 - Be prepared to dive deeper into the hyperparameters of choice.
@@ -35,7 +36,7 @@ If you are curious, in production,
 - Be prepared to answer questions on Error Cases, Failure Cases, Negative Flows, and things that may arise in the real world.
 
 
-### Stretch Goals
+## Stretch Goals
 - **Data Augmentation:** You can augment the data with LLM. Ask something like GPT to generate more App JSON. Let us know your experience with Prompt Engineering.
 - As a stretch, you can use AWS Bedrock/GCP/Azure, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
