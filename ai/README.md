@@ -2,36 +2,41 @@
 - The purpose of this exercise is not to give a "gotcha" question or puzzle but a straightforward (albeit contrived) example of the requirement that might arise in an actual project so that we have shared context for a technical conversation during the interview.
 - We are interested in how you approach a project. How you demonstrate the correctness of your implementation is up to you.
 - This exercise should take no more than 4 hours. If you find yourself taking more time, you are probably overthinking it.
-- If you have questions about the  requirements, please ask
+- If you have questions about the requirements, please ask us.
+
+## Presentation
+- You don't need to prepare any PowerPoint presentations.
+- You are welcome to create documents that accompany your code to illustrate your decisions.
+- Be able to run the program
 
 
 ## Requirements
 
 ### Goal
-Create a command-line Python program that retrieves the APP JSON document.
+- Create a command-line Python program
 - Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps at most
 - Given a new JSON object, return the best match.
-- Be able to run the program and demonstrate that it is running in the craft demo
 
-If you are curious, in production, we wil be wrapping the inference in an API. This API will be called 1 times per minute. This will be part of Quickbase's smart builder, you can create a trial to test it out.
-
-You don't need to prepare any PowerPoint presentations. You are welcome to create documents that accompany your code to illustrate your decisions.
+If you are curious, in production,
+- we will wrap the inference in an API. This API will be called 1 times per minute.
+- This will be part of Quickbase's smart builder, you can create a trial to test it out.
 
 ### Guardrails
-- Please use Python 3.
-- Please dont use a notebook and create a runnable python program
-- Avoid using a library/tool/service/database that is already doing a  `similarity_search` or `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
-- You may also use Python libraries to help with requests or mocks.
-- We recommend you spend no more than 8 hours on this
+- Use Python 3. You may also use Python libraries to help with requests or mocks.
+- Don't use a Jupyter Notebook and create a runnable Python program
+- Avoid using a library/tool/service/database with  `similarity_search`, `recsys`,  `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
 
 ## Preparation
-- Be prepared to answer questions on Evaluation Metrics.
+- Be prepared to answer questions on what you learned from the data
+- Be prepared to answer questions on Evaluation Metrics for the solution.
 - Be prepared to dive deeper into the hyperparameters of choice.
-- Be prepared to answer questions on Error Cases, Failure Cases, Negative Flows and things that may arise in the real world.
+- Be prepared to dive deeper into monitoring the solution in production
+- Be prepared to dive deeper into how you would surface the best application
+- Be prepared to answer questions on Error Cases, Failure Cases, Negative Flows, and things that may arise in the real world.
 
 
 ### Stretch Goals
-- You can augment the data with LLM. Ask something like GPT to generate more App JSON. Let us know your experience.
+- **Data Augmentation:** You can augment the data with LLM. Ask something like GPT to generate more App JSON. Let us know your experience with Prompt Engineering.
 - As a stretch, you can use AWS Bedrock/GCP/Azure, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
 - You can skip the unit tests unless it helps you.
