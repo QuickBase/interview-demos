@@ -5,9 +5,14 @@
 
 # Hands-on Task
 
-- Pick one of Java, Python or Docker Container type of an artifact that is a typical simple web application. You can pick any open-source project artifact or a simple helloworld container.
+- Pick one of Java, Python or Docker Container type of an artifact that is a typical simple web application. You can pick any open-source project artifact or a simple container you develop.
+  
+- Write a CI / CD pipeline for the artifact, using the CI tool of your choice.
+  
+- Implement 2 security testing tools of your choice in the CI/CD pipeline
 
-- Write simple deployment automation script that deploys the given artifact on either AWS or Google Cloud (preferable).
+- Write simple deployment automation script that deploys the given artifact on AWS.
+
 
 #  Presentation
 
@@ -17,7 +22,7 @@ Please prepare a presentation to discuss these points. You don’t need to imple
 
 - Plan and a task break-down how you would implement monitoring of this deployed app
 
-- What kind of security policies and scans would you recommend to put into place?
+- What kind of additional security policies and scans would you recommend to put into place?
 
 - What other improvements would you make to the CI/CD process if you had more time?
 
