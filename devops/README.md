@@ -7,11 +7,9 @@
 
 - Pick one of Java, Python or Docker Container type of an artifact that is a typical simple web application. You can pick any open-source project artifact or a simple container you develop.
   
-- Write a CI / CD pipeline for the artifact, using the CI tool of your choice.
+- Write a CI / CD pipeline for the artifact, using the CI tool of your choice. The pipeline should deploy the artifact to AWS
   
 - Implement 2 security testing tools of your choice in the CI/CD pipeline
-
-- Write simple deployment automation script that deploys the given artifact on AWS.
 
 
 #  Presentation
