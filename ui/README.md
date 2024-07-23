@@ -85,7 +85,7 @@ the conversation and make changes you think would be worthwhile.
    the form is submitted. This helps demonstrate the prior requirement (that the
    default value is added).
 1. Add a button that allows the builder to clear the form and start fresh.
-1. Generate a Mocky endpoint to use for this craft demo:
+1. Generate a Mocky endpoint to use for this craft demo or alternatively use another service/method of your preference to achieve this.  Steps to generate a Mocky endpoint to post data to:
     1. Navigate to [Mocky](https://designer.mocky.io/).
     1. Click on "New Mock".
     1. Add details about your API call here including a generic response.
