@@ -85,14 +85,18 @@ the conversation and make changes you think would be worthwhile.
    the form is submitted. This helps demonstrate the prior requirement (that the
    default value is added).
 1. Add a button that allows the builder to clear the form and start fresh.
-1. The submit button should create a json object and post it to
-   [https://run.mocky.io/v3/c00ad522-5b53-47d1-80cb-6edf9f300874](https://run.mocky.io/v3/c00ad522-5b53-47d1-80cb-6edf9f300874).
-   It should also log the post data to the console. You can add a function to
-   FieldService in
-   [MockFieldService.js](https://github.com/QuickBase/interview-demos/blob/master/ui/js/MockService.js)
-   to accomplish this, but everything is up to you. Feel free to modify or
-   change anything you would like as long as it meets the minimum requirement of
-   posting json data to the back-end endpoint.
+1. Generate a Mocky endpoint to use for this craft demo or alternatively use another service/method of your preference to achieve this.  Steps to generate a Mocky endpoint to post data to:
+    1. Navigate to [Mocky](https://designer.mocky.io/).
+    1. Click on "New Mock".
+    1. Add details about your API call here including a generic response.
+    1. Ensure "Never Expire" is checked at the bottom.
+    1. Click "Generate My HTTP Response" button at the bottom of the screen.
+    1. Copy the "Mock URL" that is provided.
+1. The submit button should create a json object and post it to the link that you 
+generated in the Mocky service above.  It should also log the post data to the console. 
+You can add a function to FieldService in [MockFieldService.js](https://github.com/QuickBase/interview-demos/blob/master/ui/js/MockService.js) to accomplish this, but everything is up 
+to you.  Feel free to modify or change anything you would like as long as it meets the 
+minimum requirement of posting json data to the back-end endpoint.
 
 ## Stretch Requirements / Tasks
 
