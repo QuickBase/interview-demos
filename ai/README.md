@@ -7,7 +7,7 @@
 
 ### Goal
 - Create a command-line Python program
-- Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps at most
+- Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps, not 1000s.
 - Given a new JSON object, return the best match.
 
 If you are curious, in production,
@@ -15,31 +15,35 @@ If you are curious, in production,
 - This will be part of Quickbase's smart builder, you can create a trial to test it out.
 
 ### Stretch Goals
-- **Data Augmentation:** You can augment the data with LLM. Ask something like GPT to generate more App JSON. Let us know your experience with Prompt Engineering.
-- As a stretch, you can use AWS Bedrock/GCP/Azure, to demonstrate your cloud knowledge. This is completely optional
+- **Data Augmentation:** Augment the dataset with LLM. Ask something like GPT to generate more App JSONs. Let us know what your prompts were.
+- As a stretch, you can use AWS Bedrock/GCP/Azure to get things like embedding, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
+- Performance Optimization: Implement indexing or caching mechanisms to optimize the performance of any of the systems
 - You can skip the unit tests unless it helps you.
 
 
 
 ### Guardrails
 - Use Python 3. You may also use Python libraries to help with requests or mocks.
-- Don't use a Jupyter Notebook and create a runnable Python program
-- Avoid using a library/tool/service/database with  `similarity_search`, `recsys`,  `semantic_search`. We would like to see how you implement these functions. We would like to go deeper into your ML Knowledge and any demonstration of these skills would be valuable.
+- Don't use a Jupyter Notebook. Please create a runnable Python program.
+- Avoid using a library/tool/service/vector database with  `similarity_search`, `recsys`,  `semantic_search`. We would like to see how you implement these functions. We want to go deeper into your ML, Data Science Knowledge.
 
 
 
 ## Preparation for the Craft Demo
 - You don't need to prepare any PowerPoint presentations.
-- You are welcome to create documents that accompany your code to illustrate your decisions.
-- Be able to run the program
+- You can create documents accompanying your code to illustrate your decisions.
+- You should be able to run the program during the presentation.
 
-- Be prepared to answer questions on what you learned from the data
-- Be prepared to answer questions on Evaluation Metrics for the solution.
-- Be prepared to dive deeper into the hyperparameters of choice.
-- Be prepared to dive deeper into monitoring the solution in production
-- Be prepared to dive deeper into how you would surface the best application
-- Be prepared to answer questions on Error Cases, Failure Cases, Negative Flows, and things that may arise in the real world.
+Be prepared to answer questions on these topics
+- Data Understanding: Explain what you learned from the dataset and how it influenced your approach.
+- Similarity Metrics: Justify the choice of similarity metrics based on the nature of the data and the retrieval task.
+- Evaluation Metrics: Justify your choice of evaluation metrics and how they align with the problem goals.
+- Algorithm, Model Selection and Hyperparameters: Describe your model selection process, including any hyperparameters you chose and why. Explain the reasoning behind selecting a particular algorithm.
+- Deployment and Monitoring: Explain your strategy for deploying and monitoring the solution in production.
+- Error and Failure Cases: Discuss how you would handle error cases, failure cases, and negative flows.
+- Scalability: Explain how your solution can scale with an increase in the number of applications or JSON objects.
+- Performance Optimization: Describe any performance optimization techniques you applied to ensure the solution is efficient and effective.
 
 
 
