@@ -6,7 +6,7 @@ namespace Backend;
 
 public class SqliteDbManager : IDbManager
 {
-    public DbConnection getConnection()
+    public DbConnection GetConnection()
     {
         try
         {

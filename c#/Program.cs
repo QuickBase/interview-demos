@@ -6,7 +6,7 @@ Console.WriteLine("Started");
 Console.WriteLine("Getting DB Connection...");
 
 IDbManager db = new SqliteDbManager();
-DbConnection conn = db.getConnection();
+DbConnection conn = db.GetConnection();
 
 if (conn == null)
 {

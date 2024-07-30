@@ -4,5 +4,5 @@ namespace Backend;
 
 public interface IDbManager
 {
-    DbConnection getConnection();
+    DbConnection GetConnection();
 }
