@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Backend
+namespace Backend;
+
+interface IStatService
 {
-    interface IStatService
-    {
-        List<Tuple<string, int>> GetCountryPopulations();
-        Task<List<Tuple<string, int>>> GetCountryPopulationsAsync();
-    }
+    List<Tuple<string, int>> GetCountryPopulations();
+    Task<List<Tuple<string, int>>> GetCountryPopulationsAsync();
 }

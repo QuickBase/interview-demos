@@ -1,27 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.Common;
-using System.Data.SQLite;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.Data.Sqlite;
 
-namespace Backend
+namespace Backend;
+
+public class SqliteDbManager : IDbManager
 {
-    public class SqliteDbManager : IDbManager
+    public DbConnection GetConnection()
     {
-        public DbConnection getConnection()
+        try
         {
-            try
-            {
-                var connection = new SQLiteConnection("Data Source=citystatecountry.db;Version=3;FailIfMissing=True");
-                return connection.OpenAndReturn();
-            }
-            catch(SQLiteException ex)
-            {
-                Console.WriteLine(ex.Message);
-                return null;
-            }
+            var connection = new SqliteConnection("Data Source=citystatecountry.db;Mode=ReadWrite");
+            connection.Open();
+            return connection;
+        }
+        catch(SqliteException ex)
+        {
+            Console.WriteLine(ex.Message);
+            return null;
         }
     }
 }

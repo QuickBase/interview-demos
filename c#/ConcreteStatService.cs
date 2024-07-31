@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Backend
+namespace Backend;
+
+public class ConcreteStatService : IStatService
 {
-    public class ConcreteStatService : IStatService
+    public List<Tuple<string, int>> GetCountryPopulations()
     {
-        public List<Tuple<string, int>> GetCountryPopulations()
-        {
-            // Pretend this calls a REST API somewhere
-            return new List<Tuple<string, int>>
-            {
-		        Tuple.Create("India",1182105000),
+        // Pretend this calls a REST API somewhere
+        return
+        [
+                Tuple.Create("India",1182105000),
 		        Tuple.Create("United Kingdom",62026962),
 		        Tuple.Create("Chile",17094270),
 		        Tuple.Create("Mali",15370000),
@@ -41,13 +39,12 @@ namespace Backend
 		        Tuple.Create("Kyrgyzstan",5418300),
 		        Tuple.Create("Lithuania",3329039),
 		        Tuple.Create("United States of America",309349689)
-            };
-        }
+        ];
+    }
 
 
-        public Task<List<Tuple<string, int>>> GetCountryPopulationsAsync()
-        {
-            return Task.FromResult<List<Tuple<string, int>>>(GetCountryPopulations());
-        }
+    public Task<List<Tuple<string, int>>> GetCountryPopulationsAsync()
+    {
+        return Task.FromResult(GetCountryPopulations());
     }
 }
