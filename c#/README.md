@@ -21,6 +21,6 @@ the sql database should be used.
 
 ## Building and Running the code
 
-This project assumes you're using Visual Studio 2022 or newer and depends on nuget. A windows dev environment is assumed.  
+This project assumes you're using Visual Studio 2022 or newer and depends on nuget.
 
-That said, feel free to challenge any of the current limitations with your demo.  Just keep the time limit in mind.
+That said, feel free to challenge any of the current limitations with your demo. Just keep the time limit in mind.
