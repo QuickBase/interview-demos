@@ -5,8 +5,8 @@
 
 ## Requirements
 
-### Goal
-- Create a command-line Python program
+### Main Goal
+- Create a command-line Python program that returns a best-match 
 - Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps, not 1000s.
 - Given a new JSON object, return the best match.
 
@@ -15,7 +15,7 @@ If you are curious, in production,
 - This will be part of Quickbase's smart builder, you can create a trial to test it out.
 
 ### Stretch Goals
-- **Data Augmentation:** Augment the dataset with LLM. Ask something like GPT to generate more App JSONs. Let us know what your prompts were.
+- Data Augmentation: Augment the dataset with LLM. Ask something like GPT to generate more App JSONs. Let us know what your prompts were.
 - As a stretch, you can use AWS Bedrock/GCP/Azure to get things like embedding, to demonstrate your cloud knowledge. This is completely optional
 - As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
 - Performance Optimization: Implement indexing or caching mechanisms to optimize the performance of any of the systems
