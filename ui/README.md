@@ -1,4 +1,4 @@
-# Quick Base Front End Craft Demo
+# Quickbase Front End Craft Demo
 
 ## General Description
 
@@ -60,7 +60,7 @@ approach XD problems.
 
 A User Experience (UX) designer has created the following image and requirements
 for the multiple choice editor you are building. It is a first draft. We are
-collaborative here at Quick Base and as a developer you can suggest alternatives
+collaborative here at Quickbase and as a developer you can suggest alternatives
 to the items below. We often have conversations between developers and UX
 designers about a spec before we go build it. Unfortunately, in this setup
 scenario, you can't talk with the UX designer so feel free to imagine you had
