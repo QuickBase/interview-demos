@@ -14,22 +14,22 @@ In production, the inference will be wrapped in an API, which will be called onc
 
 
 ### Stretch Goals
-- **Data Augmentation**: Use a Large Language Model (LLM) to generate additional App JSONs. Please share the prompts you used.
+- **Optional Data Augmentation**: Use a Large Language Model (LLM) to generate additional App JSONs. Please share the prompts you used.
 - **Optional Cloud Integration**: As an optional challenge, you can use AWS Bedrock, GCP, or Azure to generate embeddings or other features to showcase your cloud expertise.
-- **Optional Containerization**: You can also containerize your application to demonstrate your operations skills. This is optional.
-- **Performance Optimization**: Enhance system performance by implementing indexing or caching mechanisms.
-- **Unit Tests**: Unit tests are optional and can be skipped unless they assist you in the process.
+- **Optional Containerization**: You can also containerize your application to demonstrate your operations skills.
+- **Optional Performance Optimization**: Enhance system performance by implementing techniques like indexing or caching.
+- **Optional Unit Tests**: Unit tests are optional and can be skipped unless they assist you in the process.
 
 
 ### Guardrails
-- Use Python 3, and feel free to incorporate libraries for handling requests or mocks.
+- Use Python 3, and feel free to incorporate any libraries you need for handling requests or mocks.
 - Please create a standalone Python program instead of using a Jupyter Notebook.
 - Refrain from using libraries, tools, or services that offer `similarity_search`, `recsys`, or `semantic_search` features. We want to evaluate your implementation skills and dive deeper into your ML and data science expertise.
 
 
 
 ## Preparation for the Craft Demo
-- No **Presentation** Required: PowerPoint presentations are not necessary.
+- **No Presentation** Required: PowerPoint presentations are not necessary.
 - **Documentation**: You may create documents to accompany your code, detailing your decisions.
 - **Program Execution**: Ensure your program can be run during the presentation.
 
