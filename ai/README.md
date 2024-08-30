@@ -1,50 +1,47 @@
-- The purpose of this exercise is not to give a "gotcha" question or puzzle but a straightforward (albeit contrived) example of the requirement that might arise in an actual project so that we have shared context for a technical conversation during the interview.
-- We are interested in how you approach a project. How you demonstrate the correctness of your implementation is up to you.
-- This exercise should take no more than 4 hours. If you find yourself taking more time, you are probably overthinking it.
-- If you have questions about the requirements, please ask us.
+- The exercise aims to provide a realistic example for a technical discussion, not a "gotcha" question or puzzle.
+- We are interested in understanding your approach to tackling a project. How you show the accuracy of your implementation is entirely at your discretion.
+- The exercise should take no more than 6 hours. If it's taking longer, you might be overthinking it.
+- If you have any questions, please ask us.
 
 ## Requirements
 
 ### Main Goal
-- Create a command-line Python program that returns a best-match 
+- Create a command-line Python program that returns a best-match
 - Below is the  “data set” of 2 applications: "CRM App" and "Inventory App". Assume we will have 100s of these apps, not 1000s.
-- Given a new JSON object, return the best match.
+- Given a new JSON object, return the best-matching application.
 
-If you are curious, in production,
-- we will wrap the inference in an API. This API will be called 1 times per minute.
-- This will be part of Quickbase's smart builder, you can create a trial to test it out.
+In production, the inference will be wrapped in an API, which will be called once per minute. This feature will be integrated into Quickbase's Smart Builder.
+
 
 ### Stretch Goals
-- Data Augmentation: Augment the dataset with LLM. Ask something like GPT to generate more App JSONs. Let us know what your prompts were.
-- As a stretch, you can use AWS Bedrock/GCP/Azure to get things like embedding, to demonstrate your cloud knowledge. This is completely optional
-- As a stretch, you can also containerize your application to demonstrate your knowledge of operations. This is completely optional
-- Performance Optimization: Implement indexing or caching mechanisms to optimize the performance of any of the systems
-- You can skip the unit tests unless it helps you.
-
+- **Data Augmentation**: Use a Large Language Model (LLM) to generate additional App JSONs. Please share the prompts you used.
+- **Optional Cloud Integration**: As an optional challenge, you can use AWS Bedrock, GCP, or Azure to generate embeddings or other features to showcase your cloud expertise.
+- **Optional Containerization**: You can also containerize your application to demonstrate your operations skills. This is optional.
+- **Performance Optimization**: Enhance system performance by implementing indexing or caching mechanisms.
+- **Unit Tests**: Unit tests are optional and can be skipped unless they assist you in the process.
 
 
 ### Guardrails
-- Use Python 3. You may also use Python libraries to help with requests or mocks.
-- Don't use a Jupyter Notebook. Please create a runnable Python program.
-- Avoid using a library/tool/service/vector database with  `similarity_search`, `recsys`,  `semantic_search`. We would like to see how you implement these functions. We want to go deeper into your ML, Data Science Knowledge.
+- Use Python 3, and feel free to incorporate libraries for handling requests or mocks.
+- Please create a standalone Python program instead of using a Jupyter Notebook.
+- Refrain from using libraries, tools, or services that offer `similarity_search`, `recsys`, or `semantic_search` features. We want to evaluate your implementation skills and dive deeper into your ML and data science expertise.
 
 
 
 ## Preparation for the Craft Demo
-- You don't need to prepare any PowerPoint presentations.
-- You can create documents accompanying your code to illustrate your decisions.
-- You should be able to run the program during the presentation.
+- No **Presentation** Required: PowerPoint presentations are not necessary.
+- **Documentation**: You may create documents to accompany your code, detailing your decisions.
+- **Program Execution**: Ensure your program can be run during the presentation.
 
-Be prepared to answer questions on these topics
-- Data Understanding: Explain what you learned from the dataset and how it influenced your approach.
-- Similarity Metrics: Justify the choice of similarity metrics based on the nature of the data and the retrieval task.
-- Evaluation Metrics: Justify your choice of evaluation metrics and how they align with the problem goals.
-- Algorithm, Model Selection and Hyperparameters: Describe your model selection process, including any hyperparameters you chose and why. Explain the reasoning behind selecting a particular algorithm.
-- Deployment and Monitoring: Explain your strategy for deploying and monitoring the solution in production.
-- Error and Failure Cases: Discuss how you would handle error cases, failure cases, and negative flows.
-- Scalability: Explain how your solution can scale with an increase in the number of applications or JSON objects.
-- Performance Optimization: Describe any performance optimization techniques you applied to ensure the solution is efficient and effective.
-
+Be prepared to answer questions on these topics:
+- Data Understanding: Share insights gained from the dataset and how they shaped your approach.
+- Similarity Metrics: Justify your choice of similarity metrics based on the data and retrieval task.
+- Evaluation Metrics: Explain your selection of evaluation metrics and how they align with the project goals.
+- Algorithm, Model Selection, and Hyperparameters: Describe your model selection process, including chosen algorithms and hyperparameters, and explain your reasoning.
+- Deployment and Monitoring: Outline your strategy for deploying and monitoring the solution in production.
+- Error Handling: Discuss your approach to managing error cases, failures, and negative scenarios.
+- Scalability: Explain how your solution can scale with an increasing number of applications or JSON objects.
+- Performance Optimization: Detail any techniques you implemented to optimize the solution’s performance.
 
 
 
