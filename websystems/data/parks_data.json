@@ -1,0 +1,401 @@
+{
+    "parks": [
+        {
+            "title": "Abraham Lincoln Birthplace National Historical Park",
+            "link": "https://www.nps.gov/abli/index.htm",
+            "linkText": "Learn More",
+            "body": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. Visit our country's first memorial to Lincoln, built with donations from young and old, and the site of his childhood home.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C861078-1DD8-B71B-0B774A242EF6A706.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Acadia National Park",
+            "link": "https://www.nps.gov/acad/index.htm",
+            "linkText": "Learn More",
+            "body": "Acadia National Park protects the natural beauty of the highest rocky headlands along the Atlantic coastline of the United States, an abundance of habitats, and a rich cultural heritage. At 4 million visits a year, it's one of the top 10 most-visited national parks in the United States. Visitors enjoy 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7B477B-1DD8-B71B-0BCB48E009241BAA.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Adams National Historical Park",
+            "link": "https://www.nps.gov/adam/index.htm",
+            "linkText": "Learn More",
+            "body": "From the sweet little farm at the foot of Penn\u2019s Hill to the gentleman\u2019s country estate at Peace field, Adams National Historical Park is the story of \u201cheroes, statesmen, philosophers\u2026and learned women\u201d whose ideas and actions helped to transform thirteen disparate colonies into one united nation.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/889E1412-09CD-086C-0BA3855C6E9FF9D3.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "African American Civil War Memorial",
+            "link": "https://www.nps.gov/afam/index.htm",
+            "linkText": "Learn More",
+            "body": "Over 200,000 African-American soldiers and sailors served in the U.S. Army and Navy during the Civil War. Their service helped to end the war and free over four million slaves. The African American Civil War Memorial honors their service and sacrifice.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C816B50-1DD8-B71B-0BF380049FB6B6A2.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "African Burial Ground National Monument",
+            "link": "https://www.nps.gov/afbg/index.htm",
+            "linkText": "Learn More",
+            "body": "African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It protects the historic role slavery played in building New York.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Agate Fossil Beds National Monument",
+            "link": "https://www.nps.gov/agfo/index.htm",
+            "linkText": "Learn More",
+            "body": "In the early 1900s, paleontologists unearthed the Age of Mammals when they found full skeletons of extinct Miocene mammals in the hills of Nebraska -- species previously only known through fragments. At the same time, an age of friendship began between rancher James Cook and Chief Red Cloud of the Lakota. These two unprecedented events are preserved and protected here... at Agate Fossil Beds.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7A058F-1DD8-B71B-0B188ED102F7285F.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Ala Kahakai National Historic Trail",
+            "link": "https://www.nps.gov/alka/index.htm",
+            "linkText": "Learn More",
+            "body": "Established in 2000 to preserve, protect and interpret traditional Native Hawaiian culture and natural resources, Ala Kahakai National Historic Trail is a 175 mile corridor encompassing a network of culturally and historically significant trails. This \"trail by the sea\" traverses wahi pana (storied landscapes), ancient Hawaiian sites and over 200 ahupua\u02bba (traditional land divisions). Connect now!",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C86C7EB-1DD8-B71B-0BF2A10341617580.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Alagnak Wild River",
+            "link": "https://www.nps.gov/alag/index.htm",
+            "linkText": "Learn More",
+            "body": "The headwaters of Alagnak Wild River lie within the rugged Aleutian Range of neighboring Katmai National Park and Preserve. Meandering west towards Bristol Bay and the Bering Sea, the Alagnak traverses the beautiful Alaska Peninsula, providing an unparalleled opportunity to experience the unique wilderness, wildlife, and cultural heritage of southwest Alaska.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7E810E-1DD8-B71B-0B92FDF31F5C0CA6.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Alaska Public Lands",
+            "link": "https://www.nps.gov/anch/index.htm",
+            "linkText": "Learn More",
+            "body": "Alaska\u2019s parks, forests, and refuges are rich and varied. The Alaska Public Lands Information Centers help visitors and residents to have meaningful, safe, enjoyable experiences on public lands, and encourages them to sustain the natural and cultural resources of Alaska. These centers provide trip-planning, interpretation, and education for all ages.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/2595FA12-DF7A-1B6C-55D8F41ABCA2E011.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Alcatraz Island",
+            "link": "https://www.nps.gov/alca/index.htm",
+            "linkText": "Learn More",
+            "body": "Alcatraz reveals stories of American incarceration, justice, and our common humanity. This small island was once a fort, a military prison, and a maximum security federal penitentiary. In 1969, the Indians of All Tribes occupied Alcatraz for 19 months in the name of freedom and Native American civil rights. We invite you to explore Alcatraz's complex history and natural beauty.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/2514A14F-D5E3-BB31-4A0C4175BF61216A.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Aleutian Islands World War II National Historic Area",
+            "link": "https://www.nps.gov/aleu/index.htm",
+            "linkText": "Learn More",
+            "body": "The remote Aleutian Islands, home to the Unangax\u0302 (Aleut) people for over 8,000 years, became a fiercely contested Pacific battleground in World War II. Some Unangax\u0302 were taken from their homelands as Japanese prisoners of war while the others were evacuated from the islands by the government. Both groups suffered greatly during the war, and some would never return to their villages.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7BC1AE-1DD8-B71B-0BF60FDE7A21822B.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Alibates Flint Quarries National Monument",
+            "link": "https://www.nps.gov/alfl/index.htm",
+            "linkText": "Learn More",
+            "body": "13,000 years ago, Alibates was used by mammoth hunters as a source of flint for tools. The colorful flint has never lost its value or usefulness in the Texas Panhandle. Learn how important this site was to the survival, commerce, and culture of the people of the High Plains.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7EFA64-1DD8-B71B-0BD2E6EF7D52B0BF.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Allegheny Portage Railroad National Historic Site",
+            "link": "https://www.nps.gov/alpo/index.htm",
+            "linkText": "Learn More",
+            "body": "The first railroad to cross the Allegheny Mountains, the Allegheny Portage Railroad was the final piece of the Pennsylvania Main Line Canal. \"The Portage\" opened in 1834, marking the first time that there was one, direct route between Philadelphia and Pittsburgh. All things to all people, it served merchants, passengers, slaves in pursuit of freedom, and soldiers from the Mexican War.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/2C12F155-DE91-DD44-9108A954EB6F3DF6.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Amache National Historic Site",
+            "link": "https://www.nps.gov/amch/index.htm",
+            "linkText": "Learn More",
+            "body": "Amache, also known as the Granada Relocation Center, near Granada, Colorado was one of ten incarceration sites established by the War Relocation Authority during World War II to unjustly incarcerate Japanese Americans. Over 10,000 people, most American citizens, were incarcerated at Amache from 1942 to 1945.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/C1E570C9-C140-0E81-EDDC02810B0B7EAE.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "American Memorial Park",
+            "link": "https://www.nps.gov/amme/index.htm",
+            "linkText": "Learn More",
+            "body": "American Memorial Park honors the American and Marianas people who gave their lives during the Marianas Campaign of World War II. At the park, memorials stand in tribute to the courage and sacrifice of the US Servicemen and Chamorro and Carolinian civilians who were killed in the battles between the United States and Japan that took place on Saipan, Tinian, and the Philippine Sea in 1944.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C8576F5-1DD8-B71B-0B2A1CF96D1F9701.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Amistad National Recreation Area",
+            "link": "https://www.nps.gov/amis/index.htm",
+            "linkText": "Learn More",
+            "body": "An oasis in the desert, Amistad National Recreation Area consists of the US portion of the International Amistad Reservoir. Amistad, whose name comes from the Spanish word meaning friendship, is best known for excellent water-based recreation, camping, hiking, rock art viewing, and its rich cultural history. Amistad is also home to a wide variety of plant and animal life above and below the water.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3459C06C-DEA3-F44D-36D1A6393F34BFD4.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Anacostia Park",
+            "link": "https://www.nps.gov/anac/index.htm",
+            "linkText": "Learn More",
+            "body": "Welcome to Anacostia Park, your neighborhood national park in the heart of Washington, DC! Enjoy exercise along the river trail or relax by the water, Anacostia Park is a breath of fresh air and a space to unwind amid a bustling city.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C82A965-1DD8-B71B-0B42F2CD698E11A7.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Andersonville National Historic Site",
+            "link": "https://www.nps.gov/ande/index.htm",
+            "linkText": "Learn More",
+            "body": "Nearly 13,000 men died on these grounds, a site that became infamous even before the Civil War ended. Their burial grounds became Andersonville National Cemetery, where veterans continue to be buried today. This place, where tens of thousands suffered captivity so others could be free, is also home to the National Prisoner of War Museum and serves as a memorial to all American prisoners of war.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C87F1CB-1DD8-B71B-0B8B6223F6173DF9.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Andrew Johnson National Historic Site",
+            "link": "https://www.nps.gov/anjo/index.htm",
+            "linkText": "Learn More",
+            "body": "Andrew Johnson's complex presidency (1865-69) illustrates the Constitution at work following the Civil War. As the President and Congress disagreed on Reconstruction methods, the Constitution served as their guide on balance of powers, vetoes, and impeachment. In the end, it evolved as a living document with pivotal amendments on freedom, citizenship, and voting rights - topics still vital today.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/CD3972B0-AAA1-30C5-EB867099B9E2B89A.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Aniakchak National Monument & Preserve",
+            "link": "https://www.nps.gov/ania/index.htm",
+            "linkText": "Learn More",
+            "body": "Given its remote location and challenging weather conditions, Aniakchak is one of the most wild and least visited places in the National Park System. This landscape is a vibrant reminder of Alaska's location in the volcanically active \"Ring of Fire,\" as it is home to an impressive six mile (10 km) wide, 2,500 ft (762 m) deep caldera formed during a massive volcanic eruption 3,500 years ago.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7A78AD-1DD8-B71B-0BF20886BAA0C0DA.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Antietam National Battlefield",
+            "link": "https://www.nps.gov/anti/index.htm",
+            "linkText": "Learn More",
+            "body": "23,000 soldiers were killed, wounded or missing after twelve hours of savage combat on September 17, 1862. The Battle of Antietam ended the Confederate Army of Northern Virginia's first invasion into the North and led Abraham Lincoln to issue the preliminary Emancipation Proclamation.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/8EB071FD-DDA4-68D6-D79A7EF68B2E5474.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Apostle Islands National Lakeshore",
+            "link": "https://www.nps.gov/apis/index.htm",
+            "linkText": "Learn More",
+            "body": "Apostle Islands National Lakeshore, located at the northern tip of Wisconsin's Bayfield Peninsula, features 21 stunning islands, a scenic 12-mile shoreline along Lake Superior, and is located within the ancestral homeland of the Ojibwe people. Established in 1970, the park showcases picturesque sea caves, sandy beaches, and the largest collection of lighthouses in the National Park system.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/D6607D31-F031-1115-3C8F37DAD0BBB0E2.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Appalachian National Scenic Trail",
+            "link": "https://www.nps.gov/appa/index.htm",
+            "linkText": "Learn More",
+            "body": "The Appalachian Trail is a 2,190+ mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunteers.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C8397D6-1DD8-B71B-0BEF4C54462A1EB3.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Appomattox Court House National Historical Park",
+            "link": "https://www.nps.gov/apco/index.htm",
+            "linkText": "Learn More",
+            "body": "On April 9, 1865, the surrender of the Army of Northern Virginia in the McLean House in the village of Appomattox Court House, Virginia signaled the effective end of the nation's largest war. Questions remained: could the nation reunite as one? How would emancipation be realized?",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C85DA69-1DD8-B71B-0B56D1B9F92263B5.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Arches National Park",
+            "link": "https://www.nps.gov/arch/index.htm",
+            "linkText": "",
+            "body": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Arkansas Post National Memorial",
+            "link": "https://www.nps.gov/arpo/index.htm",
+            "linkText": "Learn More",
+            "body": "Located at the confluence of two rivers, Arkansas Post has served as a gathering place for many cultures throughout human history - it represents cultural cooperation, conflict, synthesis, and diversity.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C847F86-1DD8-B71B-0B476A9BC4ABFDBB.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Arlington House, The Robert E. Lee Memorial",
+            "link": "https://www.nps.gov/arho/index.htm",
+            "linkText": "Learn More",
+            "body": "Arlington House is the nation\u2019s memorial to Robert E. Lee. It honors him for specific reasons, including his role in promoting peace and reunion after the Civil War. In a larger sense it exists as a place of study and contemplation of the meaning of some of the most difficult aspects of American history: military service; sacrifice; citizenship; duty; loyalty; slavery and freedom.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/C6780B46-B0C0-FB79-E17378C527E54DA7.jpeg",
+            "category": "Historical"
+        },
+        {
+            "title": "Assateague Island National Seashore",
+            "link": "https://www.nps.gov/asis/index.htm",
+            "linkText": "Learn More",
+            "body": "Want to live on the edge? Visit a place recreated each day by ocean wind and waves. Life on Assateague Island has adapted to an existence on the move. Explore sandy beaches, salt marshes, maritime forests and coastal bays. Rest, relax, recreate and enjoy some time on the edge of the continent.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C809F06-1DD8-B71B-0B39C9B927D2C688.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Aztec Ruins National Monument",
+            "link": "https://www.nps.gov/azru/index.htm",
+            "linkText": "Learn More",
+            "body": "Aztec Ruins has some of the best-preserved Chacoan structures of its kind. Learn more about the ancestral Pueblo people in the park's museum and explore the Aztec West great house to see exceptionally advanced architecture, original wooden beams, and a restored Great Kiva. Aztec Ruins is a deeply sacred place to many Indigenous peoples across the American Southwest. Please visit with respect.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C80AFE4-1DD8-B71B-0BE2EEFC92413401.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Badlands National Park",
+            "link": "https://www.nps.gov/badl/index.htm",
+            "body": "The rugged beauty of the Badlands draws visitors from around the world. These striking geologic deposits contain one of the world\u2019s richest fossil beds. Ancient horses and rhinos once roamed here. The park\u2019s 244,000 acres protect an expanse of mixed-grass prairie where bison, bighorn sheep, prairie dogs, and black-footed ferrets live today.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C82EE63-1DD8-B71B-0BD6EE0FDCB5D402.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Baltimore-Washington Parkway",
+            "link": "https://www.nps.gov/bawa/index.htm",
+            "linkText": "Learn More",
+            "body": "This 29-mile highway connects Baltimore, MD and Washington, D.C. The parkway has carried visitors to and from the capital city since 1954.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7F83E6-1DD8-B71B-0BD4AB5763204C1E.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Bandelier National Monument",
+            "link": "https://www.nps.gov/band/index.htm",
+            "linkText": "Learn More",
+            "body": "Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country. Petroglyphs, dwellings carved into the soft rock cliffs, and standing masonry walls pay tribute to the early days of a culture that still survives in the surrounding communities.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C830B03-1DD8-B71B-0BA1266ED9B0CE08.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Belmont-Paul Women's Equality National Monument",
+            "link": "https://www.nps.gov/bepa/index.htm",
+            "linkText": "Learn More",
+            "body": "Home to the National Woman's Party for more than 90 years, this was the epicenter of the struggle for women's rights. From this house in the shadow of the U.S. Capitol and Supreme Court, Alice Paul and the NWP developed innovative strategies and tactics to advocate for the Equal Rights Amendment and equality for women. President Barack Obama designated the national monument on April 12, 2016.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/6E4F7F3F-1DD8-B71B-0BBDE514BEF76FDF.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Bent's Old Fort National Historic Site",
+            "link": "https://www.nps.gov/beol/index.htm",
+            "linkText": "Learn More",
+            "body": "In the 1840s the Arkansas River was the border between territory claimed by the United States and Mexico. Located along the river, Bent's Fort was an adobe trading post on the Santa Fe Trail, where traders, trappers, travelers, and the Cheyenne and Arapaho tribes came together in peaceful terms for trade. Today, a reconstructed fort allows visitors to explore the front line of Westward Expansion.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/8972C604-C83B-B0DB-257152905A0AA122.jpeg",
+            "category": "Historical"
+        },
+        {
+            "title": "Bering Land Bridge National Preserve",
+            "link": "https://www.nps.gov/bela/index.htm",
+            "linkText": "Learn More",
+            "body": "Bering Land Bridge National Preserve lies at the continental crossroad that greatly influenced the distribution of life in the Western Hemisphere during the Pleistocene Epoch. It is a vital landscape for Indigenous communities who depend on the land just as their ancestors did for many generations. It is a wild and ecologically healthy landscape unlike any other.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C7A859F-1DD8-B71B-0B24F438FBCB2BE9.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "",
+            "link": "https://www.nps.gov/bibe/index.htm",
+            "linkText": "Learn More",
+            "body": "There is a place in Far West Texas where night skies are dark as coal and rivers carve temple-like canyons in ancient limestone. Here, at the end of the road, hundreds of bird species take refuge in a solitary mountain range surrounded by weather-beaten desert. Tenacious cactus bloom in sublime southwestern sun, and species diversity is the best in the country. This magical place is Big Bend...",
+            "image": "https://www.nps.gov/common/uploads/structured_data/8BF8356B-BB63-76A4-19F5296EF94C96B4.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Big Cypress National Preserve",
+            "link": "https://www.nps.gov/bicy/index.htm",
+            "linkText": "Learn More",
+            "body": "The freshwaters of the Big Cypress Swamp, essential to the health of the neighboring Everglades, support the rich marine estuaries along Florida's southwest coast. Conserving over 729,000 acres of this vast swamp, Big Cypress National Preserve contains a mixture of tropical and temperate plant communities that are home to diverse wildlife, including the Endangered Florida panther.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/C224B1D4-CDDA-B563-05F29F0ECFF365A4.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Big Hole National Battlefield",
+            "link": "https://www.nps.gov/biho/index.htm",
+            "linkText": "Learn More",
+            "body": "On August 9, 1877, gun shots shattered a chilly dawn on a sleeping camp of Nez Perce. By the time the smoke cleared on August 10, almost 90 Nez Perce were dead along with 31 soldiers and volunteers. Big Hole National Battlefield was created to honor all who were there.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/99279113-1DD8-B71B-0BF75905FA3FFC7A.jpg",
+            "category": "Historical"
+        },
+        {
+            "link": "https://www.nps.gov/biso/index.htm",
+            "linkText": "Learn More",
+            "body": "Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big South Fork of the Cumberland River and its tributaries. The area boasts miles of scenic gorges and sandstone bluffs, is rich with natural and historic features and has been developed to provide visitors with a wide range of outdoor recreational activities.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C793E18-1DD8-B71B-0B815C3EA6EF7F23.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Big Thicket National Preserve",
+            "link": "https://www.nps.gov/bith/index.htm",
+            "linkText": "Learn More",
+            "body": "Life of all types abounds in the Big Thicket. This national preserve protects the incredible diversity of life found where multiple habitats meet in southeast Texas. Hiking trails and waterways meander through nine different ecosystems, from longleaf pine forests to cypress-lined bayous. It is a place of discovery, a place to wander and explore, a place to marvel at the richness of nature.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/FA692D17-BDCC-E98F-C537FAF2CE0D7796.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Bighorn Canyon National Recreation Area",
+            "link": "https://www.nps.gov/bica/index.htm",
+            "linkText": "Learn More",
+            "body": "The vast, wild landscape of Bighorn Canyon National Recreation Area offers visitors unparalleled opportunities to immerse themselves in the natural world, and experience the wonders of this extraordinary place. With over 120,000 acres, one can find an astounding diversity in ecosystems, wildlife, and more than 10,000 years of human history to explore.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C8210BC-1DD8-B71B-0B15EAD02A4BA4D2.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Birmingham Civil Rights National Monument",
+            "link": "https://www.nps.gov/bicr/index.htm",
+            "linkText": "Learn More",
+            "body": "In 1963, images of snarling police dogs unleashed against non-violent protesters and of children being sprayed with high-pressure hoses appeared in print and television news around the world. These dramatic scenes of violent police aggression against civil rights protesters in Birmingham, Alabama were vivid examples of segregation and racial injustice in America.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/D22DF28C-CD37-750E-EB966436CB1DB631.jpeg",
+            "category": "Historical"
+        },
+        {
+            "title": "Biscayne National Park",
+            "linkText": "Learn More",
+            "body": "Within sight of Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Evidence of 10,000 years of human history is here too; from prehistoric tribes to shipwrecks, and pineapple farmers to presidents. For many, the park is a boating, fishing, and diving destination, while others enjoy a warm breeze and peaceful scenery.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C8717A4-1DD8-B71B-0B2EED68CFA7E008.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Black Canyon Of The Gunnison National Park",
+            "link": "https://www.nps.gov/blca/index.htm",
+            "linkText": "Learn More",
+            "body": "Big enough to be overwhelming, yet still intimate enough to feel the pulse of time. Come see some of the steepest cliffs, oldest rock, and craggiest spires in North America. Forces of nature and the Gunnison River sculpted this canyon over two million years. The result is a vertical wilderness of rock, water, and sky.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C81655F-1DD8-B71B-0B4BCFFDB74EE723.jpg",
+            "category": "Natural"
+        },
+        {
+            "title": "Blackstone River Valley National Historical Park",
+            "link": "https://www.nps.gov/blrv/index.htm",
+            "linkText": "Learn More",
+            "body": "The Blackstone River powered America's entry into the Age of Industry. The success of Samuel Slater's cotton spinning mill in Pawtucket, RI touched off a chain reaction that changed how people worked and where they lived. Learn how this revolution transformed the landscape of the Blackstone Valley and the United States. Old Slater Mill will reopen in Spring 2025.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/0BD0215D-B0D9-7E37-CFF0CDB2B29679CC.png",
+            "category": "Historical"
+        },
+        {
+            "title": "",
+            "link": "https://www.nps.gov/blsc/index.htm",
+            "linkText": "Learn More",
+            "body": "Written by prejudice rather than law, the story of the Blackwell School is one of \u201cseparate but equal\u201d education for Mexican and Mexican American citizens of Marfa, Texas. Built in 1909, the school serves as a significant example of how racism and cultural disparity dominated education and social systems in the United States during this period of de facto segregation from 1889-1965.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/41BC060B-9362-F9FE-AD6294CE7DF1B02A.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Blue Ridge Parkway",
+            "link": "https://www.nps.gov/blri/index.htm",
+            "linkText": "Learn More",
+            "body": "A Blue Ridge Parkway experience is unlike any other: a slow-paced and relaxing drive revealing stunning long-range vistas and close-up views of the rugged mountains and pastoral landscapes of the Appalachian Highlands. The Parkway meanders for 469 miles, protecting a diversity of plants and animals, and providing opportunities for enjoying all that makes this region of the country so special.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/87E985D9-BF92-9DC3-74B91467FBA15010.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Bluestone National Scenic River",
+            "link": "https://www.nps.gov/blue/index.htm",
+            "linkText": "Learn More",
+            "body": "The Bluestone River and the rugged and ancient gorge it has carved is a richly diverse and scenic area of the southern Appalachians. Bluestone National Scenic River is preserved as a living landscape that provides an unspoiled experience for visitors and a haven for a variety of plants and animals. The park protects a 10.5-mile section of the Bluestone River in southern West Virginia.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C800E49-1DD8-B71B-0BD0956F0EFE00F0.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Booker T Washington National Monument",
+            "link": "https://www.nps.gov/bowa/index.htm",
+            "linkText": "Learn More",
+            "body": "Booker T. Washington was born a slave in April 1856 on the 207-acre farm of James Burroughs. After the Civil War, Washington became the first principal of Tuskegee Normal and Industrial School. Later as an adviser, author and orator, his past would influence his philosophies as the most influential African American of his era. Come explore his birthplace.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C78FE2A-1DD8-B71B-0B28DF0A7DEA50EB.jpg",
+            "category": "Historical"
+        },
+        {
+            "title": "Boston African American National Historic Site",
+            "link": "https://www.nps.gov/boaf/index.htm",
+            "linkText": "Learn More",
+            "body": "Centered on the north slope of Beacon Hill, the African American community of 1800s Boston led the city and the nation in the fight against slavery and injustice. These remarkable men and women, together with their allies, were leaders in the Abolition Movement, the Underground Railroad, the Civil War, and the early struggle for equal rights and education.",
+            "image": "https://www.nps.gov/common/uploads/structured_data/3C790CB4-1DD8-B71B-0B29F4B5171A78B3.jpg",
+            "category": "Historical"
+        }
+    ]
+}
