@@ -10,7 +10,7 @@ The goal is to understand how you would **plan, architect, and guide the develop
 
 Your demo should run on whichever web browser you prefer.
 
-**Expected Time Commitment:** 4-6 hours.
+**Expected Time Commitment:** 3-4 hours.
 
 **Figma Link:** [Design Mockups](https://www.figma.com/design/9gs04bvF5dkx46uR4YPe4v/Ad-Hoc?node-id=2111-18&t=oBufkT96iL7cwii4-1)
 
@@ -79,12 +79,6 @@ When you show off your craft demo, we will ask you to show us how it works from 
 - Filters and search should work together to dynamically refine the results.
 - Use **Dove Gray** for the search placeholder and text.
 
-### Pagination
-- Implement pagination to limit the number of cards displayed per page.
-- The number of cards per page is up to your discretion.
-- Users should be able to navigate between pages.
-- Use **Dove Gray** for pagination text.
-
 ---
 
 ## Live Discussion (During Interview)
@@ -103,6 +97,10 @@ During your interview, we will ask you to walk us through your approach and your
 - Add a note on **tracking analytics** for filter and pagination usage.
 - Suggest how this could be wired up to a **CMS for future flexibility**.
 - Describe how you would enforce **design system consistency** across similar pages (shared tokens, components, or stylesheets).
+- Add Pagination
+    - Implement pagination to limit the number of cards displayed per page.
+    - The number of cards per page is up to your discretion.
+    - Users should be able to navigate between pages.
 
 ---
 
