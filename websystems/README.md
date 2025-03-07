@@ -38,7 +38,7 @@ When you show off your craft demo, we will ask you to show us how it works from 
 ## Coding Requirements
 
 ### Recreate the provided mockups
-- Your code should match the provided [mobile](https://github.com/QuickBase/interview-demos/blob/a980da9ba2ebc5cec06f6a9ba3e2908f084a726d/websystems/Web-Systems__Craft-Demo-Mockup--Mobile.jpg) and [desktop](https://github.com/QuickBase/interview-demos/blob/a980da9ba2ebc5cec06f6a9ba3e2908f084a726d/websystems/Web-Systems__Craft-Demo-Mockup--Desktop.jpg) mockups.
+- Your code should match the provided [mobile](https://github.com/QuickBase/interview-demos/blob/5d9820ccc70223a638e843057588769d2511fdca/websystems/Web-Systems__Craft-Demo-Mockup--Mobile.jpg) and [desktop](https://github.com/QuickBase/interview-demos/blob/5d9820ccc70223a638e843057588769d2511fdca/websystems/Web-Systems__Craft-Demo-Mockup--Desktop.jpg) mockups.
 
 ### Responsive Design
 - Ensure the design works well across mobile and desktop.
