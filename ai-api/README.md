@@ -7,7 +7,7 @@ The purpose of this exercise is to give you a straight-forward example of the ki
 
 Create a TypeScript service that analyzes TypeScript files for dependency complexity and provides intelligent analysis using an LLM.
 
-- Build a service that reads and parses TypeScript files to extract import statements and dependency relationships
+- Build a program that reads and parses TypeScript files to extract import statements and dependency relationships
 - **Integrate with an LLM** to analyze the dependency relationships and provide insights about potential circular dependencies
 - Return a structured analysis about dependency complexity, tightly coupled modules, and refactoring recommendations
 - Handle various import formats and edge cases in TypeScript import syntax
@@ -22,6 +22,7 @@ These are bonus tasks to consider. Complete the core tasks before attempting any
 - **Implement a heuristic approach** that programmatically analyzes dependencies without using an LLM and compare the results with the LLM analysis
 - Add support for analyzing dependencies across different file types (e.g., .js, .jsx files)
 - Create a visual representation of the dependency relationships
+- Create a server that serves the analysis results via an API
 
 ## **Provided Materials**
 - Sample TypeScript files with various dependency relationships found in `src` folder
