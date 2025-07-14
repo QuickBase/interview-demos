@@ -4,7 +4,6 @@
 
 import { add } from "./mathUtils";
 import { formatResult } from "./stringUtils";
-import { processTemplate } from "./templateUtils";
 import _ from "lodash";
 
 /**
@@ -18,6 +17,8 @@ export const calculateAverage = (numbers: number[]): number => {
 
   return sum / cleanNumbers.length;
 };
+
+import { processTemplate } from "./templateUtils";
 
 /**
  * Process data and format result

@@ -21,7 +21,6 @@ These are bonus tasks to consider. Complete the core tasks before attempting any
 
 - **Implement a heuristic approach** that programmatically analyzes dependencies without using an LLM and compare the results with the LLM analysis
 - Add support for analyzing dependencies across different file types (e.g., .js, .jsx files)
-- Create a visual representation of the dependency relationships
 - Create a server that serves the analysis results via an API
 
 ## **Provided Materials**
