@@ -25,4 +25,4 @@ These are bonus tasks to consider. Complete the core tasks before attempting any
 
 ## **Provided Materials**
 - Sample TypeScript files with various dependency relationships found in `src` folder
-- Suggestion for an AI provider - OpenAI (free tier available at https://platform.openai.com/)
+- Suggestion for an AI provider - Gemini (free usage available at https://ai.google.dev/gemini-api/docs/quickstart#javascript). *You can also use whatever AI provider you prefer and have access to.*
