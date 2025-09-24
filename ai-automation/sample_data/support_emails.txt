@@ -1,0 +1,117 @@
+Subject: Can't access my account - locked out
+From: john.smith@company.com
+I've been trying to log into my account for the past hour but keep getting an error message saying my account is locked. I need to access my data urgently for a client presentation. Can someone help me reset this immediately?
+
+---
+
+Subject: Billing error - charged twice this month
+From: sarah.johnson@business.com
+Hi, I just checked my credit card statement and noticed I was charged twice for this month's subscription. The charges are for $99.99 each on March 15th. Please refund the duplicate charge as soon as possible.
+
+---
+
+Subject: How to export customer data?
+From: mike.wilson@startup.com
+Hello, I'm trying to figure out how to export all our customer data to a CSV file. I looked through the documentation but couldn't find clear instructions. Could you walk me through the process?
+
+---
+
+Subject: URGENT: System down - can't process orders
+From: lisa.brown@retailstore.com
+Our entire system has been down since 2 PM today. We can't process any customer orders and are losing money every minute. This is a critical issue that needs immediate attention. Error code: DB_CONNECTION_FAILED
+
+---
+
+Subject: Feature request - bulk email templates
+From: david.garcia@agency.com
+Would it be possible to add a feature for bulk email templates? It would save us a lot of time if we could create templates and send them to multiple clients at once. This would be a game-changer for our workflow.
+
+---
+
+Subject: Password reset not working
+From: emma.davis@consulting.com
+I tried to reset my password using the forgot password link, but I'm not receiving any reset emails. I checked my spam folder too. My email is emma.davis@consulting.com. Please help!
+
+---
+
+Subject: Invoice #12345 payment issue
+From: robert.taylor@manufacturing.com
+I'm trying to pay invoice #12345 but the payment portal keeps giving me an error. It says "Payment method invalid" even though I'm using the same card that worked last month.
+
+---
+
+Subject: Bug report - data not saving
+From: jennifer.white@nonprofit.org
+There's a bug in the customer management section. When I enter new customer information and click save, it appears to save but then disappears when I refresh the page. This has happened 5 times today.
+
+---
+
+Subject: How do I set up automated reports?
+From: chris.anderson@logistics.com
+I need to set up weekly automated reports for our team. Can you provide step-by-step instructions on how to configure this? I want reports sent every Monday morning with last week's data.
+
+---
+
+Subject: Account upgrade question
+From: amanda.martinez@tech.com
+I'm currently on the basic plan but need more storage space. What are the differences between the pro and enterprise plans? Also, if I upgrade mid-month, how does the billing work?
+
+---
+
+Subject: Critical error - all data missing
+From: kevin.thompson@finance.com
+URGENT: All our customer data has disappeared from the system. We had over 1000 customer records and now the database shows empty. This happened sometime between yesterday evening and this morning. Please help immediately!
+
+---
+
+Subject: Integration with Salesforce
+From: stephanie.lee@sales.com
+Is there a way to integrate your platform with Salesforce? We need our data to sync automatically between both systems. If this feature exists, could you send me the setup documentation?
+
+---
+
+Subject: Refund request for unused months
+From: brian.clark@seasonal.com
+Our business is seasonal and we won't need the service for the next 4 months. Can we get a refund for the unused portion of our annual subscription? We paid for the full year in January.
+
+---
+
+Subject: Two-factor authentication setup
+From: melissa.rodriguez@security.com
+I'm trying to enable two-factor authentication on my account but can't find the option in settings. Could you guide me through the process? Security is very important for our organization.
+
+---
+
+Subject: API documentation request
+From: daniel.lewis@developer.com
+I'm a developer trying to integrate with your API, but the documentation seems outdated. Several endpoints mentioned in the docs return 404 errors. Could you provide updated API documentation?
+
+---
+
+Subject: Slow performance issues
+From: rachel.walker@enterprise.com
+Our team has been experiencing very slow load times over the past week. Pages that used to load in 2-3 seconds now take 15-20 seconds. This is affecting our productivity significantly.
+
+---
+
+Subject: Training session request
+From: paul.hall@newcompany.com
+We just purchased your software for 50 users. Could you arrange a training session for our team? We'd prefer an online session that covers the basic features and best practices.
+
+---
+
+Subject: Data backup question
+From: nicole.young@important.com
+How often is our data backed up? We need to ensure we meet compliance requirements for data retention. Also, is it possible to get a copy of our backup data?
+
+---
+
+Subject: Mobile app not syncing
+From: matthew.king@mobile.com
+The mobile app isn't syncing with the web version. Changes I make on my phone don't appear on the desktop, and vice versa. I've tried logging out and back in but the issue persists.
+
+---
+
+Subject: Custom field request
+From: jessica.wright@custom.com
+We need to add some custom fields to the customer records that are specific to our industry. Is this possible with our current plan? If not, what would we need to upgrade to?
