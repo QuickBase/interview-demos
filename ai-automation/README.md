@@ -6,13 +6,13 @@ This exercise evaluates your ability to identify automation opportunities in eve
 ## **Instructions**
 
 ### **Part 1: Solution Design (45-60 minutes)**
-Review the 3 business scenarios below. Choose **1-2 scenarios** and for each one, provide:
+Review the 3 business scenarios below. Choose at least **2 of the scenarios** and for each one, provide:
 1. **Simple workflow diagram** - Show the basic flow and components
 2. **Design explanation** - How would you automate this? Where would you use AI vs. traditional logic?
 3. **Key challenges** - What are the tricky parts and how would you handle them?
 
 ### **Part 2: Implementation (2-3 hours)**
-Select **1 scenario** and build a working solution that demonstrates:
+Select **one of the scenarios** and build a working solution that demonstrates:
 - Integration with an LLM for intelligent decision-making
 - Basic workflow automation
 - Handling of at least one edge case
