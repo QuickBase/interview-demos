@@ -11,7 +11,7 @@ Quick Base C++ is based on Microsoft Windows Stack. However feel free to use you
 
 - We have provided a base FindMatchingRecords Function that we would like to optimize.
 
-- Fee free to provide your own implementation of Record, RecordCollection and FindMatchingRecords
+- Feel free to provide your own implementation of Record, RecordCollection and FindMatchingRecords
 
 - Feel free to change the profiler function, add unit tests, move the definitions into separate classes to make it more maintainable, add comments.
 
