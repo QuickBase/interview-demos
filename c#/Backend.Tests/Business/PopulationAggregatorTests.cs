@@ -54,7 +54,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(new Dictionary<string, int>());
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         var result = await aggregator.GetCombinedCountryPopulationsAsync();
@@ -68,7 +68,7 @@ public class PopulationAggregatorTests
     public async Task GetCombinedCountryPopulationsAsync_WithOnlyDatabaseData_ReturnsDatabaseData()
     {
         // Arrange
-        var dbPopulations = new Dictionary<string, int>
+        Dictionary<string, int> dbPopulations = new()
         {
             { "USA", 331000000 },
             { "Canada", 38000000 }
@@ -83,7 +83,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(new Dictionary<string, int>());
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         var result = await aggregator.GetCombinedCountryPopulationsAsync();
@@ -98,7 +98,7 @@ public class PopulationAggregatorTests
     public async Task GetCombinedCountryPopulationsAsync_WithOnlyServiceData_ReturnsServiceData()
     {
         // Arrange
-        var servicePopulations = new Dictionary<string, int>
+        Dictionary<string, int> servicePopulations = new()
         {
             { "Mexico", 129000000 },
             { "Brazil", 212000000 }
@@ -113,7 +113,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(servicePopulations);
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         var result = await aggregator.GetCombinedCountryPopulationsAsync();
@@ -128,13 +128,13 @@ public class PopulationAggregatorTests
     public async Task GetCombinedCountryPopulationsAsync_WithDifferentCountries_CombinesBothSources()
     {
         // Arrange
-        var dbPopulations = new Dictionary<string, int>
+        Dictionary<string, int> dbPopulations = new()
         {
             { "USA", 331000000 },
             { "Canada", 38000000 }
         };
 
-        var servicePopulations = new Dictionary<string, int>
+        Dictionary<string, int> servicePopulations = new()
         {
             { "Mexico", 129000000 },
             { "Brazil", 212000000 }
@@ -149,7 +149,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(servicePopulations);
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         var result = await aggregator.GetCombinedCountryPopulationsAsync();
@@ -166,13 +166,13 @@ public class PopulationAggregatorTests
     public async Task GetCombinedCountryPopulationsAsync_WithDuplicateCountries_DatabaseTakesPrecedence()
     {
         // Arrange
-        var dbPopulations = new Dictionary<string, int>
+        Dictionary<string, int> dbPopulations = new()
         {
             { "USA", 331000000 },
             { "Canada", 38000000 }
         };
 
-        var servicePopulations = new Dictionary<string, int>
+        Dictionary<string, int> servicePopulations = new()
         {
             { "USA", 300000000 },  // Different value from database
             { "Mexico", 129000000 }
@@ -187,7 +187,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(servicePopulations);
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         var result = await aggregator.GetCombinedCountryPopulationsAsync();
@@ -212,7 +212,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(new Dictionary<string, int>());
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         await aggregator.GetCombinedCountryPopulationsAsync();
@@ -234,7 +234,7 @@ public class PopulationAggregatorTests
         mockStatService.Setup(s => s.GetCountryPopulationsAsync())
             .ReturnsAsync(new Dictionary<string, int>());
 
-        var aggregator = new PopulationAggregator(mockDbManager.Object, mockStatService.Object, TestDatasource);
+        PopulationAggregator aggregator = new(mockDbManager.Object, mockStatService.Object, TestDatasource);
 
         // Act
         await aggregator.GetCombinedCountryPopulationsAsync();
