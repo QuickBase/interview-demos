@@ -24,3 +24,35 @@ the sql database should be used.
 This project assumes you're using Visual Studio 2022 or newer and depends on nuget.
 
 That said, feel free to challenge any of the current limitations with your demo. Just keep the time limit in mind.
+
+## Solution Structure
+
+The solution has been organized into a clean, testable architecture:
+
+```
+Backend/
+  Business/
+    IPopulationAggregator.cs      # Interface for population aggregation logic
+    PopulationAggregator.cs       # Combines data from DB and API sources
+  DataAccess/
+    IDbManager.cs                 # Interface for database operations
+    SqliteDbManager.cs            # SQLite database implementation
+  Services/
+    IStatService.cs               # Interface for external API service
+    ConcreteStatService.cs        # Implementation of stat service
+  Models/
+    CountryPopulation.cs          # Data model for country population
+  Program.cs                      # Application entry point
+```
+
+### Key Design Decisions
+
+1. **Separation of Concerns**: Business logic, data access, and external services are separated into distinct layers
+2. **Dependency Injection**: All classes depend on interfaces for maximum testability
+3. **PopulationAggregator**: New business class that encapsulates the logic for combining data sources
+
+### Testing
+The architecture is designed to be fully unit testable:
+- Mock `IDbManager` to test business logic without a database
+- Mock `IStatService` to simulate API responses
+- Test `PopulationAggregator` independently with mocked dependencies

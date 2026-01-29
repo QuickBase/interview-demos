@@ -1,12 +1,13 @@
-﻿using System;
+using Backend.Models;
+using Dapper;
+using Microsoft.Data.Sqlite;
+using System;
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Linq;
 using System.Threading.Tasks;
-using Dapper;
-using Microsoft.Data.Sqlite;
 
-namespace Backend;
+namespace Backend.DataAccess;
 
 public class SqliteDbManager : IDbManager
 {
@@ -27,31 +28,17 @@ public class SqliteDbManager : IDbManager
         }
         catch(SqliteException ex)
         {
-            Console.WriteLine($"Error oppening DB Connection to {datasource}: {ex.Message}");
+            Console.WriteLine($"Error opening DB Connection to {datasource}: {ex.Message}");
             //ToDo: make specific handling and logging based on SqliteException
-            
+
             return null;
         }
         catch(Exception ex)
         {
-            Console.WriteLine($"Error oppening DB Connection to {datasource}: {ex.Message}");
+            Console.WriteLine($"Error opening DB Connection to {datasource}: {ex.Message}");
             //ToDo: make specific handling and logging based on Exception
-            
-            return null;
-        }
-        finally
-        {
-            Console.WriteLine($"Closing the DB connection to {datasource}...");
 
-            if (connection != null && connection.State == System.Data.ConnectionState.Open)
-            {
-                connection.Close();
-                Console.WriteLine($"DB connection to {datasource} closed.");
-            }
-            else
-            {
-                Console.WriteLine($"DB connection to {datasource} was not opened.");
-            }
+            return null;
         }
     }
 
@@ -69,7 +56,12 @@ GROUP BY c.CountryName
 
         try
         {
-            IEnumerable<CountryPopulationDTO> result = await dbConnection.QueryAsync<CountryPopulationDTO>(sql);
+            if (dbConnection == null)
+            {
+                throw new ArgumentNullException(nameof(dbConnection), "Database connection not available.");
+            }
+
+            IEnumerable<CountryPopulation> result = await dbConnection.QueryAsync<CountryPopulation>(sql);
 
             IDictionary<string, int> countryPopulations = result.ToDictionary(
                 item => item.CountryName,
@@ -83,8 +75,11 @@ GROUP BY c.CountryName
         catch (Exception ex)
         {
             Console.WriteLine($"Error executing SQL query: {ex.Message}");
+            //ToDo: Make sure to log the exception properly in a real-world application and raise some alarms.
+            //The method seemlesly returns nothing in case of an error which will not break user-facing functionality,
+            //but the issue should be logged and monitored for further investigation.
 
-            throw;
+            return new Dictionary<string, int>();
         }
     }
 }
