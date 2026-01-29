@@ -4,5 +4,5 @@ namespace Backend;
 
 public interface IDbManager
 {
-    DbConnection GetConnection();
+    DbConnection GetConnection(string datasource, string mode = "ReadWrite");
 }

@@ -2,13 +2,15 @@
 using System;
 using System.Data.Common;
 
-Console.WriteLine("Started");
-Console.WriteLine("Getting DB Connection...");
+Console.WriteLine("Started.");
 
 IDbManager db = new SqliteDbManager();
-DbConnection conn = db.GetConnection();
 
-if (conn == null)
+using DbConnection dbConnection = db.GetConnection("citystatecountry.db");
+
+if (dbConnection == null)
 {
-    Console.WriteLine("Failed to get connection");
+    throw new Exception("Failed to get DB Connection");
 }
+
+Console.WriteLine("Finished.");
