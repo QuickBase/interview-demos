@@ -42,9 +42,8 @@ public class ConcreteStatService : IStatService
         ];
     }
 
-
-    public Task<List<Tuple<string, int>>> GetCountryPopulationsAsync()
+    public async Task<List<Tuple<string, int>>> GetCountryPopulationsAsync()
     {
-        return Task.FromResult(GetCountryPopulations());
+        return await Task.FromResult(GetCountryPopulations());
     }
 }
