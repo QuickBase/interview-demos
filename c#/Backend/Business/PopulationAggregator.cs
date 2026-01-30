@@ -24,13 +24,15 @@ public class PopulationAggregator : IPopulationAggregator
     {
         IDictionary<string, int> primaryPopulations;
 
-        using (DbConnection dbConnection = this.dbManager.GetConnection(datasource))
+        // Start fetching data from the service asynchronously, so it can run in parallel with the DB fetch
+        Task<IDictionary<string, int>> statServiceTask = this.statService.GetCountryPopulationsAsync();
+        
+        using (DbConnection dbConnection = this.dbManager.GetConnection(datasource, "ReadOnly"))
         {
             primaryPopulations = await this.dbManager.GetCountryPopulationsAsync(dbConnection);
         }
 
-        IDictionary<string, int> secondaryPopulations = await this.statService.GetCountryPopulationsAsync();
-        
+        IDictionary<string, int> secondaryPopulations = await statServiceTask;
         IDictionary<string, int> combinedPopulations = new Dictionary<string, int>(secondaryPopulations);
 
         // Add the missing populations or override with primary (database) populations where duplicates exist
