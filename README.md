@@ -12,3 +12,5 @@ The goal of these exercises is for it to serve the interviewee and the interview
 * [PHP](php/) - PHP  Craft Demo
 * [react-native](react-native/) - React Native Backend Craft Demo
 * [NodeJs](nodejs/) - NodeJs Craft Demo
+* [Expense Requests](fullstack/expense-requests/) - Full Stack Craft Demo
+* [Checkout Price Breakdown](fullstack/checkout-price-breakdown/) - Full Stack Craft Demo
