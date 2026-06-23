@@ -1,0 +1,7 @@
+[
+  { "key": "r_pct10", "label": "10% off order", "type": "percentOff", "params": { "percent": 10 } },
+  { "key": "r_flat500", "label": "$5.00 off order", "type": "fixedOff", "params": { "amountCents": 500 } },
+  { "key": "r_threshold10", "label": "$10 off if running subtotal is $80+", "type": "thresholdOff", "params": { "minSubtotalCents": 8000, "amountCents": 1000 } },
+  { "key": "r_lineWidget", "label": "20% off Widget", "type": "lineItemPercentOff", "params": { "sku": "SKU-A", "percent": 20 } },
+  { "key": "r_tax", "label": "Sales tax (8%)", "type": "tax", "params": { "ratePercent": 8 }, "serverOnly": true }
+]
