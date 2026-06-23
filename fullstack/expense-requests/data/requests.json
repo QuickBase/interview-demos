@@ -1,0 +1,59 @@
+[
+  {
+    "id": "REQ-001",
+    "requesterId": "u_alice",
+    "values": {
+      "expenseType": "Travel",
+      "amountCents": 45000,
+      "description": "Customer onsite in Chicago",
+      "billable": false
+    },
+    "events": [
+      { "type": "created", "at": "2026-05-01T09:00:00.000Z", "actorId": "u_alice" }
+    ]
+  },
+  {
+    "id": "REQ-002",
+    "requesterId": "u_alice",
+    "values": {
+      "expenseType": "Meal",
+      "amountCents": 4200,
+      "description": "Lunch with prospect",
+      "billable": false
+    },
+    "events": [
+      { "type": "created",   "at": "2026-05-02T09:00:00.000Z", "actorId": "u_alice" },
+      { "type": "submitted", "at": "2026-05-02T09:05:00.000Z", "actorId": "u_alice", "approverId": "u_carol" }
+    ]
+  },
+  {
+    "id": "REQ-003",
+    "requesterId": "u_bob",
+    "values": {
+      "expenseType": "Software",
+      "amountCents": 125000,
+      "description": "Annual design-tool renewal",
+      "billable": false,
+      "additionalJustification": "Replaces three monthly subscriptions; cheaper annually"
+    },
+    "events": [
+      { "type": "created",   "at": "2026-05-03T10:00:00.000Z", "actorId": "u_bob" },
+      { "type": "submitted", "at": "2026-05-03T10:10:00.000Z", "actorId": "u_bob", "approverId": "u_trent" },
+      { "type": "approved",  "at": "2026-05-03T11:00:00.000Z", "actorId": "u_trent" }
+    ]
+  },
+  {
+    "id": "REQ-004",
+    "requesterId": "u_mallory",
+    "values": {
+      "expenseType": "Travel",
+      "amountCents": 60000,
+      "description": "Team offsite venue deposit",
+      "billable": true,
+      "client": "Acme"
+    },
+    "events": [
+      { "type": "created", "at": "2026-05-04T13:00:00.000Z", "actorId": "u_mallory" }
+    ]
+  }
+]
