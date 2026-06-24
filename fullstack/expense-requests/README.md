@@ -6,9 +6,9 @@ This exercise gives us shared context for discussing your code, your design choi
 
 Plan on **3–4 hours** of focused time. There's no hard limit. We look at how clearly you build and explain your work, not how much you finish. A small, well-built solution scores well.
 
-Use any stack — any frontend (or plain JS) and any backend you like. In-memory storage is fine (no database needed), and no external services or accounts are needed. A plain list/detail/form UI is expected (no data-grid library), and please don't use a ready-made form builder or workflow engine that implements the core form or approval behavior for you.
+Use any stack — any frontend (or plain JS) and any backend you like. In-memory storage is fine (no database needed), and no external services or accounts are needed. A simple list/detail/form UI is expected (a data-grid library isn't necessary), and please don't use a ready-made form builder or workflow engine that implements the core form or approval behavior for you.
 
-Keep the UI plain — minimal styling is fine.
+Keep the UI simple — minimal styling is fine.
 
 ## AI use
 
@@ -54,7 +54,7 @@ You design the data model, the API, and the UI.
 
 ## Stretch (optional)
 
-Pick one or two if time allows. Not required.
+Take on whatever interests you, as time allows — none are required.
 
 - More type-specific fields — e.g. Travel → destination and dates, or Software → vendor and a reason.
 - A rejected request can be fixed and resubmitted by its owner. Resubmitting should re-validate, recompute the approver, add to history, and may include a note from the requester.
@@ -66,7 +66,7 @@ Pick one or two if time allows. Not required.
 
 ## Submitting your work
 
-- **The project** — a GitHub repo or a runnable archive (a zip), with run steps in `NOTES.md`.
+- **The project** — a GitHub repo with run steps in `NOTES.md`.
 - **Your commit history** (if you share a repo) — commit as you go rather than squashing to a single commit. It isn't graded for tidiness.
 - **If you used AI** — include your relevant prompts (an export, a gist, or a folder is fine), and in `NOTES.md` note what was AI-assisted and also mention if there were cases where you agreed or disagreed with the AI.
 
@@ -74,10 +74,10 @@ Pick one or two if time allows. Not required.
 
 During the demo we'll go through your solution at a high level:
 
-1. A quick run-through of your system's design
-2. Code walkthrough
-3. Review of the design choices and tradeoffs you made
-4. How you'd extend it if you had more time
+1. A quick run-through of your system's design.
+2. Code walkthrough.
+3. Review of the design choices and tradeoffs you made.
+4. How you'd extend it if you had more time.
 5. And, if applicable, how you used AI.
 
 ## FAQ
@@ -86,11 +86,11 @@ During the demo we'll go through your solution at a high level:
 
 **Real auth / login?** Not required. A user picker, request header, or query parameter is fine.
 
-**File uploads, receipts, notifications, tax, currency conversion?** These are out of scope.
+**File uploads, receipts, notifications, tax, currency conversion?** Not required — but if any of these interest you, feel free to add one and mention it in `NOTES.md`.
 
 **A validation library?** Using one is acceptable; the server must still enforce the rules.
 
-**A data-grid library?** Not needed. The focus is on the rules, the workflow, and the API.
+**A data-grid library?** Not necessary — the focus is on the rules, the workflow, and the API. A simple list/detail/form UI is plenty, but a richer one is fine if you'd like.
 
 **Didn't finish?** Note what you would do next in `NOTES.md`.
 

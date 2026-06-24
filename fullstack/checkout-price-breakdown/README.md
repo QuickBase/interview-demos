@@ -10,7 +10,7 @@ This is a **full-stack** exercise: build a small backend/API and a small UI that
 
 - Use any stack — the frontend can be plain JS, and the backend can be minimal.
 - In-memory storage is fine — no database, no external services, and no external accounts.
-- Keep the UI plain: minimal styling is fine, up/down buttons are plenty for reordering, and don't use a ready-made pricing/tax library, a drag-and-drop library, or a pricing/rules engine to do the core math.
+- Keep the UI simple: minimal styling is fine, and up/down buttons are plenty for reordering (a drag-and-drop library isn't necessary). Please don't use a ready-made pricing/tax library or a pricing/rules engine to do the core math.
 
 ## AI use
 
@@ -26,7 +26,7 @@ It's more than adding up a cart. The interesting part is how you model the prici
 
 **`data/cart.json`** (the line items) and **`data/rules.json`** (the rule catalog), plus this brief. **There's no scaffold** — you design the data model, the API, and the UI.
 
-The input is a set of rules to compose, not a form to fill in: the candidate selects, orders, and toggles rules from the server's catalog. Don't build a UI for authoring new rules; just compose the ones provided.
+The input is a set of rules to compose, not a form to fill in: the candidate selects, orders, and toggles rules from the server's catalog. You don't need to build a UI for authoring new rules — composing the ones provided is the focus.
 
 ## The data
 
@@ -56,7 +56,7 @@ A rule: `{ "key": "r_pct10", "label": "10% off order", "type": "percentOff", "pa
 
 ## Stretch (optional)
 
-Pick one or two if time allows. Not required.
+Take on whatever interests you, as time allows — none are required.
 
 - **Per-line attribution:** show which rule changed which line.
 - **Durable saved stacks:** persist stack definitions across server restarts.
@@ -66,7 +66,7 @@ Pick one or two if time allows. Not required.
 
 ## Submitting your work
 
-- **The project** — a GitHub repo or a runnable archive (a zip), with run steps in `NOTES.md`.
+- **The project** — a GitHub repo with run steps in `NOTES.md`.
 - **Your commit history** (if you share a repo) — commit as you go rather than squashing to a single commit. It isn't graded for tidiness.
 - **If you used AI** — include your relevant prompts (an export, a gist, or a folder is fine), and in `NOTES.md` note what was AI-assisted and also mention if there were cases where you agreed or disagreed with the AI.
 
