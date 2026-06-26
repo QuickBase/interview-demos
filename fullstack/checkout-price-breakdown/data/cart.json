@@ -1,0 +1,5 @@
+[
+  { "sku": "SKU-A", "name": "Widget", "unitPriceCents": 1000, "qty": 3 },
+  { "sku": "SKU-B", "name": "Gadget", "unitPriceCents": 2500, "qty": 2 },
+  { "sku": "SKU-C", "name": "Gizmo", "unitPriceCents": 805, "qty": 1 }
+]
