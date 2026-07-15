@@ -14,3 +14,5 @@ The goal of these exercises is for it to serve the interviewee and the interview
 * [NodeJs](nodejs/) - NodeJs Craft Demo
 * [Expense Requests](fullstack/expense-requests/) - Full Stack Craft Demo
 * [Checkout Price Breakdown](fullstack/checkout-price-breakdown/) - Full Stack Craft Demo
+* [Tenant-Aware Job Scheduler](fullstack/tenant-aware-job-scheduler/) - Full Stack Craft Demo
+* [Guarded Tool-Use Agent](fullstack/guarded-tool-use-agent/) - Full Stack Craft Demo
