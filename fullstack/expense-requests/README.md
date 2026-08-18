@@ -14,6 +14,10 @@ Keep the UI simple — minimal styling is fine.
 
 You may use AI tools. AI use is optional and will not count for or against you. We care that you understand and can explain the work you submit.
 
+## Language use
+
+We prefer Typescript. You can pick Python, C# or Java. If you want to pick other languages, please let us know
+
 ## The Scenario
 
 An internal tool for **expense requests**. Anyone can create and submit their own request. Some people are managers or finance approvers who approve or reject requests submitted by others. The form is conditional — some fields appear or become required based on others — and each request runs through an approval workflow, with the server deciding who approves it.
